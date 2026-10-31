@@ -2,16 +2,24 @@
 
 ## Actual state — 2026-10-31
 
-**Not published by this session. No successful GitHub Actions run or live Pages deployment was observed.**
+**Published.** Public repository: https://github.com/faustoaguanor/geospatial-flash-benchmark
+
+Verified [Actions run 41252590779](https://github.com/faustoaguanor/geospatial-flash-benchmark/actions/runs/41252590779): all 171 original tests and all three builds passed. Commit: `86af38a22c91bbf3fc3c7d14d4b5e13e29abf8b6`. The initial Pages setup job failed before Pages was enabled. After the owner enabled GitHub Actions as the source and reran the failed job, deployment succeeded at 23:30 UTC on 2026-10-31. The deployment action reported https://faustoaguanor.github.io/geospatial-flash-benchmark/ as its environment URL.
+
+Public HTTP retrieval and browser/WebGL/desktop/mobile behavior remain unverified: web-tool fetches did not return the four public pages. No live screenshots or fabricated status codes are supplied.
+
+### Earlier preparation blockers (resolved for publication)
+
+The owner authenticated and created/pushed the prepared checkout from their terminal. The integration could read Actions results but received 403 when attempting a rerun; the owner reran the failed job. The following entries describe the earlier sandbox state, not current repository/publication status.
 
 - `gh auth status`: the configured faustoaguanor token was invalid.
-- `gh repo view faustoaguanor/geospatial-flash-benchmark --json name,url,visibility`: GitHub API connection failed. Whether the target repository already exists could not be established; no remote was created or overwritten.
+- `gh repo view faustoaguanor/geospatial-flash-benchmark --json name,url,visibility`: GitHub API connection failed. At that point existence could not be established. The owner subsequently created the public repository and pushed safely.
 - Normal `git init` failed because the workspace exposes `.git` as read-only. No existing usable repository/history was found.
 - A local publication commit is prepared using Git metadata under `/tmp/geospatial-flash-benchmark.git`, with the project as its work tree. A portable bundle is saved at `/tmp/geospatial-flash-publication.bundle`; it is outside the public source tree. Normal `git status` inside this workspace will not use that metadata automatically. `/tmp` is session-local: copy the bundle to durable storage if needed.
 - The comparison website and all three successful standalone production builds are assembled under `/tmp/geospatial-flash-site-inspection`. Its static paths/datasets were checked. This inspection artifact is not evidence that the entire CI pipeline passed; GLM's subprocess test remains blocked here.
-- Attempts to fetch the planned repository and four Pages addresses through the web tool did not yield accessible pages. This does not prove absence or a specific HTTP status. Deployment, Actions status and browser behavior remain unverified.
+- Attempts to fetch the planned repository and four Pages addresses through the web tool did not yield accessible pages. This does not prove absence or a specific HTTP status. The later Actions/deployment result is verified above; public HTTP/browser behavior remains unverified.
 
-## Planned public targets — unverified
+## Published Pages targets — deployment verified, browser behavior unverified
 
 - Repository: https://github.com/faustoaguanor/geospatial-flash-benchmark
 - Landing page: https://faustoaguanor.github.io/geospatial-flash-benchmark/
@@ -19,7 +27,7 @@
 - GLM: https://faustoaguanor.github.io/geospatial-flash-benchmark/glm/
 - MiMo: https://faustoaguanor.github.io/geospatial-flash-benchmark/mimo/
 
-## Remaining publication steps on an unrestricted machine
+## Recovery and reproduction runbook (publication already completed)
 
 1. Recover the prepared commit into a new, absent checkout path, or initialize the current source tree after its `.git` becomes writable. The bundle preserves the prepared history:
 

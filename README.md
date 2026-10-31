@@ -14,7 +14,7 @@ The research question: how well do three coding models translate one GIS specifi
 
 ## Audit status and demos
 
-The comparison site and deployment workflow are prepared locally. **Publication was not completed in this session:** GitHub credentials were invalid, API connectivity failed and the workspace's `.git` was read-only. The site has not been rendered in a browser. Planned URLs below are **unverified deployment targets**, not confirmed live demos:
+The public repository is published. **GitHub Actions verified all 171 original tests, built all three applications and successfully deployed the Pages artifact on 2026-10-31.** [Verified deployment run](https://github.com/faustoaguanor/geospatial-flash-benchmark/actions/runs/41252590779). Direct public-page fetching and real-browser behavior remain unverified in this restricted session. Published deployment targets:
 
 - [Comparison website](https://faustoaguanor.github.io/geospatial-flash-benchmark/)
 - [DeepSeek application](https://faustoaguanor.github.io/geospatial-flash-benchmark/deepseek/)
@@ -30,13 +30,13 @@ Audit date: 2026-10-31; Node 24.16.0, npm 12.2.0. All original files are frozen.
 | Evidence | DeepSeek | GLM | MiMo |
 |---|---:|---:|---:|
 | Parsed synthetic features | 72 | 72 | 68 |
-| Existing tests independently executed | 64/64 passed | 55/56 passed; 1 sandbox error | 51/51 passed |
+| Existing tests independently executed | 64/64 passed | 56/56 passed on GitHub; 55/56 locally | 51/51 passed |
 | Production build | Passed | Passed | Passed |
 | Provisional technical subtotal /80 | 61 | 50 | 58 |
 | Browser / visual criterion /20 | Unverified | Unverified | Unverified |
 | Full score /100 | Withheld | Withheld | Withheld |
 
-GLM's generator test hit `spawnSync EPERM`; its assertion did not execute. Two direct generator runs in an isolated copy preserved both original output hashes. This is an environment limitation, not a demonstrated generator defect or a 56/56 passing test run.
+GLM's generator test initially hit `spawnSync EPERM` in the local sandbox; its assertion did not execute there. All 56 tests subsequently passed unchanged on GitHub Actions. Two direct generator runs in an isolated copy preserved both original output hashes. This is an environment limitation, not a demonstrated generator defect or a 56/56 passing test run.
 
 Independent diagnostic cases confirmed overlap/boundary discrimination in all three. They also exposed GLM's one-sided overlap indicators and missing-ID normalization, MiMo's malformed-MultiPolygon crash, and shared shortcomings in exterior-hole validity and orientation-independent duplicate detection. [Technical comparison](results/reports/technical-comparison.md) documents evidence and qualifications.
 
@@ -61,7 +61,7 @@ Usage percentages are not prices; their accounting basis is not verified and the
 
 All models received the [same benchmark prompt](benchmark/prompt.md), but each generated its own dataset. Generated incidence counts and internal passing-test totals are therefore **not directly comparable measures of correctness**. Model-authored expectations are not independent ground truth. This audit did not alter the implementations to make tests pass or deployment work.
 
-The audit uses isolated lockfile installations, original tests, production builds, selected source review and 16 shared diagnostic cases per model with schema adapters. It is one submission per model, without repeated trials or controlled agent budgets. Scores are post-hoc reviewer judgments; missing browser evidence prevents a full ranking. The 5% tolerance is experimental, not an ISO/municipal standard. Official accuracy cannot be evaluated without reference data.
+The audit uses isolated lockfile installations, original tests (including a successful hosted run), production builds, selected source review and 16 shared diagnostic cases per model with schema adapters. It is one submission per model, without repeated trials or controlled agent budgets. Scores are post-hoc reviewer judgments; missing browser evidence prevents a full ranking. The 5% tolerance is experimental, not an ISO/municipal standard. Official accuracy cannot be evaluated without reference data.
 
 - [Methodology](benchmark/methodology.md)
 - [Rubric and qualified results](benchmark/evaluation.md)

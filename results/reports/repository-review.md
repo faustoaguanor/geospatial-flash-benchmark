@@ -17,3 +17,5 @@ Audit date: 2026-10-31.
 See `publication.md` for the exact remaining authentication, push, Pages setup and browser checks. Complete remote publication cannot be claimed in this environment.
 
 Original submission whitespace and copied upstream license whitespace are preserved; whitespace review applies to newly authored material.
+
+Hosted follow-up: the owner created/pushed the public repository. GitHub Actions passed all 171 original tests and all builds, then deployed successfully after Pages activation. See publication.md. No source repair was made.

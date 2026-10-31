@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/faustoaguanor/geospatial-flash-benchmark",
+  "verified_commit": "86af38a22c91bbf3fc3c7d14d4b5e13e29abf8b6",
+  "workflow_run_id": 41252590779,
+  "workflow_url": "https://github.com/faustoaguanor/geospatial-flash-benchmark/actions/runs/41252590779",
+  "hosted_tests_passed": {
+    "deepseek": 64,
+    "glm": 56,
+    "mimo": 51
+  },
+  "builds": "all passed",
+  "deployment": "success",
+  "successful_deploy_job_id": 124689649539,
+  "deployment_success_utc": "2026-10-31T23:30:32Z",
+  "environment_url": "https://faustoaguanor.github.io/geospatial-flash-benchmark/",
+  "browser_verification": "not performed",
+  "public_http_verification": "web tool could not retrieve pages; no HTTP status inferred",
+  "source_integrity": "107 files unchanged"
+}

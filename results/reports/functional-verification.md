@@ -20,11 +20,17 @@ DeepSeek/MiMo builds emitted large-chunk warnings. MiMo produced a separate map 
 
 `npm run preview -- --host 127.0.0.1 --port 4173 --strictPort` (DeepSeek), port 4174 (GLM), and port 4175 (MiMo) all failed on socket binding with `listen EPERM`. No server remained running. Browser automation tools, Chromium and Chrome were unavailable. Firefox was present but no usable browser automation/rendering session was available. No real page, map, popup, filter, export download, mobile layout or network-loaded GeoJSON was verified. Static asset existence and parsed GeoJSON are distinct from runtime loading.
 
+## Hosted verification — completed
+
+[GitHub Actions run 41252590779](https://github.com/faustoaguanor/geospatial-flash-benchmark/actions/runs/41252590779), commit `86af38a22c91bbf3fc3c7d14d4b5e13e29abf8b6`, passed all 64 DeepSeek, 56 GLM and 51 MiMo original tests and all three builds. The hosted run also passed the external artifact checks and source-integrity check. No implementation repair was needed. This resolves the local GLM subprocess limitation for hosted execution; local results above remain a faithful record of that environment.
+
+The first deployment attempt failed because Pages was not enabled. After the owner selected GitHub Actions as the Pages source and reran the failed job, `configure-pages` and deployment both succeeded at 2026-10-31 23:30 UTC. The deployment action reported the environment URL `https://faustoaguanor.github.io/geospatial-flash-benchmark/`. This verifies the official deployment result, not real-browser application behavior. Attempts to fetch the four public URLs through the web tool were unsuccessful; no HTTP status or complete runtime success is inferred from that limitation.
+
 ## Deployment scope
 
-The workflow runs all existing tests and builds in isolated copies and fails on errors. It will not suppress GLM's test or replace expectations. A standard GitHub runner may permit its subprocess, but that run has not been observed. Node 24 is selected; the local run used npm 12 and the hosted runner's bundled npm version may differ.
+The workflow runs all existing tests and builds in isolated copies and fails on errors. It will not suppress GLM's test or replace expectations. A standard GitHub runner may permit its subprocess, and it subsequently passed all 56 tests on the observed hosted run. Node 24 is selected; the local run used npm 12 and the hosted runner's bundled npm version may differ.
 
-Built HTML and relative app assets are checked by `scripts/check-site.py`. The assembled local inspection artifact uses successful individual builds; it does not turn the GLM test failure into a passing CI run. Remote deployment and browser behavior remain unverified.
+Built HTML and relative app assets are checked by `scripts/check-site.py`. The assembled local inspection artifact uses successful individual builds; it does not turn the GLM test failure into a passing CI run. Official remote deployment is verified above; browser behavior remains unverified.
 
 ## External tooling checks
 
