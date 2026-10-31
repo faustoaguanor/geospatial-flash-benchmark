@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quito Cadastre Quality Lab</title>
+  <meta name="description" content="Laboratorio de calidad de información catastral sintética del Distrito Metropolitano de Quito. Datos experimentales, sin relación con el Municipio." />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-titles">
+      <h1>Quito Cadastre Quality Lab</h1>
+      <p class="subtitle">Análisis de calidad de información catastral vectorial sintética del Distrito Metropolitano de Quito, Ecuador</p>
+    </div>
+    <p class="aviso-sintetico" role="alert">
+      Datos catastrales sintéticos con fines educativos y experimentales.
+      No representan información oficial del Municipio del Distrito Metropolitano de Quito.
+    </p>
+  </header>
+
+  <main class="app-layout">
+    <aside class="sidebar">
+      <section class="panel" aria-labelledby="titulo-control">
+        <h2 id="titulo-control">Panel de control</h2>
+        <div class="control-group">
+          <label class="btn btn-primary" for="file-input">Cargar GeoJSON</label>
+          <input type="file" id="file-input" accept=".geojson,.json,application/geo+json,application/json" hidden />
+          <button id="btn-demo" class="btn" type="button">Cargar datos de demostración</button>
+          <button id="btn-eval" class="btn btn-accent" type="button">Ejecutar evaluación</button>
+        </div>
+
+        <div class="control-group">
+          <label for="tolerance">Tolerancia de superficie (%)
+            <input type="number" id="tolerance" min="0" max="100" step="0.1" value="5" />
+          </label>
+          <p class="hint">Umbral experimental de este laboratorio; no corresponde a una norma oficial.</p>
+        </div>
+
+        <fieldset class="control-group">
+          <legend>Reglas de validación</legend>
+          <div id="rule-toggles"></div>
+        </fieldset>
+      </section>
+
+      <section class="panel" aria-labelledby="titulo-indicadores">
+        <h2 id="titulo-indicadores">Indicadores</h2>
+        <div id="indicators" class="indicators-grid" aria-live="polite">
+          <p class="hint">Sin datos cargados.</p>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="titulo-export">
+        <h2 id="titulo-export">Exportar</h2>
+        <div class="control-group">
+          <button id="btn-csv" class="btn" type="button" disabled>Incidencias CSV</button>
+          <button id="btn-json" class="btn" type="button" disabled>Incidencias JSON</button>
+          <button id="btn-summary" class="btn" type="button" disabled>Resumen de evaluación JSON</button>
+        </div>
+      </section>
+    </aside>
+
+    <section class="content">
+      <div class="map-wrap panel">
+        <div id="map" aria-label="Mapa de predios catastrales sintéticos de Quito"></div>
+        <div class="map-legend" aria-hidden="true">
+          <span><i class="swatch swatch-error"></i> Con errores</span>
+          <span><i class="swatch swatch-warning"></i> Con advertencias</span>
+          <span><i class="swatch swatch-ok"></i> Sin incidencias</span>
+        </div>
+        <div class="map-status">
+          <label for="sector-filter">Sector:
+            <select id="sector-filter"><option value="todos">Todos</option></select>
+          </label>
+          <span id="dataset-info" class="hint"></span>
+        </div>
+      </div>
+
+      <div class="panel table-panel">
+        <div class="table-header">
+          <h2>Incidencias</h2>
+          <div class="filters">
+            <input type="search" id="search" placeholder="Buscar por identificador de predio…" aria-label="Buscar por identificador" />
+            <select id="severity-filter" aria-label="Filtrar por severidad">
+              <option value="todas">Severidad: todas</option>
+              <option value="error">Solo errores</option>
+              <option value="advertencia">Solo advertencias</option>
+            </select>
+            <select id="rule-filter" aria-label="Filtrar por regla">
+              <option value="todas">Regla: todas</option>
+            </select>
+          </div>
+        </div>
+        <p id="status" class="status-line" aria-live="polite">Cargando datos de demostración…</p>
+        <div class="table-scroll">
+          <table class="incidents-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Regla</th>
+                <th>Predio</th>
+                <th>Dimensión</th>
+                <th>Severidad</th>
+                <th>Descripción</th>
+                <th>Valor observado</th>
+                <th>Criterio</th>
+              </tr>
+            </thead>
+            <tbody id="incidents-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <details class="panel no-evaluated">
+        <summary>Reglas y dimensiones no evaluadas en esta corrida</summary>
+        <div id="not-evaluated"></div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Procesamiento 100 % local en el navegador: los datos cargados no se transmiten a servicios externos.
+       Dimensiones de calidad organizadas con referencia conceptual a ISO 19157-1:2023 (sin certificación alguna).</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

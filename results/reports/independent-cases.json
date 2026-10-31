@@ -1,0 +1,1905 @@
+{
+  "deepseek": {
+    "disjoint": {
+      "codes": [],
+      "indicators": {
+        "totalPredios": 2,
+        "totalEntidades": 2,
+        "prediosSinErrores": 2,
+        "prediosConErrores": 0,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 2,
+        "totalIncidencias": 0,
+        "incidenciasError": 0,
+        "incidenciasAdvertencia": 0,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 100,
+        "porcentajePrediosConErrores": 0,
+        "incidenciasPorSeveridad": {
+          "error": 0,
+          "advertencia": 0,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 0,
+          "consistencia_logica": 0,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {}
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "overlap": {
+      "codes": [
+        "GEO-007"
+      ],
+      "indicators": {
+        "totalPredios": 2,
+        "totalEntidades": 2,
+        "prediosSinErrores": 0,
+        "prediosConErrores": 2,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 0,
+        "totalIncidencias": 2,
+        "incidenciasError": 2,
+        "incidenciasAdvertencia": 0,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 0,
+        "porcentajePrediosConErrores": 100,
+        "incidenciasPorSeveridad": {
+          "error": 2,
+          "advertencia": 0,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 0,
+          "consistencia_logica": 2,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {
+          "GEO-007": 2
+        }
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "edge": {
+      "codes": [],
+      "indicators": {
+        "totalPredios": 2,
+        "totalEntidades": 2,
+        "prediosSinErrores": 2,
+        "prediosConErrores": 0,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 2,
+        "totalIncidencias": 0,
+        "incidenciasError": 0,
+        "incidenciasAdvertencia": 0,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 100,
+        "porcentajePrediosConErrores": 0,
+        "incidenciasPorSeveridad": {
+          "error": 0,
+          "advertencia": 0,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 0,
+          "consistencia_logica": 0,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {}
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 1,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "vertex": {
+      "codes": [],
+      "indicators": {
+        "totalPredios": 2,
+        "totalEntidades": 2,
+        "prediosSinErrores": 2,
+        "prediosConErrores": 0,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 2,
+        "totalIncidencias": 0,
+        "incidenciasError": 0,
+        "incidenciasAdvertencia": 0,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 100,
+        "porcentajePrediosConErrores": 0,
+        "incidenciasPorSeveridad": {
+          "error": 0,
+          "advertencia": 0,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 0,
+          "consistencia_logica": 0,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {}
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 1,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "identical": {
+      "codes": [
+        "GEO-005",
+        "GEO-007"
+      ],
+      "indicators": {
+        "totalPredios": 2,
+        "totalEntidades": 2,
+        "prediosSinErrores": 0,
+        "prediosConErrores": 2,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 0,
+        "totalIncidencias": 4,
+        "incidenciasError": 4,
+        "incidenciasAdvertencia": 0,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 0,
+        "porcentajePrediosConErrores": 100,
+        "incidenciasPorSeveridad": {
+          "error": 4,
+          "advertencia": 0,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 0,
+          "consistencia_logica": 4,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {
+          "GEO-005": 2,
+          "GEO-007": 2
+        }
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "reversed_duplicate": {
+      "codes": [
+        "GEO-007"
+      ],
+      "indicators": {
+        "totalPredios": 2,
+        "totalEntidades": 2,
+        "prediosSinErrores": 0,
+        "prediosConErrores": 2,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 0,
+        "totalIncidencias": 2,
+        "incidenciasError": 2,
+        "incidenciasAdvertencia": 0,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 0,
+        "porcentajePrediosConErrores": 100,
+        "incidenciasPorSeveridad": {
+          "error": 2,
+          "advertencia": 0,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 0,
+          "consistencia_logica": 2,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {
+          "GEO-007": 2
+        }
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "bowtie": {
+      "codes": [
+        "GEO-004",
+        "GEO-006",
+        "SUP-003"
+      ],
+      "indicators": {
+        "totalPredios": 1,
+        "totalEntidades": 1,
+        "prediosSinErrores": 0,
+        "prediosConErrores": 1,
+        "prediosConAdvertencias": 1,
+        "prediosSinIncidencias": 0,
+        "totalIncidencias": 3,
+        "incidenciasError": 2,
+        "incidenciasAdvertencia": 1,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 0,
+        "porcentajePrediosConErrores": 100,
+        "incidenciasPorSeveridad": {
+          "error": 2,
+          "advertencia": 1,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 1,
+          "consistencia_logica": 2,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {
+          "GEO-004": 1,
+          "GEO-006": 1,
+          "SUP-003": 1
+        }
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "hole_outside": {
+      "codes": [],
+      "indicators": {
+        "totalPredios": 1,
+        "totalEntidades": 1,
+        "prediosSinErrores": 1,
+        "prediosConErrores": 0,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 1,
+        "totalIncidencias": 0,
+        "incidenciasError": 0,
+        "incidenciasAdvertencia": 0,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 100,
+        "porcentajePrediosConErrores": 0,
+        "incidenciasPorSeveridad": {
+          "error": 0,
+          "advertencia": 0,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 0,
+          "consistencia_logica": 0,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {}
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "null_ring": {
+      "codes": [
+        "GEO-002",
+        "SUP-003"
+      ],
+      "indicators": {
+        "totalPredios": 1,
+        "totalEntidades": 1,
+        "prediosSinErrores": 0,
+        "prediosConErrores": 1,
+        "prediosConAdvertencias": 1,
+        "prediosSinIncidencias": 0,
+        "totalIncidencias": 2,
+        "incidenciasError": 1,
+        "incidenciasAdvertencia": 1,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 0,
+        "porcentajePrediosConErrores": 100,
+        "incidenciasPorSeveridad": {
+          "error": 1,
+          "advertencia": 1,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 2,
+          "consistencia_logica": 0,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {
+          "GEO-002": 1,
+          "SUP-003": 1
+        }
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "malformed_multipolygon": {
+      "codes": [
+        "GEO-002",
+        "SUP-003"
+      ],
+      "indicators": {
+        "totalPredios": 1,
+        "totalEntidades": 1,
+        "prediosSinErrores": 0,
+        "prediosConErrores": 1,
+        "prediosConAdvertencias": 1,
+        "prediosSinIncidencias": 0,
+        "totalIncidencias": 2,
+        "incidenciasError": 1,
+        "incidenciasAdvertencia": 1,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 0,
+        "porcentajePrediosConErrores": 100,
+        "incidenciasPorSeveridad": {
+          "error": 1,
+          "advertencia": 1,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 2,
+          "consistencia_logica": 0,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {
+          "GEO-002": 1,
+          "SUP-003": 1
+        }
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "missing_id": {
+      "codes": [
+        "ALF-003"
+      ],
+      "indicators": {
+        "totalPredios": 1,
+        "totalEntidades": 1,
+        "prediosSinErrores": 0,
+        "prediosConErrores": 1,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 0,
+        "totalIncidencias": 1,
+        "incidenciasError": 1,
+        "incidenciasAdvertencia": 0,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 0,
+        "porcentajePrediosConErrores": 100,
+        "incidenciasPorSeveridad": {
+          "error": 1,
+          "advertencia": 0,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 1,
+          "consistencia_logica": 0,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {
+          "ALF-003": 1
+        }
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "duplicate_id": {
+      "codes": [
+        "ALF-001"
+      ],
+      "indicators": {
+        "totalPredios": 2,
+        "totalEntidades": 2,
+        "prediosSinErrores": 0,
+        "prediosConErrores": 2,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 0,
+        "totalIncidencias": 2,
+        "incidenciasError": 2,
+        "incidenciasAdvertencia": 0,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 0,
+        "porcentajePrediosConErrores": 100,
+        "incidenciasPorSeveridad": {
+          "error": 2,
+          "advertencia": 0,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 0,
+          "consistencia_logica": 2,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {
+          "ALF-001": 2
+        }
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "null_feature": {
+      "codes": [
+        "STR-004"
+      ],
+      "indicators": {
+        "totalPredios": 0,
+        "totalEntidades": 1,
+        "prediosSinErrores": 0,
+        "prediosConErrores": 0,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 0,
+        "totalIncidencias": 1,
+        "incidenciasError": 1,
+        "incidenciasAdvertencia": 0,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 0,
+        "porcentajePrediosConErrores": 0,
+        "incidenciasPorSeveridad": {
+          "error": 1,
+          "advertencia": 0,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 1,
+          "consistencia_logica": 0,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {
+          "STR-004": 1
+        }
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "empty": {
+      "codes": [
+        "STR-003"
+      ],
+      "indicators": {
+        "totalPredios": 0,
+        "totalEntidades": 0,
+        "prediosSinErrores": 0,
+        "prediosConErrores": 0,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 0,
+        "totalIncidencias": 1,
+        "incidenciasError": 0,
+        "incidenciasAdvertencia": 1,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 0,
+        "porcentajePrediosConErrores": 0,
+        "incidenciasPorSeveridad": {
+          "error": 0,
+          "advertencia": 1,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 1,
+          "consistencia_logica": 0,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {
+          "STR-003": 1
+        }
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "invalid_collection": {
+      "codes": [
+        "STR-002"
+      ],
+      "indicators": {
+        "totalPredios": 0,
+        "totalEntidades": 0,
+        "prediosSinErrores": 0,
+        "prediosConErrores": 0,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 0,
+        "totalIncidencias": 1,
+        "incidenciasError": 1,
+        "incidenciasAdvertencia": 0,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 0,
+        "porcentajePrediosConErrores": 0,
+        "incidenciasPorSeveridad": {
+          "error": 1,
+          "advertencia": 0,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 1,
+          "consistencia_logica": 0,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 0,
+          "calidad_temporal": 0
+        },
+        "porRegla": {
+          "STR-002": 1
+        }
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    },
+    "area_threshold": {
+      "codes": [
+        "SUP-001"
+      ],
+      "indicators": {
+        "totalPredios": 1,
+        "totalEntidades": 1,
+        "prediosSinErrores": 0,
+        "prediosConErrores": 1,
+        "prediosConAdvertencias": 0,
+        "prediosSinIncidencias": 0,
+        "totalIncidencias": 1,
+        "incidenciasError": 1,
+        "incidenciasAdvertencia": 0,
+        "incidenciasInfo": 0,
+        "porcentajePrediosSinErrores": 0,
+        "porcentajePrediosConErrores": 100,
+        "incidenciasPorSeveridad": {
+          "error": 1,
+          "advertencia": 0,
+          "info": 0
+        },
+        "porDimension": {
+          "completitud": 0,
+          "consistencia_logica": 0,
+          "exactitud_posicional": 0,
+          "exactitud_tematica": 1,
+          "calidad_temporal": 0
+        },
+        "porRegla": {
+          "SUP-001": 1
+        }
+      },
+      "notEvaluated": [
+        {
+          "codigoRegla": "REF-001",
+          "nombre": "Exactitud posicional contra referencia",
+          "dimension": "exactitud_posicional",
+          "motivo": "No evaluada: no existe cartografía de referencia independiente en este experimento."
+        },
+        {
+          "codigoRegla": "REF-002",
+          "nombre": "Exactitud temática contra registro oficial",
+          "dimension": "exactitud_tematica",
+          "motivo": "No evaluada: los datos son sintéticos y no existe registro oficial de contraste."
+        },
+        {
+          "codigoRegla": "REF-003",
+          "nombre": "Calidad temporal / vigencia",
+          "dimension": "calidad_temporal",
+          "motivo": "No evaluada: el conjunto no contiene metadatos temporales de levantamiento ni series históricas."
+        },
+        {
+          "codigoRegla": "REF-004",
+          "nombre": "Completitud contra inventario de referencia",
+          "dimension": "completitud",
+          "motivo": "No evaluada: no existe inventario de referencia para medir omisiones o excesos."
+        },
+        {
+          "codigoRegla": "REF-005",
+          "nombre": "Consistencia topológica contra red catastral",
+          "dimension": "consistencia_logica",
+          "motivo": "No evaluada parcialmente: solo se comprueban relaciones entre los predios cargados, no contra la red catastral completa."
+        }
+      ],
+      "contacts": {
+        "borde": 0,
+        "vertice": 0,
+        "disjunto": 0,
+        "error": 0
+      }
+    }
+  },
+  "glm": {
+    "disjoint": {
+      "codes": [],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 2,
+        "predios_con_errores": 0,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 0,
+        "pct_sin_errores": 100,
+        "_sets": {
+          "ids": [
+            "AUDIT-0",
+            "AUDIT-1"
+          ],
+          "errores": [],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": []
+    },
+    "overlap": {
+      "codes": [
+        "TOPO_SOLAPAMIENTO"
+      ],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 1,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 1,
+        "pct_sin_errores": 50,
+        "_sets": {
+          "ids": [
+            "AUDIT-0",
+            "AUDIT-1"
+          ],
+          "errores": [
+            "AUDIT-1"
+          ],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": []
+    },
+    "edge": {
+      "codes": [
+        "TOPO_CONTACTO_BORDE"
+      ],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 2,
+        "predios_con_errores": 0,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 1,
+        "pct_sin_errores": 100,
+        "_sets": {
+          "ids": [
+            "AUDIT-0",
+            "AUDIT-1"
+          ],
+          "errores": [],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": []
+    },
+    "vertex": {
+      "codes": [
+        "TOPO_CONTACTO_VERTICE"
+      ],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 2,
+        "predios_con_errores": 0,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 1,
+        "pct_sin_errores": 100,
+        "_sets": {
+          "ids": [
+            "AUDIT-0",
+            "AUDIT-1"
+          ],
+          "errores": [],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": []
+    },
+    "identical": {
+      "codes": [
+        "GEOM_DUPLICADA"
+      ],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 1,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 1,
+        "pct_sin_errores": 50,
+        "_sets": {
+          "ids": [
+            "AUDIT-0",
+            "AUDIT-1"
+          ],
+          "errores": [
+            "AUDIT-1"
+          ],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": []
+    },
+    "reversed_duplicate": {
+      "codes": [
+        "TOPO_SOLAPAMIENTO"
+      ],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 1,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 1,
+        "pct_sin_errores": 50,
+        "_sets": {
+          "ids": [
+            "AUDIT-0",
+            "AUDIT-1"
+          ],
+          "errores": [
+            "AUDIT-1"
+          ],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": []
+    },
+    "bowtie": {
+      "codes": [
+        "GEOM_AREA_CERO",
+        "GEOM_AUTOINTERSECCION",
+        "SUP_VALOR_INVALIDO"
+      ],
+      "indicators": {
+        "total_predios": 1,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 3,
+        "pct_sin_errores": 0,
+        "_sets": {
+          "ids": [
+            "AUDIT-0"
+          ],
+          "errores": [
+            "AUDIT-0"
+          ],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": [
+        "TOPO_SOLAPAMIENTO",
+        "TOPO_CONTACTO_BORDE",
+        "TOPO_CONTACTO_VERTICE"
+      ]
+    },
+    "hole_outside": {
+      "codes": [
+        "ALFA_INCONSISTENCIA_AREA_PISOS"
+      ],
+      "indicators": {
+        "total_predios": 1,
+        "predios_sin_errores": 1,
+        "predios_con_errores": 0,
+        "predios_con_advertencias": 1,
+        "total_incidencias": 1,
+        "pct_sin_errores": 100,
+        "_sets": {
+          "ids": [
+            "AUDIT-0"
+          ],
+          "errores": [],
+          "advertencias": [
+            "AUDIT-0"
+          ]
+        }
+      },
+      "notEvaluated": [
+        "TOPO_SOLAPAMIENTO",
+        "TOPO_CONTACTO_BORDE",
+        "TOPO_CONTACTO_VERTICE"
+      ]
+    },
+    "null_ring": {
+      "codes": [
+        "GEOM_VACIA"
+      ],
+      "indicators": {
+        "total_predios": 1,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 1,
+        "pct_sin_errores": 0,
+        "_sets": {
+          "ids": [
+            "AUDIT-0"
+          ],
+          "errores": [
+            "AUDIT-0"
+          ],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": [
+        "TOPO_SOLAPAMIENTO",
+        "TOPO_CONTACTO_BORDE",
+        "TOPO_CONTACTO_VERTICE"
+      ]
+    },
+    "malformed_multipolygon": {
+      "codes": [
+        "GEOM_VACIA"
+      ],
+      "indicators": {
+        "total_predios": 1,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 1,
+        "pct_sin_errores": 0,
+        "_sets": {
+          "ids": [
+            "AUDIT-0"
+          ],
+          "errores": [
+            "AUDIT-0"
+          ],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": [
+        "TOPO_SOLAPAMIENTO",
+        "TOPO_CONTACTO_BORDE",
+        "TOPO_CONTACTO_VERTICE"
+      ]
+    },
+    "missing_id": {
+      "codes": [],
+      "indicators": {
+        "total_predios": 1,
+        "predios_sin_errores": 1,
+        "predios_con_errores": 0,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 0,
+        "pct_sin_errores": 100,
+        "_sets": {
+          "ids": [
+            "AUTO-1"
+          ],
+          "errores": [],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": [
+        "TOPO_SOLAPAMIENTO",
+        "TOPO_CONTACTO_BORDE",
+        "TOPO_CONTACTO_VERTICE"
+      ]
+    },
+    "duplicate_id": {
+      "codes": [
+        "ALFA_ID_DUPLICADO"
+      ],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 1,
+        "pct_sin_errores": 0,
+        "_sets": {
+          "ids": [
+            "AUDIT-0"
+          ],
+          "errores": [
+            "AUDIT-0"
+          ],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": []
+    },
+    "null_feature": {
+      "codes": [
+        "ESTRUCT_FEATURE_INVALIDO"
+      ],
+      "indicators": {
+        "total_predios": 0,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 1,
+        "pct_sin_errores": 0,
+        "_sets": {
+          "ids": [],
+          "errores": [
+            "feature[0]"
+          ],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": [
+        "ALFA_ID_DUPLICADO",
+        "ALFA_CLAVE_DUPLICADA",
+        "ALFA_CAMPO_OBLIGATORIO_NULO",
+        "ALFA_TIPO_DATO_INCORRECTO",
+        "ALFA_SUPERFICIE_NEGATIVA",
+        "ALFA_NUM_PISOS_INVALIDO",
+        "ALFA_VALOR_FUERA_DOMINIO",
+        "ALFA_INCONSISTENCIA_AREA_PISOS",
+        "GEOM_COORD_FUERA_RANGO",
+        "GEOM_VACIA",
+        "GEOM_ANILLO_NO_CERRADO",
+        "GEOM_AUTOINTERSECCION",
+        "GEOM_DUPLICADA",
+        "GEOM_AREA_CERO",
+        "TOPO_SOLAPAMIENTO",
+        "TOPO_CONTACTO_BORDE",
+        "TOPO_CONTACTO_VERTICE",
+        "SUP_FUERA_TOLERANCIA",
+        "SUP_VALOR_INVALIDO"
+      ]
+    },
+    "empty": {
+      "codes": [
+        "ESTRUCT_COLECCION_VACIA"
+      ],
+      "indicators": {
+        "total_predios": 0,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 0,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 1,
+        "pct_sin_errores": 0,
+        "_sets": {
+          "ids": [],
+          "errores": [],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": [
+        "ALFA_ID_DUPLICADO",
+        "ALFA_CLAVE_DUPLICADA",
+        "ALFA_CAMPO_OBLIGATORIO_NULO",
+        "ALFA_TIPO_DATO_INCORRECTO",
+        "ALFA_SUPERFICIE_NEGATIVA",
+        "ALFA_NUM_PISOS_INVALIDO",
+        "ALFA_VALOR_FUERA_DOMINIO",
+        "ALFA_INCONSISTENCIA_AREA_PISOS",
+        "GEOM_COORD_FUERA_RANGO",
+        "GEOM_VACIA",
+        "GEOM_ANILLO_NO_CERRADO",
+        "GEOM_AUTOINTERSECCION",
+        "GEOM_DUPLICADA",
+        "GEOM_AREA_CERO",
+        "TOPO_SOLAPAMIENTO",
+        "TOPO_CONTACTO_BORDE",
+        "TOPO_CONTACTO_VERTICE",
+        "SUP_FUERA_TOLERANCIA",
+        "SUP_VALOR_INVALIDO"
+      ]
+    },
+    "invalid_collection": {
+      "codes": [
+        "ESTRUCT_FC_INVALIDO"
+      ],
+      "indicators": null,
+      "notEvaluated": [
+        "ALFA_ID_DUPLICADO",
+        "ALFA_CLAVE_DUPLICADA",
+        "ALFA_CAMPO_OBLIGATORIO_NULO",
+        "ALFA_TIPO_DATO_INCORRECTO",
+        "ALFA_SUPERFICIE_NEGATIVA",
+        "ALFA_NUM_PISOS_INVALIDO",
+        "ALFA_VALOR_FUERA_DOMINIO",
+        "ALFA_INCONSISTENCIA_AREA_PISOS",
+        "GEOM_COORD_FUERA_RANGO",
+        "GEOM_VACIA",
+        "GEOM_ANILLO_NO_CERRADO",
+        "GEOM_AUTOINTERSECCION",
+        "GEOM_DUPLICADA",
+        "GEOM_AREA_CERO",
+        "TOPO_SOLAPAMIENTO",
+        "TOPO_CONTACTO_BORDE",
+        "TOPO_CONTACTO_VERTICE",
+        "SUP_FUERA_TOLERANCIA",
+        "SUP_VALOR_INVALIDO"
+      ]
+    },
+    "area_threshold": {
+      "codes": [],
+      "indicators": {
+        "total_predios": 1,
+        "predios_sin_errores": 1,
+        "predios_con_errores": 0,
+        "predios_con_advertencias": 0,
+        "total_incidencias": 0,
+        "pct_sin_errores": 100,
+        "_sets": {
+          "ids": [
+            "AUDIT-0"
+          ],
+          "errores": [],
+          "advertencias": []
+        }
+      },
+      "notEvaluated": [
+        "TOPO_SOLAPAMIENTO",
+        "TOPO_CONTACTO_BORDE",
+        "TOPO_CONTACTO_VERTICE"
+      ]
+    }
+  },
+  "mimo": {
+    "disjoint": {
+      "codes": [],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 2,
+        "predios_con_errores": 0,
+        "predios_con_advertencias": 0,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 2,
+        "total_incidencias": 0,
+        "incidencias_error": 0,
+        "incidencias_advertencia": 0,
+        "porcentaje_sin_errores": 100,
+        "incidencias_por_regla": {}
+      },
+      "notEvaluated": [],
+      "contacts": []
+    },
+    "overlap": {
+      "codes": [
+        "TOP-001"
+      ],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 2,
+        "predios_con_advertencias": 0,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 0,
+        "total_incidencias": 2,
+        "incidencias_error": 2,
+        "incidencias_advertencia": 0,
+        "porcentaje_sin_errores": 0,
+        "incidencias_por_regla": {
+          "TOP-001": 2
+        }
+      },
+      "notEvaluated": [],
+      "contacts": []
+    },
+    "edge": {
+      "codes": [],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 2,
+        "predios_con_errores": 0,
+        "predios_con_advertencias": 0,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 2,
+        "total_incidencias": 0,
+        "incidencias_error": 0,
+        "incidencias_advertencia": 0,
+        "porcentaje_sin_errores": 100,
+        "incidencias_por_regla": {}
+      },
+      "notEvaluated": [],
+      "contacts": [
+        {
+          "a": "AUDIT-0",
+          "b": "AUDIT-1",
+          "kind": "borde/vértice (detección por vértices)"
+        }
+      ]
+    },
+    "vertex": {
+      "codes": [],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 2,
+        "predios_con_errores": 0,
+        "predios_con_advertencias": 0,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 2,
+        "total_incidencias": 0,
+        "incidencias_error": 0,
+        "incidencias_advertencia": 0,
+        "porcentaje_sin_errores": 100,
+        "incidencias_por_regla": {}
+      },
+      "notEvaluated": [],
+      "contacts": [
+        {
+          "a": "AUDIT-0",
+          "b": "AUDIT-1",
+          "kind": "borde/vértice (detección por vértices)"
+        }
+      ]
+    },
+    "identical": {
+      "codes": [
+        "GEO-005",
+        "TOP-001"
+      ],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 2,
+        "predios_con_advertencias": 2,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 0,
+        "total_incidencias": 4,
+        "incidencias_error": 2,
+        "incidencias_advertencia": 2,
+        "porcentaje_sin_errores": 0,
+        "incidencias_por_regla": {
+          "GEO-005": 2,
+          "TOP-001": 2
+        }
+      },
+      "notEvaluated": [],
+      "contacts": []
+    },
+    "reversed_duplicate": {
+      "codes": [
+        "TOP-001"
+      ],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 2,
+        "predios_con_advertencias": 0,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 0,
+        "total_incidencias": 2,
+        "incidencias_error": 2,
+        "incidencias_advertencia": 0,
+        "porcentaje_sin_errores": 0,
+        "incidencias_por_regla": {
+          "TOP-001": 2
+        }
+      },
+      "notEvaluated": [],
+      "contacts": []
+    },
+    "bowtie": {
+      "codes": [
+        "GEO-004",
+        "GEO-006"
+      ],
+      "indicators": {
+        "total_predios": 1,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 0,
+        "total_incidencias": 2,
+        "incidencias_error": 2,
+        "incidencias_advertencia": 0,
+        "porcentaje_sin_errores": 0,
+        "incidencias_por_regla": {
+          "GEO-004": 1,
+          "GEO-006": 1
+        }
+      },
+      "notEvaluated": [
+        {
+          "rule_code": "ALP-008",
+          "feature_ref": "AUDIT-0",
+          "reason": "No se pudo evaluar la relación área construida/pisos: faltan valores numéricos válidos."
+        },
+        {
+          "rule_code": "SUP-001",
+          "feature_ref": "AUDIT-0",
+          "reason": "Comparación de superficies no evaluada: la geometría del predio es inválida y su área no es confiable."
+        }
+      ],
+      "contacts": []
+    },
+    "hole_outside": {
+      "codes": [],
+      "indicators": {
+        "total_predios": 1,
+        "predios_sin_errores": 1,
+        "predios_con_errores": 0,
+        "predios_con_advertencias": 0,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 1,
+        "total_incidencias": 0,
+        "incidencias_error": 0,
+        "incidencias_advertencia": 0,
+        "porcentaje_sin_errores": 100,
+        "incidencias_por_regla": {}
+      },
+      "notEvaluated": [],
+      "contacts": []
+    },
+    "null_ring": {
+      "codes": [
+        "GEO-002"
+      ],
+      "indicators": {
+        "total_predios": 1,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 0,
+        "total_incidencias": 1,
+        "incidencias_error": 1,
+        "incidencias_advertencia": 0,
+        "porcentaje_sin_errores": 0,
+        "incidencias_por_regla": {
+          "GEO-002": 1
+        }
+      },
+      "notEvaluated": [
+        {
+          "rule_code": "SUP-001",
+          "feature_ref": "AUDIT-0",
+          "reason": "Comparación de superficies no evaluada: la geometría del predio es inválida y su área no es confiable."
+        }
+      ],
+      "contacts": []
+    },
+    "malformed_multipolygon": {
+      "error": "Cannot read properties of null (reading 'forEach')"
+    },
+    "missing_id": {
+      "codes": [
+        "ALP-003"
+      ],
+      "indicators": {
+        "total_predios": 1,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 0,
+        "total_incidencias": 1,
+        "incidencias_error": 1,
+        "incidencias_advertencia": 0,
+        "porcentaje_sin_errores": 0,
+        "incidencias_por_regla": {
+          "ALP-003": 1
+        }
+      },
+      "notEvaluated": [],
+      "contacts": []
+    },
+    "duplicate_id": {
+      "codes": [
+        "ALP-001"
+      ],
+      "indicators": {
+        "total_predios": 2,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 2,
+        "predios_con_advertencias": 0,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 0,
+        "total_incidencias": 2,
+        "incidencias_error": 2,
+        "incidencias_advertencia": 0,
+        "porcentaje_sin_errores": 0,
+        "incidencias_por_regla": {
+          "ALP-001": 2
+        }
+      },
+      "notEvaluated": [],
+      "contacts": []
+    },
+    "null_feature": {
+      "codes": [
+        "STR-004",
+        "STR-005"
+      ],
+      "indicators": {
+        "total_predios": 1,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 0,
+        "total_incidencias": 3,
+        "incidencias_error": 3,
+        "incidencias_advertencia": 0,
+        "porcentaje_sin_errores": 0,
+        "incidencias_por_regla": {
+          "STR-004": 2,
+          "STR-005": 1
+        }
+      },
+      "notEvaluated": [
+        {
+          "rule_code": "ALP-008",
+          "feature_ref": "#0",
+          "reason": "No se pudo evaluar la relación área construida/pisos: faltan valores numéricos válidos."
+        },
+        {
+          "rule_code": "SUP-001",
+          "feature_ref": "#0",
+          "reason": "Comparación de superficies no evaluada: la geometría del predio es inválida y su área no es confiable."
+        }
+      ],
+      "contacts": []
+    },
+    "empty": {
+      "codes": [
+        "STR-003"
+      ]
+    },
+    "invalid_collection": {
+      "codes": [
+        "STR-002"
+      ]
+    },
+    "area_threshold": {
+      "codes": [
+        "SUP-001"
+      ],
+      "indicators": {
+        "total_predios": 1,
+        "predios_sin_errores": 0,
+        "predios_con_errores": 1,
+        "predios_con_advertencias": 0,
+        "predios_solo_advertencias": 0,
+        "predios_sin_incidencias": 0,
+        "total_incidencias": 1,
+        "incidencias_error": 1,
+        "incidencias_advertencia": 0,
+        "porcentaje_sin_errores": 0,
+        "incidencias_por_regla": {
+          "SUP-001": 1
+        }
+      },
+      "notEvaluated": [],
+      "contacts": []
+    }
+  }
+}

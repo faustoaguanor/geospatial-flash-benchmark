@@ -1,0 +1,241 @@
+{
+  "descripcion": "Referencia de los errores introducidos intencionalmente por el generador. Es un artefacto de generación, NO una prueba independiente de la corrección del validador.",
+  "semilla": 20261031,
+  "total_predios": 68,
+  "coexistencia": "Algunos predios presentan más de un error inyectado (p. ej. claves duplicadas comparten la clave con otro predio; los predios con área negativa o de tipo incorrecto tampoco permiten evaluar SUP).",
+  "errores_requeridos": {
+    "claves_catastrales_duplicadas": "3 predios (6 features marcadas: original y duplicado)",
+    "atributos_obligatorios_nulos": "3 predios",
+    "superficies_negativas": "2 predios",
+    "tipos_de_datos_incorrectos": "2 predios",
+    "superposiciones": "2 pares (4 features marcadas)",
+    "autointersecciones": "2 predios",
+    "diferencias_superficie_mayores_5pct": "3 predios",
+    "valores_fuera_de_dominio": "2 predios",
+    "extras": "1 predio con pisos negativos, 1 predio con inconsistencia área/pisos"
+  },
+  "pares_que_comparten_borde_sin_solaparse": [
+    [
+      "PD-CH-0001",
+      "PD-CH-0002"
+    ],
+    [
+      "PD-CH-0002",
+      "PD-CH-0003"
+    ],
+    [
+      "PD-CH-0003",
+      "PD-CH-0004"
+    ],
+    [
+      "PD-CH-0004",
+      "PD-CH-0005"
+    ],
+    [
+      "PD-CH-0005",
+      "PD-CH-0006"
+    ]
+  ],
+  "total_pares_que_comparten_borde": 60,
+  "pares_superpuestos": [
+    [
+      "PD-IN-0021",
+      "PD-OV-0067"
+    ],
+    [
+      "PD-QU-0046",
+      "PD-OV-0068"
+    ]
+  ],
+  "issues": [
+    {
+      "predio_id": "PD-CA-0056",
+      "rules": [
+        "GEO-004",
+        "GEO-006"
+      ],
+      "description": "geometría autointersecada (bowtie; área neta ~0)"
+    },
+    {
+      "predio_id": "PD-CA-0060",
+      "rules": [
+        "GEO-004",
+        "GEO-006"
+      ],
+      "description": "geometría autointersecada (bowtie; área neta ~0)"
+    },
+    {
+      "predio_id": "PD-CA-0061",
+      "rules": [
+        "ALP-006"
+      ],
+      "description": "pisos negativo"
+    },
+    {
+      "predio_id": "PD-CA-0064",
+      "rules": [
+        "ALP-007"
+      ],
+      "description": "uso_suelo fuera de dominio"
+    },
+    {
+      "predio_id": "PD-CA-0065",
+      "rules": [
+        "ALP-008"
+      ],
+      "description": "área construida implausible para su número de pisos"
+    },
+    {
+      "predio_id": "PD-CA-0066",
+      "rules": [
+        "ALP-007"
+      ],
+      "description": "estado_predio fuera de dominio"
+    },
+    {
+      "predio_id": "PD-CH-0003",
+      "rules": [
+        "ALP-002"
+      ],
+      "description": "clave_catastral duplicada con PD-CH-0004"
+    },
+    {
+      "predio_id": "PD-CH-0004",
+      "rules": [
+        "ALP-002"
+      ],
+      "description": "clave_catastral duplicada con PD-CH-0003"
+    },
+    {
+      "predio_id": "PD-CH-0007",
+      "rules": [
+        "ALP-002"
+      ],
+      "description": "clave_catastral duplicada con PD-CH-0008"
+    },
+    {
+      "predio_id": "PD-CH-0008",
+      "rules": [
+        "ALP-002"
+      ],
+      "description": "clave_catastral duplicada con PD-CH-0007"
+    },
+    {
+      "predio_id": "PD-CH-0011",
+      "rules": [
+        "ALP-002"
+      ],
+      "description": "clave_catastral duplicada con PD-IN-0012"
+    },
+    {
+      "predio_id": "PD-IN-0012",
+      "rules": [
+        "ALP-002"
+      ],
+      "description": "clave_catastral duplicada con PD-CH-0011"
+    },
+    {
+      "predio_id": "PD-IN-0016",
+      "rules": [
+        "ALP-003",
+        "SUP-NC"
+      ],
+      "description": "area_terreno_m2 nulo"
+    },
+    {
+      "predio_id": "PD-IN-0020",
+      "rules": [
+        "ALP-003"
+      ],
+      "description": "clave_catastral nulo"
+    },
+    {
+      "predio_id": "PD-IN-0021",
+      "rules": [
+        "TOP-001"
+      ],
+      "description": "superposición con PD-OV-0067"
+    },
+    {
+      "predio_id": "PD-LC-0024",
+      "rules": [
+        "ALP-003",
+        "ALP-007"
+      ],
+      "description": "sector nulo"
+    },
+    {
+      "predio_id": "PD-LC-0028",
+      "rules": [
+        "ALP-005",
+        "SUP-NC"
+      ],
+      "description": "area_terreno_m2 negativa"
+    },
+    {
+      "predio_id": "PD-LC-0032",
+      "rules": [
+        "ALP-005",
+        "SUP-NC"
+      ],
+      "description": "area_terreno_m2 negativa"
+    },
+    {
+      "predio_id": "PD-MA-0036",
+      "rules": [
+        "ALP-004",
+        "SUP-NC"
+      ],
+      "description": "area_terreno_m2 como texto"
+    },
+    {
+      "predio_id": "PD-MA-0040",
+      "rules": [
+        "ALP-004"
+      ],
+      "description": "pisos como texto"
+    },
+    {
+      "predio_id": "PD-MA-0044",
+      "rules": [
+        "SUP-001"
+      ],
+      "description": "diferencia de superficie 12 %"
+    },
+    {
+      "predio_id": "PD-OV-0067",
+      "rules": [
+        "TOP-001"
+      ],
+      "description": "superposición con PD-IN-0021"
+    },
+    {
+      "predio_id": "PD-OV-0068",
+      "rules": [
+        "TOP-001"
+      ],
+      "description": "superposición con PD-QU-0046"
+    },
+    {
+      "predio_id": "PD-QU-0046",
+      "rules": [
+        "TOP-001"
+      ],
+      "description": "superposición con PD-OV-0068"
+    },
+    {
+      "predio_id": "PD-QU-0048",
+      "rules": [
+        "SUP-001"
+      ],
+      "description": "diferencia de superficie 15 %"
+    },
+    {
+      "predio_id": "PD-QU-0052",
+      "rules": [
+        "SUP-001"
+      ],
+      "description": "diferencia de superficie 25 %"
+    }
+  ]
+}

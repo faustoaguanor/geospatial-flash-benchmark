@@ -1,0 +1,282 @@
+{
+  "dataset": "public/data/quito_predios_sinteticos.geojson",
+  "semilla": 20261031,
+  "total_predios": 72,
+  "sectores": [
+    {
+      "nombre": "Centro Histórico",
+      "predios": 12
+    },
+    {
+      "nombre": "Iñaquito",
+      "predios": 12
+    },
+    {
+      "nombre": "La Carolina",
+      "predios": 12
+    },
+    {
+      "nombre": "La Mariscal",
+      "predios": 12
+    },
+    {
+      "nombre": "Quitumbe",
+      "predios": 12
+    },
+    {
+      "nombre": "Calderón",
+      "predios": 12
+    }
+  ],
+  "aviso": "Datos catastrales sintéticos con fines educativos y experimentales. No representan información oficial del Municipio del Distrito Metropolitano de Quito.",
+  "nota": "Archivo de referencia de generación, no una prueba independiente del validador. Los errores pueden coexistir en un mismo predio; las reglas esperadas por defecto se listan en cada entrada. Las reglas se comprueban de forma independiente en tests/dataset.test.js.",
+  "errores_intencionales": {
+    "claves_catastrales_duplicadas": [
+      {
+        "predios": [
+          "QT-CH-011",
+          "QT-LC-002",
+          "QT-LM-005"
+        ],
+        "campo": "clave_catastral",
+        "valor": "DEMO-QT-DUP-0001",
+        "reglas_esperadas": [
+          "ALF-002"
+        ]
+      }
+    ],
+    "campos_obligatorios_nulos": [
+      {
+        "predio": "QT-IN-004",
+        "campo": "clave_catastral",
+        "reglas_esperadas": [
+          "ALF-003"
+        ]
+      },
+      {
+        "predio": "QT-LC-007",
+        "campo": "uso_suelo",
+        "reglas_esperadas": [
+          "ALF-003"
+        ]
+      },
+      {
+        "predio": "QT-LM-010",
+        "campo": "area_terreno_m2",
+        "reglas_esperadas": [
+          "ALF-003",
+          "SUP-003"
+        ]
+      }
+    ],
+    "superficies_negativas": [
+      {
+        "predio": "QT-IN-009",
+        "campo": "area_terreno_m2",
+        "valor": -450.25,
+        "reglas_esperadas": [
+          "ALF-005",
+          "SUP-003"
+        ]
+      },
+      {
+        "predio": "QT-QT-003",
+        "campo": "area_terreno_m2",
+        "valor": -180.5,
+        "reglas_esperadas": [
+          "ALF-005",
+          "SUP-003"
+        ]
+      }
+    ],
+    "tipos_de_datos_incorrectos": [
+      {
+        "predio": "QT-CH-006",
+        "campo": "area_terreno_m2",
+        "valor": "520.40",
+        "tipo": "string",
+        "reglas_esperadas": [
+          "ALF-004",
+          "SUP-003"
+        ]
+      },
+      {
+        "predio": "QT-CA-001",
+        "campo": "numero_pisos",
+        "valor": "4",
+        "tipo": "string",
+        "reglas_esperadas": [
+          "ALF-004"
+        ]
+      }
+    ],
+    "superposiciones": [
+      {
+        "predios": [
+          "QT-CH-001",
+          "QT-CH-002"
+        ],
+        "area_aproximada_m2": 354.05,
+        "reglas_esperadas": [
+          "GEO-007"
+        ]
+      },
+      {
+        "predios": [
+          "QT-IN-001",
+          "QT-IN-002"
+        ],
+        "area_aproximada_m2": 380.78,
+        "reglas_esperadas": [
+          "GEO-007"
+        ]
+      }
+    ],
+    "autointersecciones": [
+      {
+        "predio": "QT-LC-012",
+        "reglas_esperadas": [
+          "GEO-004"
+        ],
+        "nota": "La superficie registrada se recalculó sobre la geometría cruzada para aislar el defecto de autointersección."
+      },
+      {
+        "predio": "QT-QT-008",
+        "reglas_esperadas": [
+          "GEO-004"
+        ],
+        "nota": "La superficie registrada se recalculó sobre la geometría cruzada para aislar el defecto de autointersección."
+      }
+    ],
+    "diferencias_superficie": [
+      {
+        "predio": "QT-CH-004",
+        "factor": 1.12,
+        "diferencia_porcentual_aproximada": 12,
+        "reglas_esperadas": [
+          "SUP-001"
+        ]
+      },
+      {
+        "predio": "QT-LC-001",
+        "factor": 0.88,
+        "diferencia_porcentual_aproximada": 12,
+        "reglas_esperadas": [
+          "SUP-001"
+        ]
+      },
+      {
+        "predio": "QT-LM-009",
+        "factor": 1.1,
+        "diferencia_porcentual_aproximada": 10,
+        "reglas_esperadas": [
+          "SUP-001"
+        ]
+      }
+    ],
+    "valores_fuera_de_dominio": [
+      {
+        "predio": "QT-IN-006",
+        "campo": "uso_suelo",
+        "valor": "ESPACIAL",
+        "reglas_esperadas": [
+          "ALF-007"
+        ]
+      },
+      {
+        "predio": "QT-LM-012",
+        "campo": "estado",
+        "valor": "DESCONOCIDO",
+        "reglas_esperadas": [
+          "ALF-007"
+        ]
+      }
+    ],
+    "inconsistencias_area_construida": [
+      {
+        "predio": "QT-LC-011",
+        "factor_edificabilidad": 1.6,
+        "reglas_esperadas": [
+          "ALF-008"
+        ]
+      },
+      {
+        "predio": "QT-QT-011",
+        "factor_edificabilidad": 1.7,
+        "reglas_esperadas": [
+          "ALF-008"
+        ]
+      }
+    ]
+  },
+  "casos_correctos": {
+    "par_comparte_borde": {
+      "predios": [
+        "QT-CH-007",
+        "QT-CH-008"
+      ],
+      "relacion_esperada": "borde compartido sin superposición",
+      "reglas_que_no_deben_aparecer": [
+        "GEO-007"
+      ]
+    },
+    "predios_sin_errores_esperados": [
+      "QT-CH-003",
+      "QT-CH-005",
+      "QT-CH-007",
+      "QT-CH-008",
+      "QT-CH-009",
+      "QT-CH-010",
+      "QT-CH-012",
+      "QT-IN-003",
+      "QT-IN-005",
+      "QT-IN-007",
+      "QT-IN-008",
+      "QT-IN-010",
+      "QT-IN-011",
+      "QT-IN-012",
+      "QT-LC-003",
+      "QT-LC-004",
+      "QT-LC-005",
+      "QT-LC-006",
+      "QT-LC-008",
+      "QT-LC-009",
+      "QT-LC-010",
+      "QT-LM-001",
+      "QT-LM-002",
+      "QT-LM-003",
+      "QT-LM-004",
+      "QT-LM-006",
+      "QT-LM-007",
+      "QT-LM-008",
+      "QT-LM-011",
+      "QT-QT-001",
+      "QT-QT-002",
+      "QT-QT-004",
+      "QT-QT-005",
+      "QT-QT-006",
+      "QT-QT-007",
+      "QT-QT-009",
+      "QT-QT-010",
+      "QT-QT-012",
+      "QT-CA-002",
+      "QT-CA-003",
+      "QT-CA-004",
+      "QT-CA-005",
+      "QT-CA-006",
+      "QT-CA-007",
+      "QT-CA-008",
+      "QT-CA-009",
+      "QT-CA-010",
+      "QT-CA-011",
+      "QT-CA-012"
+    ]
+  },
+  "coexistencia": [
+    "Los predios con tipo de dato incorrecto en area_terreno_m2 no pueden evaluarse en superficie; se espera ALF-004 y SUP-003.",
+    "Los predios con superficie negativa no pueden compararse porcentualmente; se espera ALF-005 y SUP-003.",
+    "Los predios con superficie nula producen ALF-003 y SUP-003.",
+    "Los polígonos autointersectados conservan su superficie registrada coherente con el área calculable para aislar GEO-004 de SUP-001.",
+    "Una geometría duplicada, si existiera, también produciría GEO-007 por superposición total; en este conjunto no se inyectaron duplicados geométricos."
+  ]
+}

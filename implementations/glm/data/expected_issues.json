@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "descripcion": "Errores intencionales introducidos en el conjunto sintético. Este archivo es la referencia de generación: NO es una prueba independiente de que el validador sea correcto.",
+    "semilla": 20260214,
+    "total_predios": 72,
+    "aviso": "Datos catastrales sintéticos con fines educativos y experimentales. No representan información oficial del Municipio del Distrito Metropolitano de Quito."
+  },
+  "notas": [
+    "Los errores pueden coexistir en un mismo predio; cada coexistencia conocida está documentada en la descripción de la incidencia.",
+    "Los predios autointersecados (moño) probablemente generen además SUP_FUERA_TOLERANCIA, porque el área geodésica de un anillo autointersecado difiere del lote rectangular previsto.",
+    "El predio con area_terreno_m2 como cadena genera SUP_VALOR_INVALIDO además de ALFA_TIPO_DATO_INCORRECTO.",
+    "Los pares superpuestos y la geometría duplicada pueden generar incidencias adicionales derivadas (p. ej. el par 62/63 se reporta solo como GEOM_DUPLICADA y no como solapamiento).",
+    "El par que comparte borde (TOPO_CONTACTO_BORDE) es un caso topológicamente VÁLIDO: genera incidencia informativa, nunca un error."
+  ],
+  "incidencias_esperadas": [
+    {
+      "id_predio": "SIM-CENT-0004",
+      "clave_catastral": "SIM-90-CEN-00001",
+      "codigo_regla": "ALFA_CLAVE_DUPLICADA",
+      "descripcion": "Clave catastral duplicada con SIM-CENT-0001 (error intencional).",
+      "predios_relacionados": [
+        "SIM-CENT-0001",
+        "SIM-CENT-0004"
+      ]
+    },
+    {
+      "id_predio": "SIM-INAQ-0016",
+      "clave_catastral": "SIM-90-INA-00013",
+      "codigo_regla": "ALFA_CLAVE_DUPLICADA",
+      "descripcion": "Clave catastral duplicada con SIM-INAQ-0013 (error intencional).",
+      "predios_relacionados": [
+        "SIM-INAQ-0013",
+        "SIM-INAQ-0016"
+      ]
+    },
+    {
+      "id_predio": "SIM-LA_C-0028",
+      "clave_catastral": "SIM-90-LA_-00025",
+      "codigo_regla": "ALFA_CLAVE_DUPLICADA",
+      "descripcion": "Clave catastral duplicada con SIM-LA_C-0025 (error intencional).",
+      "predios_relacionados": [
+        "SIM-LA_C-0025",
+        "SIM-LA_C-0028"
+      ]
+    },
+    {
+      "id_predio": "SIM-CENT-0005",
+      "clave_catastral": "SIM-90-CEN-00005",
+      "codigo_regla": "ALFA_CAMPO_OBLIGATORIO_NULO",
+      "descripcion": "uso_suelo = null (error intencional)."
+    },
+    {
+      "id_predio": "SIM-INAQ-0017",
+      "clave_catastral": "SIM-90-INA-00017",
+      "codigo_regla": "ALFA_CAMPO_OBLIGATORIO_NULO",
+      "descripcion": "direccion = null (error intencional)."
+    },
+    {
+      "id_predio": "SIM-LA_C-0029",
+      "clave_catastral": "SIM-90-LA_-00029",
+      "codigo_regla": "ALFA_CAMPO_OBLIGATORIO_NULO",
+      "descripcion": "num_pisos = null (error intencional)."
+    },
+    {
+      "id_predio": "SIM-CENT-0006",
+      "clave_catastral": "SIM-90-CEN-00006",
+      "codigo_regla": "ALFA_SUPERFICIE_NEGATIVA",
+      "descripcion": "area_terreno_m2 = -150.5 (error intencional)."
+    },
+    {
+      "id_predio": "SIM-CENT-0006",
+      "clave_catastral": "SIM-90-CEN-00006",
+      "codigo_regla": "SUP_VALOR_INVALIDO",
+      "descripcion": "area_terreno_m2 negativa: comparación de superficies no evaluable (coexiste con ALFA_SUPERFICIE_NEGATIVA)."
+    },
+    {
+      "id_predio": "SIM-INAQ-0018",
+      "clave_catastral": "SIM-90-INA-00018",
+      "codigo_regla": "ALFA_SUPERFICIE_NEGATIVA",
+      "descripcion": "area_construida_m2 = -80.25 (error intencional)."
+    },
+    {
+      "id_predio": "SIM-CENT-0007",
+      "clave_catastral": "SIM-90-CEN-00007",
+      "codigo_regla": "ALFA_TIPO_DATO_INCORRECTO",
+      "descripcion": "num_pisos = \"2\" (cadena en lugar de entero, error intencional)."
+    },
+    {
+      "id_predio": "SIM-INAQ-0019",
+      "clave_catastral": "SIM-90-INA-00019",
+      "codigo_regla": "ALFA_TIPO_DATO_INCORRECTO",
+      "descripcion": "area_terreno_m2 = \"180.5\" (cadena en lugar de número, error intencional)."
+    },
+    {
+      "id_predio": "SIM-INAQ-0019",
+      "clave_catastral": "SIM-90-INA-00019",
+      "codigo_regla": "SUP_VALOR_INVALIDO",
+      "descripcion": "area_terreno_m2 no numérica: comparación de superficies no evaluable (coexiste con ALFA_TIPO_DATO_INCORRECTO)."
+    },
+    {
+      "id_predio": "SIM-LA_M-0041",
+      "clave_catastral": "SIM-90-LA_-00041",
+      "codigo_regla": "TOPO_SOLAPAMIENTO",
+      "descripcion": "Solapamiento parcial intencional con el predio vecino.",
+      "predios_relacionados": [
+        "SIM-LA_M-0042",
+        "SIM-LA_M-0041"
+      ]
+    },
+    {
+      "id_predio": "SIM-LA_M-0043",
+      "clave_catastral": "SIM-90-LA_-00043",
+      "codigo_regla": "TOPO_SOLAPAMIENTO",
+      "descripcion": "Solapamiento intencional de gran superficie con el predio vecino.",
+      "predios_relacionados": [
+        "SIM-LA_M-0044",
+        "SIM-LA_M-0043"
+      ]
+    },
+    {
+      "id_predio": "SIM-QUIT-0051",
+      "clave_catastral": "SIM-90-QUI-00051",
+      "codigo_regla": "GEOM_AUTOINTERSECCION",
+      "descripcion": "Anillo autointersecado intencional (forma de moño). Nota: coexiste probablemente con SUP_FUERA_TOLERANCIA porque el área geodésica de un moño difiere del lote rectangular previsto."
+    },
+    {
+      "id_predio": "SIM-QUIT-0052",
+      "clave_catastral": "SIM-90-QUI-00052",
+      "codigo_regla": "GEOM_AUTOINTERSECCION",
+      "descripcion": "Anillo autointersecado intencional (forma de moño). Nota: coexiste probablemente con SUP_FUERA_TOLERANCIA porque el área geodésica de un moño difiere del lote rectangular previsto."
+    },
+    {
+      "id_predio": "SIM-CENT-0012",
+      "clave_catastral": "SIM-90-CEN-00012",
+      "codigo_regla": "SUP_FUERA_TOLERANCIA",
+      "descripcion": "Área registrada desviada intencionalmente ≈ 30 % respecto al área geométrica."
+    },
+    {
+      "id_predio": "SIM-INAQ-0024",
+      "clave_catastral": "SIM-90-INA-00024",
+      "codigo_regla": "SUP_FUERA_TOLERANCIA",
+      "descripcion": "Área registrada desviada intencionalmente ≈ -45 % respecto al área geométrica."
+    },
+    {
+      "id_predio": "SIM-LA_C-0036",
+      "clave_catastral": "SIM-90-LA_-00036",
+      "codigo_regla": "SUP_FUERA_TOLERANCIA",
+      "descripcion": "Área registrada desviada intencionalmente ≈ 18 % respecto al área geométrica."
+    },
+    {
+      "id_predio": "SIM-INAQ-0024",
+      "clave_catastral": "SIM-90-INA-00024",
+      "codigo_regla": "ALFA_INCONSISTENCIA_AREA_PISOS",
+      "descripcion": "Coexistencia: el área registrada reducida (factor 0.55) hace que area_construida_m2 supere area_terreno_m2 × num_pisos (advertencia derivada, no introducida directamente)."
+    },
+    {
+      "id_predio": "SIM-INAQ-0013",
+      "clave_catastral": "SIM-90-INA-00013",
+      "codigo_regla": "ALFA_VALOR_FUERA_DOMINIO",
+      "descripcion": "uso_suelo = \"Agrícola\" fuera del dominio configurado (error intencional)."
+    },
+    {
+      "id_predio": "SIM-LA_C-0025",
+      "clave_catastral": "SIM-90-LA_-00025",
+      "codigo_regla": "ALFA_VALOR_FUERA_DOMINIO",
+      "descripcion": "estado_conservacion = \"Excelente\" fuera del dominio configurado (error intencional)."
+    },
+    {
+      "id_predio": "SIM-CALD-0062",
+      "clave_catastral": "SIM-90-CAL-00062",
+      "codigo_regla": "TOPO_CONTACTO_BORDE",
+      "descripcion": "Comparte borde con SIM-CALD-0061 sin superponerse (caso válido intencional; genera incidencia informativa, no error).",
+      "predios_relacionados": [
+        "SIM-CALD-0061",
+        "SIM-CALD-0062"
+      ]
+    },
+    {
+      "id_predio": "SIM-CALD-0064",
+      "clave_catastral": "SIM-90-CAL-00064",
+      "codigo_regla": "GEOM_DUPLICADA",
+      "descripcion": "Geometría idéntica a SIM-CALD-0063 (error intencional).",
+      "predios_relacionados": [
+        "SIM-CALD-0063",
+        "SIM-CALD-0064"
+      ]
+    }
+  ]
+}

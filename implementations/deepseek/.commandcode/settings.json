@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(node --version)",
+      "Shell(npm:*)",
+      "Shell(node --input-type=module -e \" import {kinks, area, feature, intersect} from '@turf/turf'; const bowtie = feature({type:'Polygon', coordinates:[[[-78.5,-0.22],[-78.4998,-0.2198],[-78.4998,-0.22],[-78.5,-0.2198],[-78.5,-0.22]]]}); console.log('kinks', kinks(bowtie).features.length, 'area', area(bowtie)); const a = feature({type:'Polygon',coordinates:[[[-78.5,-0.22],[-78.4998,-0.22],[-78.4998,-0.2198],[-78.5,-0.2198],[-78.5,-0.22]]]}); const b = feature({type:'Polygon',coordinates:[[[-78.5,-0.22],[-78.4998,-0.22],[-78.4998,-0.2198],[-78.5,-0.2198],[-78.5,-0.22]]]}); console.log('self intersect', intersect(a,a)?.geometry.type, area(intersect(a,a))); const c = feature({type:'Polygon',coordinates:[[[-78.4999,-0.22],[-78.4997,-0.22],[-78.4997,-0.2198],[-78.4999,-0.2198],[-78.4999,-0.22]]]}); const i = intersect(a,c); console.log('overlap', i?.geometry.type, i?area(i):null); const d = feature({type:'Polygon',coordinates:[[[-78.4998,-0.22],[-78.4996,-0.22],[-78.4996,-0.2198],[-78.4998,-0.2198],[-78.4998,-0.22]]]}); const j = intersect(a,d); console.log('edge', j?.geometry.type, j?area(j):null); const e = feature({type:'Polygon',coordinates:[[[-78.4998,-0.2198],[-78.4996,-0.2198],[-78.4996,-0.2196],[-78.4998,-0.2196],[-78.4998,-0.2198]]]}); const k = intersect(a,e); console.log('vertex', k?.geometry.type, k?area(k):null); \")",
+      "Shell(node --input-type=module -e \" import {kinks, area, feature, featureCollection, intersect} from '@turf/turf'; const mk=(x0,y0,x1,y1)=>feature({type:'Polygon',coordinates:[[[x0,y0],[x1,y0],[x1,y1],[x0,y1],[x0,y0]]]}); const a=mk(-78.5,-0.22,-78.4998,-0.2198); const b=mk(-78.4999,-0.22,-78.4997,-0.2198); const c=mk(-78.4998,-0.22,-78.4996,-0.2198); const d=mk(-78.4998,-0.2198,-78.4996,-0.2196); const same=mk(-78.5,-0.22,-78.4998,-0.2198); for (const [name,other] of [['overlap',b],['edge',c],['vertex',d],['same',same]]) { try { const i=intersect(featureCollection([a,other])); console.log(name, i?.geometry.type, i?area(i):null); } catch(e) { console.log(name,'ERR',e.message); } } const bowtie = feature({type:'Polygon', coordinates:[[[-78.5,-0.22],[-78.4998,-0.2198],[-78.4998,-0.22],[-78.5,-0.2198],[-78.5,-0.22]]]}); console.log('bowtie kinks', kinks(bowtie).features.length, 'area', area(bowtie)); \")"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}

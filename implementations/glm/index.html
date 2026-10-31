@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quito Cadastre Quality Lab</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header__inner">
+      <div>
+        <h1>Quito Cadastre Quality Lab</h1>
+        <p class="app-header__subtitle">
+          Laboratorio de calidad de información catastral vectorial — Distrito Metropolitano de Quito, Ecuador
+        </p>
+      </div>
+    </div>
+    <div class="app-disclaimer" role="note">
+      ⚠ Datos catastrales <strong>sintéticos</strong> con fines educativos y experimentales.
+      No representan información oficial del Municipio del Distrito Metropolitano de Quito.
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- Columna izquierda: controles e indicadores -->
+    <section class="panel panel--controls" aria-label="Panel de control">
+      <h2>Panel de control</h2>
+
+      <div class="control-group">
+        <h3>Datos</h3>
+        <div class="control-row">
+          <label class="file-label" for="file-input">Cargar GeoJSON</label>
+          <input type="file" id="file-input" accept=".geojson,.json,application/geo+json,application/json" />
+        </div>
+        <div class="control-row">
+          <button id="btn-demo" type="button" class="btn btn--primary">Cargar datos de demostración</button>
+          <button id="btn-run" type="button" class="btn">Ejecutar evaluación</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <h3>Configuración</h3>
+        <div class="control-row control-row--inline">
+          <label for="tolerance-input">Tolerancia de superficie (%):</label>
+          <input type="number" id="tolerance-input" min="0" max="100" step="0.5" value="5" />
+        </div>
+        <details class="rules-details">
+          <summary>Reglas activas</summary>
+          <div id="rules-list" class="rules-list"></div>
+        </details>
+      </div>
+
+      <div class="control-group">
+        <h3>Exportación</h3>
+        <div class="control-row control-row--wrap">
+          <button id="btn-export-csv" type="button" class="btn btn--small">Incidencias CSV</button>
+          <button id="btn-export-json" type="button" class="btn btn--small">Incidencias JSON</button>
+          <button id="btn-export-summary" type="button" class="btn btn--small">Resumen JSON</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <h3>Indicadores</h3>
+        <div class="indicators" id="indicators"></div>
+      </div>
+
+      <div id="status-messages" class="status-messages" aria-live="polite"></div>
+    </section>
+
+    <!-- Columna derecha: mapa y tabla -->
+    <section class="panel panel--map" aria-label="Mapa y resultados">
+      <div class="map-toolbar">
+        <label for="sector-select">Sector:</label>
+        <select id="sector-select">
+          <option value="__all__">Todos los sectores</option>
+        </select>
+        <div class="legend">
+          <span class="legend__item"><span class="swatch swatch--ok"></span>Sin incidencias</span>
+          <span class="legend__item"><span class="swatch swatch--warning"></span>Con advertencias</span>
+          <span class="legend__item"><span class="swatch swatch--error"></span>Con errores</span>
+        </div>
+      </div>
+      <div id="map" class="map"></div>
+
+      <div class="table-toolbar">
+        <h2>Incidencias</h2>
+        <div class="table-filters">
+          <input type="search" id="search-input" placeholder="Buscar por predio o clave catastral…" />
+          <select id="severity-filter">
+            <option value="__all__">Todas las severidades</option>
+            <option value="error">Error</option>
+            <option value="warning">Advertencia</option>
+            <option value="info">Informativa</option>
+          </select>
+          <select id="rule-filter">
+            <option value="__all__">Todas las reglas</option>
+          </select>
+        </div>
+      </div>
+      <div class="table-wrapper">
+        <table id="incidents-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Regla</th>
+              <th>Predio</th>
+              <th>Severidad</th>
+              <th>Dimensión</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody id="incidents-tbody"></tbody>
+        </table>
+        <p id="table-empty" class="table-empty hidden">Sin incidencias que mostrar.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>
+      Experimento educativo basado conceptualmente en las dimensiones de calidad de ISO 19157-1:2023.
+      No constituye una certificación ni una evaluación oficial. Procesamiento 100 % local en el navegador.
+    </p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

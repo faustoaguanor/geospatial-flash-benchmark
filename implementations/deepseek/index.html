@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Laboratorio web de evaluación de calidad catastral vectorial sintética para el Distrito Metropolitano de Quito, Ecuador."
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Quito Cadastre Quality Lab</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="app-header">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">QC</div>
+          <div class="brand-text">
+            <h1>Quito Cadastre Quality Lab</h1>
+            <p>
+              Laboratorio de evaluación de calidad de información catastral vectorial sintética ·
+              Quito, Ecuador
+            </p>
+          </div>
+        </div>
+        <div class="header-meta">
+          <span class="pill pill-outline">Datos sintéticos</span>
+          <span class="pill pill-muted" id="dataset-badge">Sin evaluación</span>
+        </div>
+      </header>
+
+      <div class="disclaimer" role="note">
+        <span class="disclaimer-icon" aria-hidden="true">!</span>
+        <p>
+          <strong>Aviso:</strong> Datos catastrales sintéticos con fines educativos y
+          experimentales. No representan información oficial del Municipio del Distrito
+          Metropolitano de Quito. Todo el procesamiento ocurre localmente en el navegador.
+        </p>
+      </div>
+
+      <div id="app-error" class="app-error" role="alert" hidden></div>
+
+      <main class="app-main">
+        <section class="panel map-panel" aria-labelledby="map-title">
+          <div class="panel-head">
+            <div>
+              <h2 id="map-title">Mapa de predios</h2>
+              <p class="panel-subtitle">
+                Sectores de demostración en Quito. Los colores resumen el estado de calidad.
+              </p>
+            </div>
+            <div class="map-controls">
+              <label for="sector-select">Sector</label>
+              <select id="sector-select" aria-label="Filtrar predios por sector"></select>
+              <button type="button" id="fit-all" class="mini-button">Ver todos</button>
+            </div>
+          </div>
+
+          <div class="map-wrap">
+            <div id="map" class="map-canvas" aria-label="Mapa de predios catastrales sintéticos"></div>
+            <div id="map-status" class="map-status" role="status">Inicializando mapa…</div>
+            <div class="map-legend" aria-label="Leyenda del mapa">
+              <span class="legend-item"><span class="legend-swatch swatch-error"></span>Con errores</span>
+              <span class="legend-item"><span class="legend-swatch swatch-warn"></span>Con advertencias</span>
+              <span class="legend-item"><span class="legend-swatch swatch-ok"></span>Sin errores comprobados</span>
+              <span class="legend-item"><span class="legend-swatch swatch-selected"></span>Seleccionado</span>
+            </div>
+          </div>
+        </section>
+
+        <aside class="side-column">
+          <section class="panel control-panel" aria-labelledby="control-title">
+            <div class="panel-head compact">
+              <h2 id="control-title">Panel de control</h2>
+            </div>
+            <p class="panel-subtitle">
+              Cargue el conjunto de demostración o un GeoJSON local. Puede ejecutar la evaluación
+              cuando lo necesite.
+            </p>
+
+            <div class="button-stack">
+              <button type="button" id="reload-demo" class="button primary">
+                Cargar datos de demostración
+              </button>
+              <label class="button file-button">
+                Cargar GeoJSON
+                <input
+                  id="file-input"
+                  type="file"
+                  accept=".geojson,.json,application/json"
+                  aria-label="Cargar archivo GeoJSON"
+                />
+              </label>
+              <button type="button" id="evaluate-btn" class="button">
+                Ejecutar evaluación
+              </button>
+            </div>
+
+            <p id="source-label" class="hint source-label">Fuente: sin cargar</p>
+
+            <div class="tolerance-row">
+              <label for="tolerance-input">Tolerancia de superficie (%)</label>
+              <input
+                id="tolerance-input"
+                type="number"
+                min="0"
+                max="100"
+                step="0.5"
+                value="5"
+                aria-describedby="tolerance-help"
+              />
+            </div>
+            <p id="tolerance-help" class="hint">
+              Parámetro experimental de este laboratorio. No corresponde a una norma oficial.
+            </p>
+
+            <details class="rules-box">
+              <summary>
+                Reglas de evaluación
+                <span id="rules-count" class="summary-meta"></span>
+              </summary>
+              <div id="rules-list" class="rules-list"></div>
+              <div class="rules-actions">
+                <button type="button" id="rules-all" class="mini-button">Activar todas</button>
+                <button type="button" id="rules-none" class="mini-button">Desactivar evaluables</button>
+              </div>
+            </details>
+
+            <div id="run-meta" class="run-meta" aria-live="polite"></div>
+          </section>
+
+          <section class="panel indicators-panel" aria-labelledby="indicators-title">
+            <div class="panel-head compact">
+              <h2 id="indicators-title">Indicadores</h2>
+            </div>
+            <div id="indicators" class="indicator-grid" aria-live="polite"></div>
+            <p class="hint">
+              «Predios con advertencias» puede solaparse con «Predios con errores». Cada predio se
+              cuenta una sola vez por indicador.
+            </p>
+          </section>
+
+          <section class="panel not-evaluated-panel" aria-labelledby="not-evaluated-title">
+            <details>
+              <summary>
+                <span id="not-evaluated-title">Reglas no evaluadas</span>
+                <span id="not-evaluated-count" class="summary-meta">0</span>
+              </summary>
+              <ul id="not-evaluated-list" class="not-evaluated-list"></ul>
+            </details>
+          </section>
+        </aside>
+      </main>
+
+      <section class="panel issues-section" aria-labelledby="issues-title">
+        <div class="panel-head wrap">
+          <div>
+            <h2 id="issues-title">Incidencias <span id="issues-count" class="count-badge"></span></h2>
+            <p class="panel-subtitle">
+              Búsqueda por identificador, filtros por severidad y regla, selección y localización.
+            </p>
+          </div>
+          <div class="export-actions">
+            <button type="button" id="export-csv" class="button small">Exportar CSV</button>
+            <button type="button" id="export-json" class="button small">Exportar JSON</button>
+            <button type="button" id="export-summary" class="button small">
+              Resumen JSON
+            </button>
+          </div>
+        </div>
+
+        <div class="filters">
+          <label class="filter-field">
+            <span>Buscar predio o incidencia</span>
+            <input id="search-input" type="search" placeholder="Ej. QT-CH-001 o INC-0001" />
+          </label>
+          <label class="filter-field">
+            <span>Severidad</span>
+            <select id="severity-filter"></select>
+          </label>
+          <label class="filter-field">
+            <span>Regla</span>
+            <select id="rule-filter"></select>
+          </label>
+          <label class="check-field">
+            <input id="select-all" type="checkbox" />
+            <span>Seleccionar visibles</span>
+          </label>
+          <div class="selection-actions">
+            <button type="button" id="locate-selected" class="button small">
+              Localizar seleccionadas
+            </button>
+            <button type="button" id="clear-selection" class="mini-button">Limpiar</button>
+            <span id="selection-count" class="selection-count">0 seleccionada(s)</span>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="issues-table">
+            <thead>
+              <tr>
+                <th class="cell-check" scope="col"><span class="sr-only">Seleccionar</span></th>
+                <th scope="col">ID</th>
+                <th scope="col">Predio</th>
+                <th scope="col">Regla</th>
+                <th scope="col">Severidad</th>
+                <th scope="col">Dimensión</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Valor observado</th>
+                <th scope="col">Acción</th>
+              </tr>
+            </thead>
+            <tbody id="issues-body"></tbody>
+          </table>
+        </div>
+        <p id="table-note" class="table-note"></p>
+      </section>
+
+      <footer class="app-footer">
+        <div class="footer-grid">
+          <div>
+            <h3>Metodología</h3>
+            <p>
+              Las dimensiones de calidad siguen conceptualmente ISO 19157-1:2023 (completitud,
+              consistencia lógica, exactitud posicional, exactitud temática y calidad temporal).
+              Este experimento no constituye una certificación ISO.
+            </p>
+          </div>
+          <div>
+            <h3>Sistemas de referencia</h3>
+            <p>
+              GeoJSON en WGS84 geográfico (EPSG:4326), orden [longitud, latitud] según RFC 7946. La
+              comparación con EPSG:32717 (UTM 17S) y la proyección local TMQ de Quito es conceptual:
+              las áreas se calculan geodésicamente, no con fórmulas planas sobre grados.
+            </p>
+          </div>
+          <div>
+            <h3>Limitaciones</h3>
+            <p>
+              Datos ficticios; no hay cartografía ni registro catastral oficial de referencia. La
+              topología se evalúa solo entre predios cargados y con tolerancias numéricas
+              documentadas. El análisis de superposiciones es O(n²).
+            </p>
+          </div>
+        </div>
+        <p class="footer-note">
+          Quito Cadastre Quality Lab · Aplicación estática sin backend · Datos sintéticos
+          reproducibles con semilla fija.
+        </p>
+      </footer>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <noscript>
+      <p class="noscript">Esta aplicación requiere JavaScript para ejecutar la evaluación local.</p>
+    </noscript>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

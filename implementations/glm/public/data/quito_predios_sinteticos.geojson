@@ -1,0 +1,3110 @@
+{
+  "type": "FeatureCollection",
+  "name": "quito_predios_sinteticos",
+  "metadata": {
+    "descripcion": "Predios catastrales sintéticos del Distrito Metropolitano de Quito con fines educativos y experimentales. No representan información oficial del Municipio del DMQ.",
+    "semilla": 20260214,
+    "generador": "scripts/generate-predios.mjs",
+    "sistema_referencia": "WGS84 (RFC 7946), orden [longitud, latitud]",
+    "total_predios": 72,
+    "errores_intencionales": "Ver data/expected_issues.json"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CENT-0001",
+        "clave_catastral": "SIM-90-CEN-00001",
+        "sector": "Centro Histórico",
+        "direccion": "Calle sintética 22 N001-84 (dato ficticio)",
+        "area_terreno_m2": 545.29,
+        "area_construida_m2": 924.48,
+        "num_pisos": 2,
+        "ano_construccion": 1999,
+        "uso_suelo": "Recreación",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5190477,
+              -0.2211834
+            ],
+            [
+              -78.5188757,
+              -0.2211611
+            ],
+            [
+              -78.5188997,
+              -0.2209139
+            ],
+            [
+              -78.5190745,
+              -0.2209245
+            ],
+            [
+              -78.5190477,
+              -0.2211834
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CENT-0002",
+        "clave_catastral": "SIM-90-CEN-00002",
+        "sector": "Centro Histórico",
+        "direccion": "Calle sintética 24 N002-32 (dato ficticio)",
+        "area_terreno_m2": 789.18,
+        "area_construida_m2": 2713.29,
+        "num_pisos": 4,
+        "ano_construccion": 1994,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5186264,
+              -0.2211896
+            ],
+            [
+              -78.5183918,
+              -0.2211657
+            ],
+            [
+              -78.5184204,
+              -0.2208947
+            ],
+            [
+              -78.5186487,
+              -0.2209259
+            ],
+            [
+              -78.5186264,
+              -0.2211896
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CENT-0003",
+        "clave_catastral": "SIM-90-CEN-00003",
+        "sector": "Centro Histórico",
+        "direccion": "Calle sintética 35 N003-82 (dato ficticio)",
+        "area_terreno_m2": 332.59,
+        "area_construida_m2": 904.68,
+        "num_pisos": 4,
+        "ano_construccion": 1986,
+        "uso_suelo": "Institucional",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5181316,
+              -0.2211594
+            ],
+            [
+              -78.5179967,
+              -0.2211382
+            ],
+            [
+              -78.5180162,
+              -0.2209388
+            ],
+            [
+              -78.5181457,
+              -0.2209537
+            ],
+            [
+              -78.5181316,
+              -0.2211594
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CENT-0004",
+        "clave_catastral": "SIM-90-CEN-00001",
+        "sector": "Centro Histórico",
+        "direccion": "Calle sintética 34 N004-10 (dato ficticio)",
+        "area_terreno_m2": 528.47,
+        "area_construida_m2": 877.42,
+        "num_pisos": 2,
+        "ano_construccion": 2013,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5177182,
+              -0.2211609
+            ],
+            [
+              -78.5175162,
+              -0.2211358
+            ],
+            [
+              -78.5175329,
+              -0.2209285
+            ],
+            [
+              -78.517742,
+              -0.220955
+            ],
+            [
+              -78.5177182,
+              -0.2211609
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CENT-0005",
+        "clave_catastral": "SIM-90-CEN-00005",
+        "sector": "Centro Histórico",
+        "direccion": "Calle sintética 10 N005-34 (dato ficticio)",
+        "area_terreno_m2": 590.25,
+        "area_construida_m2": 970.09,
+        "num_pisos": 2,
+        "ano_construccion": 1976,
+        "uso_suelo": null,
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5190566,
+              -0.2206895
+            ],
+            [
+              -78.5188703,
+              -0.2206735
+            ],
+            [
+              -78.5188927,
+              -0.2204119
+            ],
+            [
+              -78.519076,
+              -0.2204275
+            ],
+            [
+              -78.5190566,
+              -0.2206895
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CENT-0006",
+        "clave_catastral": "SIM-90-CEN-00006",
+        "sector": "Centro Histórico",
+        "direccion": "Calle sintética 8 N006-17 (dato ficticio)",
+        "area_terreno_m2": -150.5,
+        "area_construida_m2": 646.77,
+        "num_pisos": 2,
+        "ano_construccion": 1975,
+        "uso_suelo": "Institucional",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5186346,
+              -0.2206508
+            ],
+            [
+              -78.5184031,
+              -0.2206257
+            ],
+            [
+              -78.5184234,
+              -0.2204449
+            ],
+            [
+              -78.5186483,
+              -0.2204779
+            ],
+            [
+              -78.5186346,
+              -0.2206508
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CENT-0007",
+        "clave_catastral": "SIM-90-CEN-00007",
+        "sector": "Centro Histórico",
+        "direccion": "Calle sintética 19 N007-45 (dato ficticio)",
+        "area_terreno_m2": 692.8,
+        "area_construida_m2": 1140.52,
+        "num_pisos": "2",
+        "ano_construccion": 1997,
+        "uso_suelo": "Recreación",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5181577,
+              -0.2207008
+            ],
+            [
+              -78.5179655,
+              -0.2206853
+            ],
+            [
+              -78.5179902,
+              -0.220392
+            ],
+            [
+              -78.518185,
+              -0.2204149
+            ],
+            [
+              -78.5181577,
+              -0.2207008
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CENT-0008",
+        "clave_catastral": "SIM-90-CEN-00008",
+        "sector": "Centro Histórico",
+        "direccion": "Calle sintética 4 N008-71 (dato ficticio)",
+        "area_terreno_m2": 742.41,
+        "area_construida_m2": 2261.45,
+        "num_pisos": 4,
+        "ano_construccion": 2019,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5177179,
+              -0.2206976
+            ],
+            [
+              -78.5175042,
+              -0.2206762
+            ],
+            [
+              -78.5175358,
+              -0.2203916
+            ],
+            [
+              -78.517745,
+              -0.2204165
+            ],
+            [
+              -78.5177179,
+              -0.2206976
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CENT-0009",
+        "clave_catastral": "SIM-90-CEN-00009",
+        "sector": "Centro Histórico",
+        "direccion": "Calle sintética 37 N009-29 (dato ficticio)",
+        "area_terreno_m2": 389.52,
+        "area_construida_m2": 314.21,
+        "num_pisos": 1,
+        "ano_construccion": 1998,
+        "uso_suelo": "Recreación",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5190511,
+              -0.2201526
+            ],
+            [
+              -78.5188802,
+              -0.2201347
+            ],
+            [
+              -78.5188986,
+              -0.2199492
+            ],
+            [
+              -78.519065,
+              -0.2199633
+            ],
+            [
+              -78.5190511,
+              -0.2201526
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CENT-0010",
+        "clave_catastral": "SIM-90-CEN-00010",
+        "sector": "Centro Histórico",
+        "direccion": "Calle sintética 25 N010-55 (dato ficticio)",
+        "area_terreno_m2": 647.89,
+        "area_construida_m2": 1582.76,
+        "num_pisos": 3,
+        "ano_construccion": 1989,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5185999,
+              -0.2202034
+            ],
+            [
+              -78.5184189,
+              -0.2201806
+            ],
+            [
+              -78.5184488,
+              -0.2198946
+            ],
+            [
+              -78.5186303,
+              -0.2199148
+            ],
+            [
+              -78.5185999,
+              -0.2202034
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CENT-0011",
+        "clave_catastral": "SIM-90-CEN-00011",
+        "sector": "Centro Histórico",
+        "direccion": "Calle sintética 35 N011-80 (dato ficticio)",
+        "area_terreno_m2": 673.31,
+        "area_construida_m2": 2232.26,
+        "num_pisos": 4,
+        "ano_construccion": 2014,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5181548,
+              -0.220205
+            ],
+            [
+              -78.5179695,
+              -0.2201807
+            ],
+            [
+              -78.5179939,
+              -0.219904
+            ],
+            [
+              -78.5181863,
+              -0.2199144
+            ],
+            [
+              -78.5181548,
+              -0.220205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CENT-0012",
+        "clave_catastral": "SIM-90-CEN-00012",
+        "sector": "Centro Histórico",
+        "direccion": "Calle sintética 26 N012-17 (dato ficticio)",
+        "area_terreno_m2": 996.31,
+        "area_construida_m2": 969.16,
+        "num_pisos": 2,
+        "ano_construccion": 2009,
+        "uso_suelo": "Residencial",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.517725,
+              -0.2201974
+            ],
+            [
+              -78.5175009,
+              -0.2201783
+            ],
+            [
+              -78.5175257,
+              -0.2199021
+            ],
+            [
+              -78.5177536,
+              -0.2199307
+            ],
+            [
+              -78.517725,
+              -0.2201974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-INAQ-0013",
+        "clave_catastral": "SIM-90-INA-00013",
+        "sector": "Iñaquito",
+        "direccion": "Calle sintética 8 N013-79 (dato ficticio)",
+        "area_terreno_m2": 664.41,
+        "area_construida_m2": 574.78,
+        "num_pisos": 1,
+        "ano_construccion": 2013,
+        "uso_suelo": "Agrícola",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4868201,
+              -0.1698213
+            ],
+            [
+              -78.4866066,
+              -0.169898
+            ],
+            [
+              -78.4865298,
+              -0.1696743
+            ],
+            [
+              -78.4867334,
+              -0.1695982
+            ],
+            [
+              -78.4868201,
+              -0.1698213
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-INAQ-0014",
+        "clave_catastral": "SIM-90-INA-00014",
+        "sector": "Iñaquito",
+        "direccion": "Calle sintética 6 N014-89 (dato ficticio)",
+        "area_terreno_m2": 379.47,
+        "area_construida_m2": 1293.59,
+        "num_pisos": 4,
+        "ano_construccion": 2016,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4863269,
+              -0.1698297
+            ],
+            [
+              -78.4862019,
+              -0.1698777
+            ],
+            [
+              -78.4861221,
+              -0.1696596
+            ],
+            [
+              -78.4862444,
+              -0.1696128
+            ],
+            [
+              -78.4863269,
+              -0.1698297
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-INAQ-0015",
+        "clave_catastral": "SIM-90-INA-00015",
+        "sector": "Iñaquito",
+        "direccion": "Calle sintética 13 N015-94 (dato ficticio)",
+        "area_terreno_m2": 522.83,
+        "area_construida_m2": 358.11,
+        "num_pisos": 1,
+        "ano_construccion": 1983,
+        "uso_suelo": "Residencial",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4859066,
+              -0.1698218
+            ],
+            [
+              -78.4857168,
+              -0.1698823
+            ],
+            [
+              -78.4856482,
+              -0.1696742
+            ],
+            [
+              -78.4858286,
+              -0.1696132
+            ],
+            [
+              -78.4859066,
+              -0.1698218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-INAQ-0016",
+        "clave_catastral": "SIM-90-INA-00013",
+        "sector": "Iñaquito",
+        "direccion": "Calle sintética 9 N016-91 (dato ficticio)",
+        "area_terreno_m2": 394.11,
+        "area_construida_m2": 761.15,
+        "num_pisos": 3,
+        "ano_construccion": 2015,
+        "uso_suelo": "Residencial",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4854375,
+              -0.1698012
+            ],
+            [
+              -78.4852753,
+              -0.1698608
+            ],
+            [
+              -78.4852125,
+              -0.1696923
+            ],
+            [
+              -78.4853808,
+              -0.1696322
+            ],
+            [
+              -78.4854375,
+              -0.1698012
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-INAQ-0017",
+        "clave_catastral": "SIM-90-INA-00017",
+        "sector": "Iñaquito",
+        "direccion": null,
+        "area_terreno_m2": 531.4,
+        "area_construida_m2": 1036.53,
+        "num_pisos": 3,
+        "ano_construccion": 2009,
+        "uso_suelo": "Institucional",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4868072,
+              -0.1693023
+            ],
+            [
+              -78.4866019,
+              -0.169377
+            ],
+            [
+              -78.4865361,
+              -0.1692029
+            ],
+            [
+              -78.4867479,
+              -0.1691181
+            ],
+            [
+              -78.4868072,
+              -0.1693023
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-INAQ-0018",
+        "clave_catastral": "SIM-90-INA-00018",
+        "sector": "Iñaquito",
+        "direccion": "Calle sintética 14 N018-63 (dato ficticio)",
+        "area_terreno_m2": 498.76,
+        "area_construida_m2": -80.25,
+        "num_pisos": 2,
+        "ano_construccion": 1986,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4863504,
+              -0.1693148
+            ],
+            [
+              -78.4861731,
+              -0.1693897
+            ],
+            [
+              -78.4861044,
+              -0.1691815
+            ],
+            [
+              -78.4862758,
+              -0.1691137
+            ],
+            [
+              -78.4863504,
+              -0.1693148
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-INAQ-0019",
+        "clave_catastral": "SIM-90-INA-00019",
+        "sector": "Iñaquito",
+        "direccion": "Calle sintética 17 N019-16 (dato ficticio)",
+        "area_terreno_m2": "180.5",
+        "area_construida_m2": 586.88,
+        "num_pisos": 1,
+        "ano_construccion": 2009,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4859288,
+              -0.1693407
+            ],
+            [
+              -78.4857216,
+              -0.1694189
+            ],
+            [
+              -78.4856239,
+              -0.169163
+            ],
+            [
+              -78.4858316,
+              -0.169085
+            ],
+            [
+              -78.4859288,
+              -0.1693407
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-INAQ-0020",
+        "clave_catastral": "SIM-90-INA-00020",
+        "sector": "Iñaquito",
+        "direccion": "Calle sintética 31 N020-90 (dato ficticio)",
+        "area_terreno_m2": 582.31,
+        "area_construida_m2": 711.95,
+        "num_pisos": 2,
+        "ano_construccion": 2005,
+        "uso_suelo": "Institucional",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4854579,
+              -0.1693273
+            ],
+            [
+              -78.4852761,
+              -0.1693967
+            ],
+            [
+              -78.4851954,
+              -0.1691647
+            ],
+            [
+              -78.4853809,
+              -0.1691019
+            ],
+            [
+              -78.4854579,
+              -0.1693273
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-INAQ-0021",
+        "clave_catastral": "SIM-90-INA-00021",
+        "sector": "Iñaquito",
+        "direccion": "Calle sintética 33 N021-75 (dato ficticio)",
+        "area_terreno_m2": 673.95,
+        "area_construida_m2": 1322.75,
+        "num_pisos": 3,
+        "ano_construccion": 2016,
+        "uso_suelo": "Institucional",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4868183,
+              -0.1688308
+            ],
+            [
+              -78.4866185,
+              -0.1689121
+            ],
+            [
+              -78.4865326,
+              -0.1686651
+            ],
+            [
+              -78.4867286,
+              -0.1685926
+            ],
+            [
+              -78.4868183,
+              -0.1688308
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-INAQ-0022",
+        "clave_catastral": "SIM-90-INA-00022",
+        "sector": "Iñaquito",
+        "direccion": "Calle sintética 7 N022-73 (dato ficticio)",
+        "area_terreno_m2": 450.16,
+        "area_construida_m2": 1153.53,
+        "num_pisos": 3,
+        "ano_construccion": 2008,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4863375,
+              -0.1688418
+            ],
+            [
+              -78.4861971,
+              -0.1688935
+            ],
+            [
+              -78.4861107,
+              -0.1686691
+            ],
+            [
+              -78.4862497,
+              -0.1686145
+            ],
+            [
+              -78.4863375,
+              -0.1688418
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-INAQ-0023",
+        "clave_catastral": "SIM-90-INA-00023",
+        "sector": "Iñaquito",
+        "direccion": "Calle sintética 18 N023-62 (dato ficticio)",
+        "area_terreno_m2": 453.11,
+        "area_construida_m2": 968.76,
+        "num_pisos": 3,
+        "ano_construccion": 2007,
+        "uso_suelo": "Residencial",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4859029,
+              -0.1688108
+            ],
+            [
+              -78.485717,
+              -0.1688721
+            ],
+            [
+              -78.4856564,
+              -0.1686905
+            ],
+            [
+              -78.4858379,
+              -0.1686328
+            ],
+            [
+              -78.4859029,
+              -0.1688108
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-INAQ-0024",
+        "clave_catastral": "SIM-90-INA-00024",
+        "sector": "Iñaquito",
+        "direccion": "Calle sintética 5 N024-65 (dato ficticio)",
+        "area_terreno_m2": 284,
+        "area_construida_m2": 329.32,
+        "num_pisos": 1,
+        "ano_construccion": 1984,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4854606,
+              -0.1688129
+            ],
+            [
+              -78.4852718,
+              -0.1688842
+            ],
+            [
+              -78.4851945,
+              -0.168687
+            ],
+            [
+              -78.4853838,
+              -0.1686233
+            ],
+            [
+              -78.4854606,
+              -0.1688129
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_C-0025",
+        "clave_catastral": "SIM-90-LA_-00025",
+        "sector": "La Carolina",
+        "direccion": "Calle sintética 2 N025-42 (dato ficticio)",
+        "area_terreno_m2": 629.77,
+        "area_construida_m2": 561.78,
+        "num_pisos": 1,
+        "ano_construccion": 2011,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Excelente",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.488278,
+              -0.1803647
+            ],
+            [
+              -78.4880681,
+              -0.1803626
+            ],
+            [
+              -78.4880649,
+              -0.1801199
+            ],
+            [
+              -78.4882823,
+              -0.1801306
+            ],
+            [
+              -78.488278,
+              -0.1803647
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_C-0026",
+        "clave_catastral": "SIM-90-LA_-00026",
+        "sector": "La Carolina",
+        "direccion": "Calle sintética 25 N026-46 (dato ficticio)",
+        "area_terreno_m2": 581.56,
+        "area_construida_m2": 328.61,
+        "num_pisos": 1,
+        "ano_construccion": 1983,
+        "uso_suelo": "Institucional",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4878294,
+              -0.1803589
+            ],
+            [
+              -78.4876095,
+              -0.1803475
+            ],
+            [
+              -78.4876146,
+              -0.1801353
+            ],
+            [
+              -78.4878364,
+              -0.1801386
+            ],
+            [
+              -78.4878294,
+              -0.1803589
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_C-0027",
+        "clave_catastral": "SIM-90-LA_-00027",
+        "sector": "La Carolina",
+        "direccion": "Calle sintética 16 N027-13 (dato ficticio)",
+        "area_terreno_m2": 645.82,
+        "area_construida_m2": 799.86,
+        "num_pisos": 2,
+        "ano_construccion": 1975,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4873725,
+              -0.1803853
+            ],
+            [
+              -78.4871818,
+              -0.1803822
+            ],
+            [
+              -78.4871844,
+              -0.1801031
+            ],
+            [
+              -78.4873746,
+              -0.1801102
+            ],
+            [
+              -78.4873725,
+              -0.1803853
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_C-0028",
+        "clave_catastral": "SIM-90-LA_-00025",
+        "sector": "La Carolina",
+        "direccion": "Calle sintética 31 N028-24 (dato ficticio)",
+        "area_terreno_m2": 297.02,
+        "area_construida_m2": 783.4,
+        "num_pisos": 3,
+        "ano_construccion": 2016,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4868903,
+              -0.1803374
+            ],
+            [
+              -78.4867585,
+              -0.1803356
+            ],
+            [
+              -78.4867594,
+              -0.1801526
+            ],
+            [
+              -78.4868916,
+              -0.1801609
+            ],
+            [
+              -78.4868903,
+              -0.1803374
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_C-0029",
+        "clave_catastral": "SIM-90-LA_-00029",
+        "sector": "La Carolina",
+        "direccion": "Calle sintética 7 N029-77 (dato ficticio)",
+        "area_terreno_m2": 377.55,
+        "area_construida_m2": 515.49,
+        "num_pisos": null,
+        "ano_construccion": 1978,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.488257,
+              -0.179838
+            ],
+            [
+              -78.4880843,
+              -0.1798332
+            ],
+            [
+              -78.4880903,
+              -0.1796599
+            ],
+            [
+              -78.488262,
+              -0.1796623
+            ],
+            [
+              -78.488257,
+              -0.179838
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_C-0030",
+        "clave_catastral": "SIM-90-LA_-00030",
+        "sector": "La Carolina",
+        "direccion": "Calle sintética 38 N030-97 (dato ficticio)",
+        "area_terreno_m2": 429.06,
+        "area_construida_m2": 271.06,
+        "num_pisos": 1,
+        "ano_construccion": 1993,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4878173,
+              -0.1798418
+            ],
+            [
+              -78.4876294,
+              -0.1798325
+            ],
+            [
+              -78.4876271,
+              -0.1796556
+            ],
+            [
+              -78.487826,
+              -0.1796601
+            ],
+            [
+              -78.4878173,
+              -0.1798418
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_C-0031",
+        "clave_catastral": "SIM-90-LA_-00031",
+        "sector": "La Carolina",
+        "direccion": "Calle sintética 5 N031-99 (dato ficticio)",
+        "area_terreno_m2": 667.94,
+        "area_construida_m2": 2216.34,
+        "num_pisos": 4,
+        "ano_construccion": 1984,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4873749,
+              -0.1798889
+            ],
+            [
+              -78.4871738,
+              -0.1798839
+            ],
+            [
+              -78.487179,
+              -0.1796141
+            ],
+            [
+              -78.4873758,
+              -0.1796115
+            ],
+            [
+              -78.4873749,
+              -0.1798889
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_C-0032",
+        "clave_catastral": "SIM-90-LA_-00032",
+        "sector": "La Carolina",
+        "direccion": "Calle sintética 5 N032-49 (dato ficticio)",
+        "area_terreno_m2": 539.83,
+        "area_construida_m2": 718.31,
+        "num_pisos": 2,
+        "ano_construccion": 1994,
+        "uso_suelo": "Residencial",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4869084,
+              -0.1798814
+            ],
+            [
+              -78.4867392,
+              -0.1798806
+            ],
+            [
+              -78.486746,
+              -0.1796139
+            ],
+            [
+              -78.4869083,
+              -0.1796128
+            ],
+            [
+              -78.4869084,
+              -0.1798814
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_C-0033",
+        "clave_catastral": "SIM-90-LA_-00033",
+        "sector": "La Carolina",
+        "direccion": "Calle sintética 10 N033-73 (dato ficticio)",
+        "area_terreno_m2": 450.43,
+        "area_construida_m2": 928.67,
+        "num_pisos": 3,
+        "ano_construccion": 1995,
+        "uso_suelo": "Residencial",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4882557,
+              -0.1793695
+            ],
+            [
+              -78.4880879,
+              -0.1793662
+            ],
+            [
+              -78.4880973,
+              -0.1791422
+            ],
+            [
+              -78.4882578,
+              -0.1791456
+            ],
+            [
+              -78.4882557,
+              -0.1793695
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_C-0034",
+        "clave_catastral": "SIM-90-LA_-00034",
+        "sector": "La Carolina",
+        "direccion": "Calle sintética 16 N034-74 (dato ficticio)",
+        "area_terreno_m2": 313.69,
+        "area_construida_m2": 742.54,
+        "num_pisos": 3,
+        "ano_construccion": 2000,
+        "uso_suelo": "Recreación",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4877937,
+              -0.1793473
+            ],
+            [
+              -78.4876489,
+              -0.1793364
+            ],
+            [
+              -78.4876494,
+              -0.1791631
+            ],
+            [
+              -78.4877966,
+              -0.1791664
+            ],
+            [
+              -78.4877937,
+              -0.1793473
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_C-0035",
+        "clave_catastral": "SIM-90-LA_-00035",
+        "sector": "La Carolina",
+        "direccion": "Calle sintética 23 N035-21 (dato ficticio)",
+        "area_terreno_m2": 505.95,
+        "area_construida_m2": 1580.92,
+        "num_pisos": 4,
+        "ano_construccion": 2001,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4873427,
+              -0.1793938
+            ],
+            [
+              -78.4872021,
+              -0.1793968
+            ],
+            [
+              -78.4872105,
+              -0.1791026
+            ],
+            [
+              -78.4873503,
+              -0.1791124
+            ],
+            [
+              -78.4873427,
+              -0.1793938
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_C-0036",
+        "clave_catastral": "SIM-90-LA_-00036",
+        "sector": "La Carolina",
+        "direccion": "Calle sintética 33 N036-23 (dato ficticio)",
+        "area_terreno_m2": 449.77,
+        "area_construida_m2": 236.9,
+        "num_pisos": 1,
+        "ano_construccion": 1991,
+        "uso_suelo": "Recreación",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4868995,
+              -0.1793546
+            ],
+            [
+              -78.4867508,
+              -0.1793522
+            ],
+            [
+              -78.4867494,
+              -0.1791503
+            ],
+            [
+              -78.486903,
+              -0.1791486
+            ],
+            [
+              -78.4868995,
+              -0.1793546
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_M-0037",
+        "clave_catastral": "SIM-90-LA_-00037",
+        "sector": "La Mariscal",
+        "direccion": "Calle sintética 20 N037-52 (dato ficticio)",
+        "area_terreno_m2": 461.27,
+        "area_construida_m2": 680.34,
+        "num_pisos": 2,
+        "ano_construccion": 1988,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4932601,
+              -0.2028806
+            ],
+            [
+              -78.4931291,
+              -0.2028968
+            ],
+            [
+              -78.4930877,
+              -0.2026129
+            ],
+            [
+              -78.4932217,
+              -0.2025999
+            ],
+            [
+              -78.4932601,
+              -0.2028806
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_M-0038",
+        "clave_catastral": "SIM-90-LA_-00038",
+        "sector": "La Mariscal",
+        "direccion": "Calle sintética 23 N038-85 (dato ficticio)",
+        "area_terreno_m2": 572.83,
+        "area_construida_m2": 1786.91,
+        "num_pisos": 4,
+        "ano_construccion": 2013,
+        "uso_suelo": "Residencial",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4928502,
+              -0.2028321
+            ],
+            [
+              -78.4926295,
+              -0.2028689
+            ],
+            [
+              -78.4925985,
+              -0.2026533
+            ],
+            [
+              -78.4928212,
+              -0.2026312
+            ],
+            [
+              -78.4928502,
+              -0.2028321
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_M-0039",
+        "clave_catastral": "SIM-90-LA_-00039",
+        "sector": "La Mariscal",
+        "direccion": "Calle sintética 35 N039-75 (dato ficticio)",
+        "area_terreno_m2": 795.17,
+        "area_construida_m2": 2050.34,
+        "num_pisos": 4,
+        "ano_construccion": 2018,
+        "uso_suelo": "Institucional",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4924036,
+              -0.202872
+            ],
+            [
+              -78.4921776,
+              -0.2028972
+            ],
+            [
+              -78.4921466,
+              -0.2026193
+            ],
+            [
+              -78.4923731,
+              -0.2025905
+            ],
+            [
+              -78.4924036,
+              -0.202872
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_M-0040",
+        "clave_catastral": "SIM-90-LA_-00040",
+        "sector": "La Mariscal",
+        "direccion": "Calle sintética 11 N040-49 (dato ficticio)",
+        "area_terreno_m2": 463.27,
+        "area_construida_m2": 346.97,
+        "num_pisos": 1,
+        "ano_construccion": 2010,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4919285,
+              -0.2028423
+            ],
+            [
+              -78.4917533,
+              -0.2028639
+            ],
+            [
+              -78.4917268,
+              -0.2026479
+            ],
+            [
+              -78.4918942,
+              -0.2026277
+            ],
+            [
+              -78.4919285,
+              -0.2028423
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_M-0041",
+        "clave_catastral": "SIM-90-LA_-00041",
+        "sector": "La Mariscal",
+        "direccion": "Calle sintética 34 N041-85 (dato ficticio)",
+        "area_terreno_m2": 507.39,
+        "area_construida_m2": 1406.61,
+        "num_pisos": 4,
+        "ano_construccion": 2009,
+        "uso_suelo": "Residencial",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4924102,
+              -0.2033792
+            ],
+            [
+              -78.4922305,
+              -0.2033792
+            ],
+            [
+              -78.4922305,
+              -0.2031531
+            ],
+            [
+              -78.4924102,
+              -0.2031531
+            ],
+            [
+              -78.4924102,
+              -0.2033792
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_M-0042",
+        "clave_catastral": "SIM-90-LA_-00042",
+        "sector": "La Mariscal",
+        "direccion": "Calle sintética 30 N042-83 (dato ficticio)",
+        "area_terreno_m2": 497.34,
+        "area_construida_m2": 703.31,
+        "num_pisos": 2,
+        "ano_construccion": 1983,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4923204,
+              -0.2033792
+            ],
+            [
+              -78.4921407,
+              -0.2033792
+            ],
+            [
+              -78.4921407,
+              -0.2031531
+            ],
+            [
+              -78.4923204,
+              -0.2031531
+            ],
+            [
+              -78.4923204,
+              -0.2033792
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_M-0043",
+        "clave_catastral": "SIM-90-LA_-00043",
+        "sector": "La Mariscal",
+        "direccion": "Calle sintética 27 N043-24 (dato ficticio)",
+        "area_terreno_m2": 507.1,
+        "area_construida_m2": 702.92,
+        "num_pisos": 2,
+        "ano_construccion": 2011,
+        "uso_suelo": "Institucional",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4917813,
+              -0.2033792
+            ],
+            [
+              -78.4916017,
+              -0.2033792
+            ],
+            [
+              -78.4916017,
+              -0.2031531
+            ],
+            [
+              -78.4917813,
+              -0.2031531
+            ],
+            [
+              -78.4917813,
+              -0.2033792
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_M-0044",
+        "clave_catastral": "SIM-90-LA_-00044",
+        "sector": "La Mariscal",
+        "direccion": "Calle sintética 20 N044-66 (dato ficticio)",
+        "area_terreno_m2": 497.06,
+        "area_construida_m2": 1405.83,
+        "num_pisos": 4,
+        "ano_construccion": 1991,
+        "uso_suelo": "Recreación",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4917454,
+              -0.2033792
+            ],
+            [
+              -78.4915658,
+              -0.2033792
+            ],
+            [
+              -78.4915658,
+              -0.2031531
+            ],
+            [
+              -78.4917454,
+              -0.2031531
+            ],
+            [
+              -78.4917454,
+              -0.2033792
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_M-0045",
+        "clave_catastral": "SIM-90-LA_-00045",
+        "sector": "La Mariscal",
+        "direccion": "Calle sintética 26 N045-84 (dato ficticio)",
+        "area_terreno_m2": 689.08,
+        "area_construida_m2": 1863.52,
+        "num_pisos": 4,
+        "ano_construccion": 2021,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.493295,
+              -0.201867
+            ],
+            [
+              -78.4930879,
+              -0.2018991
+            ],
+            [
+              -78.4930513,
+              -0.2016375
+            ],
+            [
+              -78.4932624,
+              -0.2016106
+            ],
+            [
+              -78.493295,
+              -0.201867
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_M-0046",
+        "clave_catastral": "SIM-90-LA_-00046",
+        "sector": "La Mariscal",
+        "direccion": "Calle sintética 35 N046-69 (dato ficticio)",
+        "area_terreno_m2": 506.53,
+        "area_construida_m2": 1430.37,
+        "num_pisos": 4,
+        "ano_construccion": 1989,
+        "uso_suelo": "Recreación",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4928186,
+              -0.2018684
+            ],
+            [
+              -78.4926589,
+              -0.2018812
+            ],
+            [
+              -78.4926257,
+              -0.2016366
+            ],
+            [
+              -78.4927937,
+              -0.2016153
+            ],
+            [
+              -78.4928186,
+              -0.2018684
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_M-0047",
+        "clave_catastral": "SIM-90-LA_-00047",
+        "sector": "La Mariscal",
+        "direccion": "Calle sintética 8 N047-15 (dato ficticio)",
+        "area_terreno_m2": 689.14,
+        "area_construida_m2": 1475.86,
+        "num_pisos": 3,
+        "ano_construccion": 1983,
+        "uso_suelo": "Residencial",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4923946,
+              -0.2018767
+            ],
+            [
+              -78.4921901,
+              -0.201901
+            ],
+            [
+              -78.4921652,
+              -0.2016191
+            ],
+            [
+              -78.4923559,
+              -0.2015968
+            ],
+            [
+              -78.4923946,
+              -0.2018767
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-LA_M-0048",
+        "clave_catastral": "SIM-90-LA_-00048",
+        "sector": "La Mariscal",
+        "direccion": "Calle sintética 2 N048-31 (dato ficticio)",
+        "area_terreno_m2": 458.54,
+        "area_construida_m2": 1136.14,
+        "num_pisos": 3,
+        "ano_construccion": 1975,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4919136,
+              -0.2018683
+            ],
+            [
+              -78.4917702,
+              -0.2018877
+            ],
+            [
+              -78.491734,
+              -0.2016383
+            ],
+            [
+              -78.4918833,
+              -0.2016215
+            ],
+            [
+              -78.4919136,
+              -0.2018683
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-QUIT-0049",
+        "clave_catastral": "SIM-90-QUI-00049",
+        "sector": "Quitumbe",
+        "direccion": "Calle sintética 1 N049-26 (dato ficticio)",
+        "area_terreno_m2": 538.51,
+        "area_construida_m2": 481.12,
+        "num_pisos": 1,
+        "ano_construccion": 2023,
+        "uso_suelo": "Recreación",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5607333,
+              -0.2928815
+            ],
+            [
+              -78.5605306,
+              -0.2927827
+            ],
+            [
+              -78.5606114,
+              -0.2926099
+            ],
+            [
+              -78.5608181,
+              -0.2927023
+            ],
+            [
+              -78.5607333,
+              -0.2928815
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-QUIT-0050",
+        "clave_catastral": "SIM-90-QUI-00050",
+        "sector": "Quitumbe",
+        "direccion": "Calle sintética 27 N050-51 (dato ficticio)",
+        "area_terreno_m2": 525.47,
+        "area_construida_m2": 320.65,
+        "num_pisos": 1,
+        "ano_construccion": 2015,
+        "uso_suelo": "Residencial",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.56026,
+              -0.2928941
+            ],
+            [
+              -78.5600971,
+              -0.2928229
+            ],
+            [
+              -78.5601939,
+              -0.2926016
+            ],
+            [
+              -78.560355,
+              -0.2926711
+            ],
+            [
+              -78.56026,
+              -0.2928941
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-QUIT-0051",
+        "clave_catastral": "SIM-90-QUI-00051",
+        "sector": "Quitumbe",
+        "direccion": "Calle sintética 38 N051-16 (dato ficticio)",
+        "area_terreno_m2": 591.78,
+        "area_construida_m2": 501.51,
+        "num_pisos": 1,
+        "ano_construccion": 1980,
+        "uso_suelo": "Recreación",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.55982,
+              -0.2928956
+            ],
+            [
+              -78.5596401,
+              -0.2928198
+            ],
+            [
+              -78.559914,
+              -0.2926812
+            ],
+            [
+              -78.5597352,
+              -0.2925955
+            ],
+            [
+              -78.55982,
+              -0.2928956
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-QUIT-0052",
+        "clave_catastral": "SIM-90-QUI-00052",
+        "sector": "Quitumbe",
+        "direccion": "Calle sintética 25 N052-19 (dato ficticio)",
+        "area_terreno_m2": 427.85,
+        "area_construida_m2": 1117.59,
+        "num_pisos": 4,
+        "ano_construccion": 1998,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5593738,
+              -0.29287
+            ],
+            [
+              -78.5591984,
+              -0.2927911
+            ],
+            [
+              -78.5594504,
+              -0.2927006
+            ],
+            [
+              -78.559279,
+              -0.2926326
+            ],
+            [
+              -78.5593738,
+              -0.29287
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-QUIT-0053",
+        "clave_catastral": "SIM-90-QUI-00053",
+        "sector": "Quitumbe",
+        "direccion": "Calle sintética 16 N053-36 (dato ficticio)",
+        "area_terreno_m2": 517.87,
+        "area_construida_m2": 1293.41,
+        "num_pisos": 3,
+        "ano_construccion": 1995,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5606905,
+              -0.2923976
+            ],
+            [
+              -78.5605501,
+              -0.2923358
+            ],
+            [
+              -78.5606546,
+              -0.2920906
+            ],
+            [
+              -78.560801,
+              -0.2921632
+            ],
+            [
+              -78.5606905,
+              -0.2923976
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-QUIT-0054",
+        "clave_catastral": "SIM-90-QUI-00054",
+        "sector": "Quitumbe",
+        "direccion": "Calle sintética 29 N054-67 (dato ficticio)",
+        "area_terreno_m2": 695.81,
+        "area_construida_m2": 1630.08,
+        "num_pisos": 3,
+        "ano_construccion": 1977,
+        "uso_suelo": "Institucional",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.560257,
+              -0.2924172
+            ],
+            [
+              -78.5600774,
+              -0.2923355
+            ],
+            [
+              -78.5601931,
+              -0.2920783
+            ],
+            [
+              -78.5603732,
+              -0.292158
+            ],
+            [
+              -78.560257,
+              -0.2924172
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-QUIT-0055",
+        "clave_catastral": "SIM-90-QUI-00055",
+        "sector": "Quitumbe",
+        "direccion": "Calle sintética 34 N055-72 (dato ficticio)",
+        "area_terreno_m2": 498.52,
+        "area_construida_m2": 812.18,
+        "num_pisos": 2,
+        "ano_construccion": 2023,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5598085,
+              -0.2923904
+            ],
+            [
+              -78.5596514,
+              -0.2923165
+            ],
+            [
+              -78.5597377,
+              -0.2921051
+            ],
+            [
+              -78.5598977,
+              -0.2921861
+            ],
+            [
+              -78.5598085,
+              -0.2923904
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-QUIT-0056",
+        "clave_catastral": "SIM-90-QUI-00056",
+        "sector": "Quitumbe",
+        "direccion": "Calle sintética 20 N056-19 (dato ficticio)",
+        "area_terreno_m2": 469.02,
+        "area_construida_m2": 972.86,
+        "num_pisos": 3,
+        "ano_construccion": 1983,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5593628,
+              -0.2923805
+            ],
+            [
+              -78.5592035,
+              -0.2923144
+            ],
+            [
+              -78.559293,
+              -0.2921098
+            ],
+            [
+              -78.5594463,
+              -0.2921838
+            ],
+            [
+              -78.5593628,
+              -0.2923805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-QUIT-0057",
+        "clave_catastral": "SIM-90-QUI-00057",
+        "sector": "Quitumbe",
+        "direccion": "Calle sintética 13 N057-26 (dato ficticio)",
+        "area_terreno_m2": 718.89,
+        "area_construida_m2": 1969.41,
+        "num_pisos": 4,
+        "ano_construccion": 1984,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.56072,
+              -0.2919154
+            ],
+            [
+              -78.5605224,
+              -0.2918337
+            ],
+            [
+              -78.5606267,
+              -0.2915828
+            ],
+            [
+              -78.5608319,
+              -0.2916743
+            ],
+            [
+              -78.56072,
+              -0.2919154
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-QUIT-0058",
+        "clave_catastral": "SIM-90-QUI-00058",
+        "sector": "Quitumbe",
+        "direccion": "Calle sintética 29 N058-51 (dato ficticio)",
+        "area_terreno_m2": 775.62,
+        "area_construida_m2": 2184.24,
+        "num_pisos": 4,
+        "ano_construccion": 1980,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5602638,
+              -0.2919275
+            ],
+            [
+              -78.5600606,
+              -0.2918379
+            ],
+            [
+              -78.5601861,
+              -0.2915736
+            ],
+            [
+              -78.5603857,
+              -0.2916719
+            ],
+            [
+              -78.5602638,
+              -0.2919275
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-QUIT-0059",
+        "clave_catastral": "SIM-90-QUI-00059",
+        "sector": "Quitumbe",
+        "direccion": "Calle sintética 32 N059-28 (dato ficticio)",
+        "area_terreno_m2": 459.9,
+        "area_construida_m2": 1002.43,
+        "num_pisos": 4,
+        "ano_construccion": 2000,
+        "uso_suelo": "Institucional",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5597856,
+              -0.2919
+            ],
+            [
+              -78.5596568,
+              -0.2918452
+            ],
+            [
+              -78.55977,
+              -0.2915965
+            ],
+            [
+              -78.559895,
+              -0.291657
+            ],
+            [
+              -78.5597856,
+              -0.2919
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-QUIT-0060",
+        "clave_catastral": "SIM-90-QUI-00060",
+        "sector": "Quitumbe",
+        "direccion": "Calle sintética 10 N060-28 (dato ficticio)",
+        "area_terreno_m2": 617.99,
+        "area_construida_m2": 1061.18,
+        "num_pisos": 2,
+        "ano_construccion": 2011,
+        "uso_suelo": "Residencial",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.5593568,
+              -0.2919061
+            ],
+            [
+              -78.5591834,
+              -0.2918365
+            ],
+            [
+              -78.5592982,
+              -0.2915906
+            ],
+            [
+              -78.5594685,
+              -0.2916684
+            ],
+            [
+              -78.5593568,
+              -0.2919061
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CALD-0061",
+        "clave_catastral": "SIM-90-CAL-00061",
+        "sector": "Calderón",
+        "direccion": "Calle sintética 17 N061-73 (dato ficticio)",
+        "area_terreno_m2": 502.28,
+        "area_construida_m2": 1054.78,
+        "num_pisos": 3,
+        "ano_construccion": 1989,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4565982,
+              -0.0712172
+            ],
+            [
+              -78.4564242,
+              -0.0711724
+            ],
+            [
+              -78.4564797,
+              -0.0709533
+            ],
+            [
+              -78.4566538,
+              -0.0709981
+            ],
+            [
+              -78.4565982,
+              -0.0712172
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CALD-0062",
+        "clave_catastral": "SIM-90-CAL-00062",
+        "sector": "Calderón",
+        "direccion": "Calle sintética 22 N062-58 (dato ficticio)",
+        "area_terreno_m2": 502.21,
+        "area_construida_m2": 1406.18,
+        "num_pisos": 4,
+        "ano_construccion": 1987,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4564242,
+              -0.0711724
+            ],
+            [
+              -78.4562501,
+              -0.0711277
+            ],
+            [
+              -78.4563057,
+              -0.0709086
+            ],
+            [
+              -78.4564797,
+              -0.0709533
+            ],
+            [
+              -78.4564242,
+              -0.0711724
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CALD-0063",
+        "clave_catastral": "SIM-90-CAL-00063",
+        "sector": "Calderón",
+        "direccion": "Calle sintética 6 N063-19 (dato ficticio)",
+        "area_terreno_m2": 360.63,
+        "area_construida_m2": 287.78,
+        "num_pisos": 1,
+        "ano_construccion": 2007,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4558114,
+              -0.0708666
+            ],
+            [
+              -78.4556779,
+              -0.0708365
+            ],
+            [
+              -78.4557387,
+              -0.0706213
+            ],
+            [
+              -78.4558656,
+              -0.0706608
+            ],
+            [
+              -78.4558114,
+              -0.0708666
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CALD-0064",
+        "clave_catastral": "SIM-90-CAL-00064",
+        "sector": "Calderón",
+        "direccion": "Calle sintética 12 N064-25 (dato ficticio)",
+        "area_terreno_m2": 360.63,
+        "area_construida_m2": 287.78,
+        "num_pisos": 1,
+        "ano_construccion": 1993,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4558114,
+              -0.0708666
+            ],
+            [
+              -78.4556779,
+              -0.0708365
+            ],
+            [
+              -78.4557387,
+              -0.0706213
+            ],
+            [
+              -78.4558656,
+              -0.0706608
+            ],
+            [
+              -78.4558114,
+              -0.0708666
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CALD-0065",
+        "clave_catastral": "SIM-90-CAL-00065",
+        "sector": "Calderón",
+        "direccion": "Calle sintética 14 N065-87 (dato ficticio)",
+        "area_terreno_m2": 445.39,
+        "area_construida_m2": 336.79,
+        "num_pisos": 1,
+        "ano_construccion": 2002,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4567024,
+              -0.0704008
+            ],
+            [
+              -78.4565767,
+              -0.0703747
+            ],
+            [
+              -78.4566518,
+              -0.0700908
+            ],
+            [
+              -78.4567713,
+              -0.070127
+            ],
+            [
+              -78.4567024,
+              -0.0704008
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CALD-0066",
+        "clave_catastral": "SIM-90-CAL-00066",
+        "sector": "Calderón",
+        "direccion": "Calle sintética 9 N066-83 (dato ficticio)",
+        "area_terreno_m2": 362.95,
+        "area_construida_m2": 308.65,
+        "num_pisos": 1,
+        "ano_construccion": 2005,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4562751,
+              -0.0703573
+            ],
+            [
+              -78.4561267,
+              -0.0703209
+            ],
+            [
+              -78.4561778,
+              -0.0701338
+            ],
+            [
+              -78.4563209,
+              -0.0701703
+            ],
+            [
+              -78.4562751,
+              -0.0703573
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CALD-0067",
+        "clave_catastral": "SIM-90-CAL-00067",
+        "sector": "Calderón",
+        "direccion": "Calle sintética 14 N067-69 (dato ficticio)",
+        "area_terreno_m2": 483.73,
+        "area_construida_m2": 721.03,
+        "num_pisos": 2,
+        "ano_construccion": 1975,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Regular",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4558563,
+              -0.0703651
+            ],
+            [
+              -78.4556477,
+              -0.0703085
+            ],
+            [
+              -78.4556922,
+              -0.0701347
+            ],
+            [
+              -78.4558966,
+              -0.0701867
+            ],
+            [
+              -78.4558563,
+              -0.0703651
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CALD-0068",
+        "clave_catastral": "SIM-90-CAL-00068",
+        "sector": "Calderón",
+        "direccion": "Calle sintética 29 N068-15 (dato ficticio)",
+        "area_terreno_m2": 359.99,
+        "area_construida_m2": 998.42,
+        "num_pisos": 4,
+        "ano_construccion": 2024,
+        "uso_suelo": "Residencial",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4553616,
+              -0.0703736
+            ],
+            [
+              -78.4552396,
+              -0.0703368
+            ],
+            [
+              -78.4552947,
+              -0.0701237
+            ],
+            [
+              -78.4554221,
+              -0.0701622
+            ],
+            [
+              -78.4553616,
+              -0.0703736
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CALD-0069",
+        "clave_catastral": "SIM-90-CAL-00069",
+        "sector": "Calderón",
+        "direccion": "Calle sintética 22 N069-84 (dato ficticio)",
+        "area_terreno_m2": 446.13,
+        "area_construida_m2": 328.26,
+        "num_pisos": 1,
+        "ano_construccion": 1988,
+        "uso_suelo": "Comercial",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4567472,
+              -0.0698573
+            ],
+            [
+              -78.4565554,
+              -0.0698104
+            ],
+            [
+              -78.4565955,
+              -0.0696373
+            ],
+            [
+              -78.456795,
+              -0.0696883
+            ],
+            [
+              -78.4567472,
+              -0.0698573
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CALD-0070",
+        "clave_catastral": "SIM-90-CAL-00070",
+        "sector": "Calderón",
+        "direccion": "Calle sintética 29 N070-12 (dato ficticio)",
+        "area_terreno_m2": 492.55,
+        "area_construida_m2": 675.9,
+        "num_pisos": 2,
+        "ano_construccion": 2015,
+        "uso_suelo": "Recreación",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4562993,
+              -0.0698783
+            ],
+            [
+              -78.4561047,
+              -0.0698221
+            ],
+            [
+              -78.4561563,
+              -0.0696319
+            ],
+            [
+              -78.4563419,
+              -0.0696833
+            ],
+            [
+              -78.4562993,
+              -0.0698783
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CALD-0071",
+        "clave_catastral": "SIM-90-CAL-00071",
+        "sector": "Calderón",
+        "direccion": "Calle sintética 17 N071-77 (dato ficticio)",
+        "area_terreno_m2": 507.43,
+        "area_construida_m2": 627.9,
+        "num_pisos": 2,
+        "ano_construccion": 1992,
+        "uso_suelo": "Institucional",
+        "estado_conservacion": "Bueno",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.4558267,
+              -0.0698928
+            ],
+            [
+              -78.4556703,
+              -0.0698571
+            ],
+            [
+              -78.4557307,
+              -0.069612
+            ],
+            [
+              -78.4558854,
+              -0.0696421
+            ],
+            [
+              -78.4558267,
+              -0.0698928
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_predio": "SIM-CALD-0072",
+        "clave_catastral": "SIM-90-CAL-00072",
+        "sector": "Calderón",
+        "direccion": "Calle sintética 30 N072-23 (dato ficticio)",
+        "area_terreno_m2": 668.84,
+        "area_construida_m2": 500.55,
+        "num_pisos": 1,
+        "ano_construccion": 1981,
+        "uso_suelo": "Mixto",
+        "estado_conservacion": "Malo",
+        "fuente": "Datos sintéticos generados con semilla fija — no oficiales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.455405,
+              -0.0698937
+            ],
+            [
+              -78.4551888,
+              -0.0698436
+            ],
+            [
+              -78.4552427,
+              -0.0696019
+            ],
+            [
+              -78.4554657,
+              -0.0696699
+            ],
+            [
+              -78.455405,
+              -0.0698937
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

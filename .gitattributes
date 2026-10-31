@@ -1,0 +1,7 @@
+# Normalize new repository text, but preserve original benchmark bytes.
+* text=auto
+*.png binary
+*.jpg binary
+implementations/** -text -whitespace
+# Retain upstream license text verbatim, including original whitespace.
+docs/third-party-licenses.txt -whitespace

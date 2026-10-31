@@ -1,0 +1,238 @@
+Captured original test/build output from isolated copies. Node 24.16.0; npm 12.2.0.
+
+=== deepseek: install ===
+
+added 225 packages in 3s
+npm warn install-scripts 1 package had install scripts blocked because they are not covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+=== deepseek: test ===
+npm notice run quito-cadastre-quality-lab@1.0.0 test
+npm notice run vitest run
+
+ RUN  v3.2.7 /tmp/geospatial-flash-audit/deepseek
+
+ ✓ tests/engine.test.js (6 tests) 42ms
+ ✓ tests/topology.test.js (5 tests) 154ms
+ ✓ tests/attributes.test.js (9 tests) 138ms
+ ✓ tests/surface.test.js (7 tests) 66ms
+ ✓ tests/structure.test.js (9 tests) 48ms
+ ✓ tests/geometry.test.js (8 tests) 151ms
+ ✓ tests/dataset.test.js (15 tests) 92ms
+ ✓ tests/export.test.js (5 tests) 11ms
+
+ Test Files  8 passed (8)
+      Tests  64 passed (64)
+   Start at  18:06:59
+   Duration  2.86s (transform 697ms, setup 0ms, collect 8.02s, tests 701ms, environment 12ms, prepare 1.68s)
+
+
+=== deepseek: build ===
+npm notice run quito-cadastre-quality-lab@1.0.0 build
+npm notice run vite build --base=./
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 345 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                    10.84 kB │ gzip:   3.09 kB
+dist/assets/index-bS8zjmRE.css     85.54 kB │ gzip:  13.94 kB
+dist/assets/index-BVYvvNHG.js   1,164.95 kB │ gzip: 321.68 kB │ map: 2,781.72 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 5.46s
+
+=== glm: install ===
+
+added 231 packages in 3s
+npm warn install-scripts 1 package had install scripts blocked because they are not covered by allowScripts:
+npm warn install-scripts   esbuild@0.21.5 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+=== glm: test ===
+npm notice run quito-cadastre-quality-lab@1.0.0 test
+npm notice run vitest run
+
+ RUN  v2.1.9 /tmp/geospatial-flash-audit/glm
+
+ ✓ tests/geometric.test.js (9 tests) 76ms
+ ✓ tests/attribute.test.js (11 tests) 100ms
+ ✓ tests/structural.test.js (8 tests) 92ms
+ ✓ tests/surface.test.js (7 tests) 97ms
+ ✓ tests/indicators.test.js (9 tests) 76ms
+ ✓ tests/topology.test.js (5 tests) 168ms
+ ❯ tests/demoData.test.js (7 tests | 1 failed) 671ms
+   × Reproducibilidad de la generación > ejecutar el generador dos veces produce exactamente el mismo archivo 385ms
+     → spawnSync <node executable> EPERM
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/demoData.test.js > Reproducibilidad de la generación > ejecutar el generador dos veces produce exactamente el mismo archivo
+Error: spawnSync <node executable> EPERM
+ ❯ tests/demoData.test.js:61:5
+     59|     const hash = (buf) => createHash('sha256').update(buf).digest('hex…
+     60|     const before = hash(readFileSync(DATA_PATH));
+     61|     execFileSync(process.execPath, [join(ROOT, 'scripts', 'generate-pr…
+       |     ^
+     62|     const after = hash(readFileSync(DATA_PATH));
+     63|     expect(after).toBe(before);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+ Test Files  1 failed | 6 passed (7)
+      Tests  1 failed | 55 passed (56)
+   Start at  18:06:59
+   Duration  2.18s (transform 720ms, setup 0ms, collect 5.24s, tests 1.28s, environment 8ms, prepare 2.31s)
+
+
+=== glm: build ===
+npm notice run quito-cadastre-quality-lab@1.0.0 build
+npm notice run vite build --base=./
+vite v5.4.21 building for production...
+transforming...
+✓ 49 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   4.96 kB │ gzip:   1.65 kB
+dist/assets/index-Bbx7uvDX.css   70.34 kB │ gzip:  10.67 kB
+dist/assets/index-C_JN_-Wg.js   914.95 kB │ gzip: 255.83 kB
+✓ built in 2.99s
+
+=== mimo: install ===
+
+added 225 packages in 3s
+npm warn install-scripts 1 package had install scripts blocked because they are not covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+=== mimo: test ===
+npm notice run quito-cadastre-quality-lab@1.0.0 test
+npm notice run vitest run
+
+ RUN  v3.2.7 /tmp/geospatial-flash-audit/mimo
+
+ ✓ tests/exporters.test.js (4 tests) 16ms
+ ✓ tests/area.test.js (7 tests) 78ms
+ ✓ tests/indicators.test.js (4 tests) 50ms
+ ✓ tests/topology.test.js (5 tests) 128ms
+ ✓ tests/geometry.test.js (10 tests) 31ms
+ ✓ tests/attributes.test.js (10 tests) 45ms
+ ✓ tests/dataset.test.js (7 tests) 426ms
+   ✓ dataset de demostración > la evaluación detecta las familias de errores inyectados  307ms
+ ✓ tests/structural.test.js (4 tests) 10ms
+
+ Test Files  8 passed (8)
+      Tests  51 passed (51)
+   Start at  18:06:59
+   Duration  2.88s (transform 769ms, setup 0ms, collect 8.47s, tests 783ms, environment 2ms, prepare 2.24s)
+
+
+=== mimo: build ===
+npm notice run quito-cadastre-quality-lab@1.0.0 build
+npm notice run vite build --base=./
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 344 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                       5.48 kB │ gzip:   1.80 kB
+dist/assets/index-CYDtmcB6.css        4.82 kB │ gzip:   1.55 kB
+dist/assets/mapView-DNVN2dqC.css     69.92 kB │ gzip:  10.05 kB
+dist/assets/index-wK_UD2bp.js        81.95 kB │ gzip:  28.64 kB
+dist/assets/mapView-DUMHOPYs.js   1,056.24 kB │ gzip: 285.89 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 4.93s
+
+=== Full isolated pipeline: expected nonzero at sandbox-denied GLM test ===
+{"checked_utc": "2026-10-31T23:16:12.536635+00:00", "unchanged": true, "files_checked": 107, "changed": [], "added": [], "removed": []}
+
+added 225 packages in 2s
+npm warn install-scripts 1 package had install scripts blocked because they are not covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+npm notice run quito-cadastre-quality-lab@1.0.0 test
+npm notice run vitest run
+
+ RUN  v3.2.7 /tmp/tmp.GVN7Sd03oU/deepseek
+
+ ✓ tests/attributes.test.js (9 tests) 46ms
+ ✓ tests/engine.test.js (6 tests) 39ms
+ ✓ tests/surface.test.js (7 tests) 39ms
+ ✓ tests/structure.test.js (9 tests) 38ms
+ ✓ tests/topology.test.js (5 tests) 59ms
+ ✓ tests/geometry.test.js (8 tests) 63ms
+ ✓ tests/dataset.test.js (15 tests) 51ms
+ ✓ tests/export.test.js (5 tests) 10ms
+
+ Test Files  8 passed (8)
+      Tests  64 passed (64)
+   Start at  18:16:15
+   Duration  1.33s (transform 304ms, setup 0ms, collect 3.42s, tests 344ms, environment 2ms, prepare 950ms)
+
+npm notice run quito-cadastre-quality-lab@1.0.0 build
+npm notice run vite build --base=./
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 345 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                    10.84 kB │ gzip:   3.09 kB
+dist/assets/index-bS8zjmRE.css     85.54 kB │ gzip:  13.94 kB
+dist/assets/index-BVYvvNHG.js   1,164.95 kB │ gzip: 321.68 kB │ map: 2,781.72 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 4.23s
+
+added 231 packages in 2s
+npm warn install-scripts 1 package had install scripts blocked because they are not covered by allowScripts:
+npm warn install-scripts   esbuild@0.21.5 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+npm notice run quito-cadastre-quality-lab@1.0.0 test
+npm notice run vitest run
+
+ RUN  v2.1.9 /tmp/tmp.GVN7Sd03oU/glm
+
+ ✓ tests/structural.test.js (8 tests) 15ms
+ ✓ tests/surface.test.js (7 tests) 17ms
+ ✓ tests/geometric.test.js (9 tests) 18ms
+ ✓ tests/attribute.test.js (11 tests) 23ms
+ ✓ tests/indicators.test.js (9 tests) 15ms
+ ✓ tests/topology.test.js (5 tests) 45ms
+ ❯ tests/demoData.test.js (7 tests | 1 failed) 163ms
+   × Reproducibilidad de la generación > ejecutar el generador dos veces produce exactamente el mismo archivo 91ms
+     → spawnSync <node executable> EPERM
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/demoData.test.js > Reproducibilidad de la generación > ejecutar el generador dos veces produce exactamente el mismo archivo
+Error: spawnSync <node executable> EPERM
+ ❯ tests/demoData.test.js:61:5
+     59|     const hash = (buf) => createHash('sha256').update(buf).digest('hex…
+     60|     const before = hash(readFileSync(DATA_PATH));
+     61|     execFileSync(process.execPath, [join(ROOT, 'scripts', 'generate-pr…
+       |     ^
+     62|     const after = hash(readFileSync(DATA_PATH));
+     63|     expect(after).toBe(before);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+ Test Files  1 failed | 6 passed (7)
+      Tests  1 failed | 55 passed (56)
+   Start at  18:16:23
+   Duration  712ms (transform 246ms, setup 0ms, collect 1.29s, tests 295ms, environment 2ms, prepare 865ms)

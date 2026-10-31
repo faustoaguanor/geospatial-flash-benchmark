@@ -1,0 +1,2868 @@
+{
+ "type": "FeatureCollection",
+ "name": "quito_predios_sinteticos",
+ "metadata": {
+  "aviso": "Datos catastrales sintéticos con fines educativos y experimentales. No representan información oficial del Municipio del Distrito Metropolitano de Quito.",
+  "semilla": 20261031,
+  "crs": "EPSG:4326 (WGS84 geográfico, orden [longitud, latitud] según RFC 7946)",
+  "generado_por": "scripts/generate-data.mjs"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CH-0001",
+    "clave_catastral": "170000000000001",
+    "sector": "Centro Histórico",
+    "direccion": "Av. Simón Bolívar 669-11",
+    "area_terreno_m2": 297.06,
+    "area_construida_m2": 177.28,
+    "pisos": 1,
+    "uso_suelo": "institucional",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-03-08"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5105,
+       -0.219569
+      ],
+      [
+       -78.5103259,
+       -0.219569
+      ],
+      [
+       -78.5103259,
+       -0.219431
+      ],
+      [
+       -78.5105,
+       -0.219431
+      ],
+      [
+       -78.5105,
+       -0.219569
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CH-0002",
+    "clave_catastral": "170000000000002",
+    "sector": "Centro Histórico",
+    "direccion": "Calle Cordero 441-14",
+    "area_terreno_m2": 313.06,
+    "area_construida_m2": 155.35,
+    "pisos": 1,
+    "uso_suelo": "comercial",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2024-11-26"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5103259,
+       -0.2195658
+      ],
+      [
+       -78.5101335,
+       -0.2195658
+      ],
+      [
+       -78.5101335,
+       -0.2194342
+      ],
+      [
+       -78.5103259,
+       -0.2194342
+      ],
+      [
+       -78.5103259,
+       -0.2195658
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CH-0003",
+    "clave_catastral": "170000000000003",
+    "sector": "Centro Histórico",
+    "direccion": "Av. Simón Bolívar 562-3",
+    "area_terreno_m2": 195.75,
+    "area_construida_m2": 379.58,
+    "pisos": 4,
+    "uso_suelo": "industrial",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2025-06-05"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5101335,
+       -0.2195589
+      ],
+      [
+       -78.5099991,
+       -0.2195589
+      ],
+      [
+       -78.5099991,
+       -0.2194411
+      ],
+      [
+       -78.5101335,
+       -0.2194411
+      ],
+      [
+       -78.5101335,
+       -0.2195589
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CH-0004",
+    "clave_catastral": "170000000000003",
+    "sector": "Centro Histórico",
+    "direccion": "Av. Equinoccial 22-12",
+    "area_terreno_m2": 395.53,
+    "area_construida_m2": 592.52,
+    "pisos": 3,
+    "uso_suelo": "residencial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2024-11-16"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5099991,
+       -0.2195837
+      ],
+      [
+       -78.509808,
+       -0.2195837
+      ],
+      [
+       -78.509808,
+       -0.2194163
+      ],
+      [
+       -78.5099991,
+       -0.2194163
+      ],
+      [
+       -78.5099991,
+       -0.2195837
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CH-0005",
+    "clave_catastral": "170000000000005",
+    "sector": "Centro Histórico",
+    "direccion": "Av. Mariscal Sucre 830-12",
+    "area_terreno_m2": 399.62,
+    "area_construida_m2": 1574.99,
+    "pisos": 5,
+    "uso_suelo": "comercial",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-04-07"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.509808,
+       -0.2195802
+      ],
+      [
+       -78.5096065,
+       -0.2195802
+      ],
+      [
+       -78.5096065,
+       -0.2194198
+      ],
+      [
+       -78.509808,
+       -0.2194198
+      ],
+      [
+       -78.509808,
+       -0.2195802
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CH-0006",
+    "clave_catastral": "170000000000006",
+    "sector": "Centro Histórico",
+    "direccion": "Av. Mariscal Sucre 314-1",
+    "area_terreno_m2": 398.27,
+    "area_construida_m2": 834.5,
+    "pisos": 5,
+    "uso_suelo": "residencial",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2024-04-17"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5096065,
+       -0.2195813
+      ],
+      [
+       -78.5094084,
+       -0.2195813
+      ],
+      [
+       -78.5094084,
+       -0.2194187
+      ],
+      [
+       -78.5096065,
+       -0.2194187
+      ],
+      [
+       -78.5096065,
+       -0.2195813
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CH-0007",
+    "clave_catastral": "170000000000007",
+    "sector": "Centro Histórico",
+    "direccion": "Calle Isabel La Católica 620-10",
+    "area_terreno_m2": 393.44,
+    "area_construida_m2": 696.11,
+    "pisos": 3,
+    "uso_suelo": "mixto",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2025-06-17"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5094084,
+       -0.2195833
+      ],
+      [
+       -78.5092174,
+       -0.2195833
+      ],
+      [
+       -78.5092174,
+       -0.2194167
+      ],
+      [
+       -78.5094084,
+       -0.2194167
+      ],
+      [
+       -78.5094084,
+       -0.2195833
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CH-0008",
+    "clave_catastral": "170000000000007",
+    "sector": "Centro Histórico",
+    "direccion": "Av. Mariscal Sucre 373-15",
+    "area_terreno_m2": 211.71,
+    "area_construida_m2": 382.62,
+    "pisos": 3,
+    "uso_suelo": "institucional",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-02-18"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5092174,
+       -0.2195552
+      ],
+      [
+       -78.5090623,
+       -0.2195552
+      ],
+      [
+       -78.5090623,
+       -0.2194448
+      ],
+      [
+       -78.5092174,
+       -0.2194448
+      ],
+      [
+       -78.5092174,
+       -0.2195552
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CH-0009",
+    "clave_catastral": "170000000000009",
+    "sector": "Centro Histórico",
+    "direccion": "Av. Equinoccial 283-7",
+    "area_terreno_m2": 307.35,
+    "area_construida_m2": 496.6,
+    "pisos": 3,
+    "uso_suelo": "institucional",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-05-25"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5090623,
+       -0.2195884
+      ],
+      [
+       -78.5089217,
+       -0.2195884
+      ],
+      [
+       -78.5089217,
+       -0.2194116
+      ],
+      [
+       -78.5090623,
+       -0.2194116
+      ],
+      [
+       -78.5090623,
+       -0.2195884
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CH-0010",
+    "clave_catastral": "170000000000010",
+    "sector": "Centro Histórico",
+    "direccion": "Calle Cordero 577-5",
+    "area_terreno_m2": 287.93,
+    "area_construida_m2": 353.96,
+    "pisos": 2,
+    "uso_suelo": "mixto",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-06-03"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5089217,
+       -0.2195867
+      ],
+      [
+       -78.5087874,
+       -0.2195867
+      ],
+      [
+       -78.5087874,
+       -0.2194133
+      ],
+      [
+       -78.5089217,
+       -0.2194133
+      ],
+      [
+       -78.5089217,
+       -0.2195867
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CH-0011",
+    "clave_catastral": "170000000000011",
+    "sector": "Centro Histórico",
+    "direccion": "Calle Granda Salazar 128-19",
+    "area_terreno_m2": 323.47,
+    "area_construida_m2": 971.39,
+    "pisos": 5,
+    "uso_suelo": "mixto",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-05-28"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5087874,
+       -0.2195757
+      ],
+      [
+       -78.5086146,
+       -0.2195757
+      ],
+      [
+       -78.5086146,
+       -0.2194243
+      ],
+      [
+       -78.5087874,
+       -0.2194243
+      ],
+      [
+       -78.5087874,
+       -0.2195757
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-IN-0012",
+    "clave_catastral": "170000000000011",
+    "sector": "Iñaquito",
+    "direccion": "Av. Simón Bolívar 987-5",
+    "area_terreno_m2": 328.07,
+    "area_construida_m2": 135.61,
+    "pisos": 1,
+    "uso_suelo": "industrial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-04-23"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.494,
+       -0.1750742
+      ],
+      [
+       -78.4938212,
+       -0.1750742
+      ],
+      [
+       -78.4938212,
+       -0.1749258
+      ],
+      [
+       -78.494,
+       -0.1749258
+      ],
+      [
+       -78.494,
+       -0.1750742
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-IN-0013",
+    "clave_catastral": "170000000000013",
+    "sector": "Iñaquito",
+    "direccion": "Calle Roca 334-6",
+    "area_terreno_m2": 264.69,
+    "area_construida_m2": 703.93,
+    "pisos": 5,
+    "uso_suelo": "comercial",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2024-04-28"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4938212,
+       -0.1750594
+      ],
+      [
+       -78.493641,
+       -0.1750594
+      ],
+      [
+       -78.493641,
+       -0.1749406
+      ],
+      [
+       -78.4938212,
+       -0.1749406
+      ],
+      [
+       -78.4938212,
+       -0.1750594
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-IN-0014",
+    "clave_catastral": "170000000000014",
+    "sector": "Iñaquito",
+    "direccion": "Calle Roca 22-16",
+    "area_terreno_m2": 278.13,
+    "area_construida_m2": 336.66,
+    "pisos": 2,
+    "uso_suelo": "comercial",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2024-07-16"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.493641,
+       -0.1750619
+      ],
+      [
+       -78.4934593,
+       -0.1750619
+      ],
+      [
+       -78.4934593,
+       -0.1749381
+      ],
+      [
+       -78.493641,
+       -0.1749381
+      ],
+      [
+       -78.493641,
+       -0.1750619
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-IN-0015",
+    "clave_catastral": "170000000000015",
+    "sector": "Iñaquito",
+    "direccion": "Calle Granda Salazar 34-2",
+    "area_terreno_m2": 281.72,
+    "area_construida_m2": 336.1,
+    "pisos": 2,
+    "uso_suelo": "comercial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-03-03"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4934593,
+       -0.1750871
+      ],
+      [
+       -78.4933285,
+       -0.1750871
+      ],
+      [
+       -78.4933285,
+       -0.1749129
+      ],
+      [
+       -78.4934593,
+       -0.1749129
+      ],
+      [
+       -78.4934593,
+       -0.1750871
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-IN-0016",
+    "clave_catastral": "170000000000016",
+    "sector": "Iñaquito",
+    "direccion": "Calle Cordero 619-18",
+    "area_terreno_m2": null,
+    "area_construida_m2": 539.28,
+    "pisos": 3,
+    "uso_suelo": "industrial",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-01-15"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4933285,
+       -0.1750894
+      ],
+      [
+       -78.4931367,
+       -0.1750894
+      ],
+      [
+       -78.4931367,
+       -0.1749106
+      ],
+      [
+       -78.4933285,
+       -0.1749106
+      ],
+      [
+       -78.4933285,
+       -0.1750894
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-IN-0017",
+    "clave_catastral": "170000000000017",
+    "sector": "Iñaquito",
+    "direccion": "Calle Roca 711-3",
+    "area_terreno_m2": 312.51,
+    "area_construida_m2": 782.4,
+    "pisos": 3,
+    "uso_suelo": "mixto",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2025-03-12"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4931367,
+       -0.1750694
+      ],
+      [
+       -78.4929546,
+       -0.1750694
+      ],
+      [
+       -78.4929546,
+       -0.1749306
+      ],
+      [
+       -78.4931367,
+       -0.1749306
+      ],
+      [
+       -78.4931367,
+       -0.1750694
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-IN-0018",
+    "clave_catastral": "170000000000018",
+    "sector": "Iñaquito",
+    "direccion": "Av. Simón Bolívar 744-5",
+    "area_terreno_m2": 399.42,
+    "area_construida_m2": 1308.65,
+    "pisos": 5,
+    "uso_suelo": "residencial",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-10-13"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4929546,
+       -0.1750861
+      ],
+      [
+       -78.492767,
+       -0.1750861
+      ],
+      [
+       -78.492767,
+       -0.1749139
+      ],
+      [
+       -78.4929546,
+       -0.1749139
+      ],
+      [
+       -78.4929546,
+       -0.1750861
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-IN-0019",
+    "clave_catastral": "170000000000019",
+    "sector": "Iñaquito",
+    "direccion": "Av. Portugal 396-19",
+    "area_terreno_m2": 239.15,
+    "area_construida_m2": 677.71,
+    "pisos": 4,
+    "uso_suelo": "residencial",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2025-06-07"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.492767,
+       -0.1750673
+      ],
+      [
+       -78.4926233,
+       -0.1750673
+      ],
+      [
+       -78.4926233,
+       -0.1749327
+      ],
+      [
+       -78.492767,
+       -0.1749327
+      ],
+      [
+       -78.492767,
+       -0.1750673
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-IN-0020",
+    "clave_catastral": null,
+    "sector": "Iñaquito",
+    "direccion": "Calle Isabel La Católica 698-13",
+    "area_terreno_m2": 344.84,
+    "area_construida_m2": 880.6,
+    "pisos": 5,
+    "uso_suelo": "industrial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-01-24"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4926233,
+       -0.1750705
+      ],
+      [
+       -78.4924255,
+       -0.1750705
+      ],
+      [
+       -78.4924255,
+       -0.1749295
+      ],
+      [
+       -78.4926233,
+       -0.1749295
+      ],
+      [
+       -78.4926233,
+       -0.1750705
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-IN-0021",
+    "clave_catastral": "170000000000021",
+    "sector": "Iñaquito",
+    "direccion": "Calle García Moreno 844-19",
+    "area_terreno_m2": 423.1,
+    "area_construida_m2": 308.47,
+    "pisos": 1,
+    "uso_suelo": "residencial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-11-11"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4924255,
+       -0.1750833
+      ],
+      [
+       -78.4922201,
+       -0.1750833
+      ],
+      [
+       -78.4922201,
+       -0.1749167
+      ],
+      [
+       -78.4924255,
+       -0.1749167
+      ],
+      [
+       -78.4924255,
+       -0.1750833
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-IN-0022",
+    "clave_catastral": "170000000000022",
+    "sector": "Iñaquito",
+    "direccion": "Calle Cordero 912-2",
+    "area_terreno_m2": 256.3,
+    "area_construida_m2": 653.19,
+    "pisos": 4,
+    "uso_suelo": "mixto",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2025-11-02"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4922201,
+       -0.1750811
+      ],
+      [
+       -78.4920923,
+       -0.1750811
+      ],
+      [
+       -78.4920923,
+       -0.1749189
+      ],
+      [
+       -78.4922201,
+       -0.1749189
+      ],
+      [
+       -78.4922201,
+       -0.1750811
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-LC-0023",
+    "clave_catastral": "170000000000023",
+    "sector": "La Carolina",
+    "direccion": "Calle García Moreno 53-3",
+    "area_terreno_m2": 258.94,
+    "area_construida_m2": 457.39,
+    "pisos": 4,
+    "uso_suelo": "mixto",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2024-05-12"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.482,
+       -0.1820612
+      ],
+      [
+       -78.4818289,
+       -0.1820612
+      ],
+      [
+       -78.4818289,
+       -0.1819388
+      ],
+      [
+       -78.482,
+       -0.1819388
+      ],
+      [
+       -78.482,
+       -0.1820612
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-LC-0024",
+    "clave_catastral": "170000000000024",
+    "sector": null,
+    "direccion": "Calle Granda Salazar 184-13",
+    "area_terreno_m2": 186.09,
+    "area_construida_m2": 286.94,
+    "pisos": 2,
+    "uso_suelo": "residencial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2024-09-17"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4818289,
+       -0.1820587
+      ],
+      [
+       -78.4817007,
+       -0.1820587
+      ],
+      [
+       -78.4817007,
+       -0.1819413
+      ],
+      [
+       -78.4818289,
+       -0.1819413
+      ],
+      [
+       -78.4818289,
+       -0.1820587
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-LC-0025",
+    "clave_catastral": "170000000000025",
+    "sector": "La Carolina",
+    "direccion": "Av. Portugal 172-12",
+    "area_terreno_m2": 249.69,
+    "area_construida_m2": 101.09,
+    "pisos": 1,
+    "uso_suelo": "industrial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-08-16"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4817007,
+       -0.1820609
+      ],
+      [
+       -78.4815349,
+       -0.1820609
+      ],
+      [
+       -78.4815349,
+       -0.1819391
+      ],
+      [
+       -78.4817007,
+       -0.1819391
+      ],
+      [
+       -78.4817007,
+       -0.1820609
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-LC-0026",
+    "clave_catastral": "170000000000026",
+    "sector": "La Carolina",
+    "direccion": "Av. Simón Bolívar 753-13",
+    "area_terreno_m2": 327.61,
+    "area_construida_m2": 155.73,
+    "pisos": 1,
+    "uso_suelo": "institucional",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2024-05-25"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4815349,
+       -0.1820645
+      ],
+      [
+       -78.4813295,
+       -0.1820645
+      ],
+      [
+       -78.4813295,
+       -0.1819355
+      ],
+      [
+       -78.4815349,
+       -0.1819355
+      ],
+      [
+       -78.4815349,
+       -0.1820645
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-LC-0027",
+    "clave_catastral": "170000000000027",
+    "sector": "La Carolina",
+    "direccion": "Av. Diego de Robles 179-11",
+    "area_terreno_m2": 197.42,
+    "area_construida_m2": 616.59,
+    "pisos": 4,
+    "uso_suelo": "industrial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2024-10-02"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4813295,
+       -0.1820598
+      ],
+      [
+       -78.481196,
+       -0.1820598
+      ],
+      [
+       -78.481196,
+       -0.1819402
+      ],
+      [
+       -78.4813295,
+       -0.1819402
+      ],
+      [
+       -78.4813295,
+       -0.1820598
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-LC-0028",
+    "clave_catastral": "170000000000028",
+    "sector": "La Carolina",
+    "direccion": "Calle Isabel La Católica 576-9",
+    "area_terreno_m2": -247.1,
+    "area_construida_m2": 766.51,
+    "pisos": 4,
+    "uso_suelo": "industrial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2024-10-24"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.481196,
+       -0.1820571
+      ],
+      [
+       -78.481021,
+       -0.1820571
+      ],
+      [
+       -78.481021,
+       -0.1819429
+      ],
+      [
+       -78.481196,
+       -0.1819429
+      ],
+      [
+       -78.481196,
+       -0.1820571
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-LC-0029",
+    "clave_catastral": "170000000000029",
+    "sector": "La Carolina",
+    "direccion": "Calle Roca 903-5",
+    "area_terreno_m2": 233.78,
+    "area_construida_m2": 645.53,
+    "pisos": 5,
+    "uso_suelo": "mixto",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2025-10-27"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.481021,
+       -0.1820629
+      ],
+      [
+       -78.4808707,
+       -0.1820629
+      ],
+      [
+       -78.4808707,
+       -0.1819371
+      ],
+      [
+       -78.481021,
+       -0.1819371
+      ],
+      [
+       -78.481021,
+       -0.1820629
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-LC-0030",
+    "clave_catastral": "170000000000030",
+    "sector": "La Carolina",
+    "direccion": "Av. Diego de Robles 839-20",
+    "area_terreno_m2": 410.18,
+    "area_construida_m2": 1245.63,
+    "pisos": 4,
+    "uso_suelo": "comercial",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-05-05"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4808707,
+       -0.1820755
+      ],
+      [
+       -78.480651,
+       -0.1820755
+      ],
+      [
+       -78.480651,
+       -0.1819245
+      ],
+      [
+       -78.4808707,
+       -0.1819245
+      ],
+      [
+       -78.4808707,
+       -0.1820755
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-LC-0031",
+    "clave_catastral": "170000000000031",
+    "sector": "La Carolina",
+    "direccion": "Calle Isabel La Católica 117-12",
+    "area_terreno_m2": 401.06,
+    "area_construida_m2": 1460.26,
+    "pisos": 5,
+    "uso_suelo": "institucional",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-05-28"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.480651,
+       -0.1820754
+      ],
+      [
+       -78.4804359,
+       -0.1820754
+      ],
+      [
+       -78.4804359,
+       -0.1819246
+      ],
+      [
+       -78.480651,
+       -0.1819246
+      ],
+      [
+       -78.480651,
+       -0.1820754
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-LC-0032",
+    "clave_catastral": "170000000000032",
+    "sector": "La Carolina",
+    "direccion": "Calle Roca 855-9",
+    "area_terreno_m2": -272.71,
+    "area_construida_m2": 656.19,
+    "pisos": 5,
+    "uso_suelo": "institucional",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2025-01-03"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4804359,
+       -0.1820622
+      ],
+      [
+       -78.4802586,
+       -0.1820622
+      ],
+      [
+       -78.4802586,
+       -0.1819378
+      ],
+      [
+       -78.4804359,
+       -0.1819378
+      ],
+      [
+       -78.4804359,
+       -0.1820622
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-LC-0033",
+    "clave_catastral": "170000000000033",
+    "sector": "La Carolina",
+    "direccion": "Av. Mariscal Sucre 461-14",
+    "area_terreno_m2": 276.21,
+    "area_construida_m2": 935.49,
+    "pisos": 5,
+    "uso_suelo": "institucional",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-06-04"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4802586,
+       -0.1820843
+      ],
+      [
+       -78.4801261,
+       -0.1820843
+      ],
+      [
+       -78.4801261,
+       -0.1819157
+      ],
+      [
+       -78.4802586,
+       -0.1819157
+      ],
+      [
+       -78.4802586,
+       -0.1820843
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-MA-0034",
+    "clave_catastral": "170000000000034",
+    "sector": "La Mariscal",
+    "direccion": "Calle Isabel La Católica 625-17",
+    "area_terreno_m2": 232.5,
+    "area_construida_m2": 404.05,
+    "pisos": 3,
+    "uso_suelo": "industrial",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2025-03-11"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4935,
+       -0.1965738
+      ],
+      [
+       -78.4933726,
+       -0.1965738
+      ],
+      [
+       -78.4933726,
+       -0.1964262
+      ],
+      [
+       -78.4935,
+       -0.1964262
+      ],
+      [
+       -78.4935,
+       -0.1965738
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-MA-0035",
+    "clave_catastral": "170000000000035",
+    "sector": "La Mariscal",
+    "direccion": "Calle García Moreno 386-14",
+    "area_terreno_m2": 257.22,
+    "area_construida_m2": 125.52,
+    "pisos": 1,
+    "uso_suelo": "mixto",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2025-02-07"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4933726,
+       -0.1965778
+      ],
+      [
+       -78.4932389,
+       -0.1965778
+      ],
+      [
+       -78.4932389,
+       -0.1964222
+      ],
+      [
+       -78.4933726,
+       -0.1964222
+      ],
+      [
+       -78.4933726,
+       -0.1965778
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-MA-0036",
+    "clave_catastral": "170000000000036",
+    "sector": "La Mariscal",
+    "direccion": "Calle García Moreno 606-10",
+    "area_terreno_m2": "259.73",
+    "area_construida_m2": 340.65,
+    "pisos": 2,
+    "uso_suelo": "industrial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-07-23"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4932389,
+       -0.1965735
+      ],
+      [
+       -78.493096,
+       -0.1965735
+      ],
+      [
+       -78.493096,
+       -0.1964265
+      ],
+      [
+       -78.4932389,
+       -0.1964265
+      ],
+      [
+       -78.4932389,
+       -0.1965735
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-MA-0037",
+    "clave_catastral": "170000000000037",
+    "sector": "La Mariscal",
+    "direccion": "Av. Diego de Robles 940-11",
+    "area_terreno_m2": 396.88,
+    "area_construida_m2": 481.9,
+    "pisos": 3,
+    "uso_suelo": "comercial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2024-09-14"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.493096,
+       -0.1965781
+      ],
+      [
+       -78.4928905,
+       -0.1965781
+      ],
+      [
+       -78.4928905,
+       -0.1964219
+      ],
+      [
+       -78.493096,
+       -0.1964219
+      ],
+      [
+       -78.493096,
+       -0.1965781
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-MA-0038",
+    "clave_catastral": "170000000000038",
+    "sector": "La Mariscal",
+    "direccion": "Av. Mariscal Sucre 369-10",
+    "area_terreno_m2": 295.94,
+    "area_construida_m2": 500.43,
+    "pisos": 3,
+    "uso_suelo": "industrial",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2025-09-14"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4928905,
+       -0.1965841
+      ],
+      [
+       -78.4927482,
+       -0.1965841
+      ],
+      [
+       -78.4927482,
+       -0.1964159
+      ],
+      [
+       -78.4928905,
+       -0.1964159
+      ],
+      [
+       -78.4928905,
+       -0.1965841
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-MA-0039",
+    "clave_catastral": "170000000000039",
+    "sector": "La Mariscal",
+    "direccion": "Calle Cordero 324-8",
+    "area_terreno_m2": 276.44,
+    "area_construida_m2": 381.2,
+    "pisos": 3,
+    "uso_suelo": "mixto",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2025-03-21"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4927482,
+       -0.1965734
+      ],
+      [
+       -78.4925959,
+       -0.1965734
+      ],
+      [
+       -78.4925959,
+       -0.1964266
+      ],
+      [
+       -78.4927482,
+       -0.1964266
+      ],
+      [
+       -78.4927482,
+       -0.1965734
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-MA-0040",
+    "clave_catastral": "170000000000040",
+    "sector": "La Mariscal",
+    "direccion": "Calle Roca 907-2",
+    "area_terreno_m2": 237.82,
+    "area_construida_m2": 404.03,
+    "pisos": "2",
+    "uso_suelo": "mixto",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2025-06-26"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4925959,
+       -0.1965702
+      ],
+      [
+       -78.4924589,
+       -0.1965702
+      ],
+      [
+       -78.4924589,
+       -0.1964298
+      ],
+      [
+       -78.4925959,
+       -0.1964298
+      ],
+      [
+       -78.4925959,
+       -0.1965702
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-MA-0041",
+    "clave_catastral": "170000000000041",
+    "sector": "La Mariscal",
+    "direccion": "Av. Diego de Robles 874-19",
+    "area_terreno_m2": 279.43,
+    "area_construida_m2": 322.59,
+    "pisos": 2,
+    "uso_suelo": "institucional",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2025-06-28"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4924589,
+       -0.1965591
+      ],
+      [
+       -78.4922677,
+       -0.1965591
+      ],
+      [
+       -78.4922677,
+       -0.1964409
+      ],
+      [
+       -78.4924589,
+       -0.1964409
+      ],
+      [
+       -78.4924589,
+       -0.1965591
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-MA-0042",
+    "clave_catastral": "170000000000042",
+    "sector": "La Mariscal",
+    "direccion": "Calle García Moreno 261-2",
+    "area_terreno_m2": 382.12,
+    "area_construida_m2": 1209.07,
+    "pisos": 4,
+    "uso_suelo": "comercial",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2024-09-15"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4922677,
+       -0.1965799
+      ],
+      [
+       -78.4920743,
+       -0.1965799
+      ],
+      [
+       -78.4920743,
+       -0.1964201
+      ],
+      [
+       -78.4922677,
+       -0.1964201
+      ],
+      [
+       -78.4922677,
+       -0.1965799
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-MA-0043",
+    "clave_catastral": "170000000000043",
+    "sector": "La Mariscal",
+    "direccion": "Calle Isabel La Católica 729-9",
+    "area_terreno_m2": 348.25,
+    "area_construida_m2": 706.29,
+    "pisos": 5,
+    "uso_suelo": "comercial",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2024-06-04"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4920743,
+       -0.1965797
+      ],
+      [
+       -78.4918976,
+       -0.1965797
+      ],
+      [
+       -78.4918976,
+       -0.1964203
+      ],
+      [
+       -78.4920743,
+       -0.1964203
+      ],
+      [
+       -78.4920743,
+       -0.1965797
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-MA-0044",
+    "clave_catastral": "170000000000044",
+    "sector": "La Mariscal",
+    "direccion": "Av. Diego de Robles 283-2",
+    "area_terreno_m2": 512.3,
+    "area_construida_m2": 375.6,
+    "pisos": 1,
+    "uso_suelo": "comercial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-11-22"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4918976,
+       -0.1965845
+      ],
+      [
+       -78.4916787,
+       -0.1965845
+      ],
+      [
+       -78.4916787,
+       -0.1964155
+      ],
+      [
+       -78.4918976,
+       -0.1964155
+      ],
+      [
+       -78.4918976,
+       -0.1965845
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-QU-0045",
+    "clave_catastral": "170000000000045",
+    "sector": "Quitumbe",
+    "direccion": "Calle Granda Salazar 327-6",
+    "area_terreno_m2": 351.47,
+    "area_construida_m2": 942.85,
+    "pisos": 4,
+    "uso_suelo": "industrial",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-09-04"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.533,
+       -0.2540885
+      ],
+      [
+       -78.5328394,
+       -0.2540885
+      ],
+      [
+       -78.5328394,
+       -0.2539115
+      ],
+      [
+       -78.533,
+       -0.2539115
+      ],
+      [
+       -78.533,
+       -0.2540885
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-QU-0046",
+    "clave_catastral": "170000000000046",
+    "sector": "Quitumbe",
+    "direccion": "Calle Roca 66-8",
+    "area_terreno_m2": 344.45,
+    "area_construida_m2": 431.18,
+    "pisos": 3,
+    "uso_suelo": "mixto",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2024-12-27"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5328394,
+       -0.2540603
+      ],
+      [
+       -78.5326084,
+       -0.2540603
+      ],
+      [
+       -78.5326084,
+       -0.2539397
+      ],
+      [
+       -78.5328394,
+       -0.2539397
+      ],
+      [
+       -78.5328394,
+       -0.2540603
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-QU-0047",
+    "clave_catastral": "170000000000047",
+    "sector": "Quitumbe",
+    "direccion": "Av. Portugal 739-8",
+    "area_terreno_m2": 277.4,
+    "area_construida_m2": 761.67,
+    "pisos": 4,
+    "uso_suelo": "residencial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-04-07"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5326084,
+       -0.2540846
+      ],
+      [
+       -78.5324758,
+       -0.2540846
+      ],
+      [
+       -78.5324758,
+       -0.2539154
+      ],
+      [
+       -78.5326084,
+       -0.2539154
+      ],
+      [
+       -78.5326084,
+       -0.2540846
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-QU-0048",
+    "clave_catastral": "170000000000048",
+    "sector": "Quitumbe",
+    "direccion": "Av. Portugal 736-6",
+    "area_terreno_m2": 269.21,
+    "area_construida_m2": 822.07,
+    "pisos": 5,
+    "uso_suelo": "mixto",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2025-06-24"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5324758,
+       -0.2540562
+      ],
+      [
+       -78.5322479,
+       -0.2540562
+      ],
+      [
+       -78.5322479,
+       -0.2539438
+      ],
+      [
+       -78.5324758,
+       -0.2539438
+      ],
+      [
+       -78.5324758,
+       -0.2540562
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-QU-0049",
+    "clave_catastral": "170000000000049",
+    "sector": "Quitumbe",
+    "direccion": "Av. Simón Bolívar 96-8",
+    "area_terreno_m2": 233.66,
+    "area_construida_m2": 508,
+    "pisos": 4,
+    "uso_suelo": "institucional",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-01-10"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5322479,
+       -0.254061
+      ],
+      [
+       -78.532093,
+       -0.254061
+      ],
+      [
+       -78.532093,
+       -0.253939
+      ],
+      [
+       -78.5322479,
+       -0.253939
+      ],
+      [
+       -78.5322479,
+       -0.254061
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-QU-0050",
+    "clave_catastral": "170000000000050",
+    "sector": "Quitumbe",
+    "direccion": "Calle Cordero 304-18",
+    "area_terreno_m2": 216.18,
+    "area_construida_m2": 87.98,
+    "pisos": 1,
+    "uso_suelo": "institucional",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2024-12-24"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.532093,
+       -0.254069
+      ],
+      [
+       -78.5319663,
+       -0.254069
+      ],
+      [
+       -78.5319663,
+       -0.253931
+      ],
+      [
+       -78.532093,
+       -0.253931
+      ],
+      [
+       -78.532093,
+       -0.254069
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-QU-0051",
+    "clave_catastral": "170000000000051",
+    "sector": "Quitumbe",
+    "direccion": "Av. Equinoccial 794-11",
+    "area_terreno_m2": 308.3,
+    "area_construida_m2": 1225.18,
+    "pisos": 5,
+    "uso_suelo": "industrial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2024-08-04"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5319663,
+       -0.2540649
+      ],
+      [
+       -78.5317742,
+       -0.2540649
+      ],
+      [
+       -78.5317742,
+       -0.2539351
+      ],
+      [
+       -78.5319663,
+       -0.2539351
+      ],
+      [
+       -78.5319663,
+       -0.2540649
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-QU-0052",
+    "clave_catastral": "170000000000052",
+    "sector": "Quitumbe",
+    "direccion": "Av. Portugal 413-20",
+    "area_terreno_m2": 411.63,
+    "area_construida_m2": 518.54,
+    "pisos": 2,
+    "uso_suelo": "residencial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2024-01-03"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5317742,
+       -0.2540812
+      ],
+      [
+       -78.5316102,
+       -0.2540812
+      ],
+      [
+       -78.5316102,
+       -0.2539188
+      ],
+      [
+       -78.5317742,
+       -0.2539188
+      ],
+      [
+       -78.5317742,
+       -0.2540812
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-QU-0053",
+    "clave_catastral": "170000000000053",
+    "sector": "Quitumbe",
+    "direccion": "Av. Simón Bolívar 461-13",
+    "area_terreno_m2": 489.56,
+    "area_construida_m2": 247.84,
+    "pisos": 1,
+    "uso_suelo": "residencial",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-12-18"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5316102,
+       -0.2540904
+      ],
+      [
+       -78.5313912,
+       -0.2540904
+      ],
+      [
+       -78.5313912,
+       -0.2539096
+      ],
+      [
+       -78.5316102,
+       -0.2539096
+      ],
+      [
+       -78.5316102,
+       -0.2540904
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-QU-0054",
+    "clave_catastral": "170000000000054",
+    "sector": "Quitumbe",
+    "direccion": "Av. Equinoccial 163-1",
+    "area_terreno_m2": 174.27,
+    "area_construida_m2": 218.12,
+    "pisos": 2,
+    "uso_suelo": "industrial",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2025-01-15"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5313912,
+       -0.2540558
+      ],
+      [
+       -78.5312649,
+       -0.2540558
+      ],
+      [
+       -78.5312649,
+       -0.2539442
+      ],
+      [
+       -78.5313912,
+       -0.2539442
+      ],
+      [
+       -78.5313912,
+       -0.2540558
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-QU-0055",
+    "clave_catastral": "170000000000055",
+    "sector": "Quitumbe",
+    "direccion": "Av. Equinoccial 24-9",
+    "area_terreno_m2": 292,
+    "area_construida_m2": 208.32,
+    "pisos": 1,
+    "uso_suelo": "mixto",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-04-24"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5312649,
+       -0.2540755
+      ],
+      [
+       -78.5311085,
+       -0.2540755
+      ],
+      [
+       -78.5311085,
+       -0.2539245
+      ],
+      [
+       -78.5312649,
+       -0.2539245
+      ],
+      [
+       -78.5312649,
+       -0.2540755
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CA-0056",
+    "clave_catastral": "170000000000056",
+    "sector": "Calderón",
+    "direccion": "Calle García Moreno 406-11",
+    "area_terreno_m2": 251.98,
+    "area_construida_m2": 415.16,
+    "pisos": 3,
+    "uso_suelo": "comercial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2024-08-26"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.460039,
+       -0.1080735
+      ],
+      [
+       -78.4598233,
+       -0.1079265
+      ],
+      [
+       -78.4598428,
+       -0.1080963
+      ],
+      [
+       -78.4600195,
+       -0.1079037
+      ],
+      [
+       -78.460039,
+       -0.1080735
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CA-0057",
+    "clave_catastral": "170000000000057",
+    "sector": "Calderón",
+    "direccion": "Av. Equinoccial 265-18",
+    "area_terreno_m2": 366.54,
+    "area_construida_m2": 172.31,
+    "pisos": 1,
+    "uso_suelo": "residencial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2024-08-06"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4598623,
+       -0.1080772
+      ],
+      [
+       -78.4596703,
+       -0.1080772
+      ],
+      [
+       -78.4596703,
+       -0.1079228
+      ],
+      [
+       -78.4598623,
+       -0.1079228
+      ],
+      [
+       -78.4598623,
+       -0.1080772
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CA-0058",
+    "clave_catastral": "170000000000058",
+    "sector": "Calderón",
+    "direccion": "Av. Mariscal Sucre 92-1",
+    "area_terreno_m2": 395.46,
+    "area_construida_m2": 609.05,
+    "pisos": 3,
+    "uso_suelo": "residencial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-02-06"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4596703,
+       -0.1080721
+      ],
+      [
+       -78.4594485,
+       -0.1080721
+      ],
+      [
+       -78.4594485,
+       -0.1079279
+      ],
+      [
+       -78.4596703,
+       -0.1079279
+      ],
+      [
+       -78.4596703,
+       -0.1080721
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CA-0059",
+    "clave_catastral": "170000000000059",
+    "sector": "Calderón",
+    "direccion": "Av. Diego de Robles 760-5",
+    "area_terreno_m2": 378.61,
+    "area_construida_m2": 1360.11,
+    "pisos": 5,
+    "uso_suelo": "industrial",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2025-03-18"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4594485,
+       -0.1080673
+      ],
+      [
+       -78.459221,
+       -0.1080673
+      ],
+      [
+       -78.459221,
+       -0.1079327
+      ],
+      [
+       -78.4594485,
+       -0.1079327
+      ],
+      [
+       -78.4594485,
+       -0.1080673
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CA-0060",
+    "clave_catastral": "170000000000060",
+    "sector": "Calderón",
+    "direccion": "Av. Portugal 677-13",
+    "area_terreno_m2": 262.28,
+    "area_construida_m2": 396.24,
+    "pisos": 3,
+    "uso_suelo": "residencial",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2024-11-20"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4592318,
+       -0.10809
+      ],
+      [
+       -78.4590799,
+       -0.10791
+      ],
+      [
+       -78.459057,
+       -0.1080637
+      ],
+      [
+       -78.4592547,
+       -0.1079363
+      ],
+      [
+       -78.4592318,
+       -0.10809
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CA-0061",
+    "clave_catastral": "170000000000061",
+    "sector": "Calderón",
+    "direccion": "Av. Simón Bolívar 116-10",
+    "area_terreno_m2": 380.93,
+    "area_construida_m2": 490.95,
+    "pisos": -2,
+    "uso_suelo": "industrial",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2024-08-03"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4590907,
+       -0.108066
+      ],
+      [
+       -78.4588573,
+       -0.108066
+      ],
+      [
+       -78.4588573,
+       -0.107934
+      ],
+      [
+       -78.4590907,
+       -0.107934
+      ],
+      [
+       -78.4590907,
+       -0.108066
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CA-0062",
+    "clave_catastral": "170000000000062",
+    "sector": "Calderón",
+    "direccion": "Calle Granda Salazar 967-3",
+    "area_terreno_m2": 442.78,
+    "area_construida_m2": 1209.27,
+    "pisos": 5,
+    "uso_suelo": "comercial",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2025-06-28"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4588573,
+       -0.1080849
+      ],
+      [
+       -78.4586464,
+       -0.1080849
+      ],
+      [
+       -78.4586464,
+       -0.1079151
+      ],
+      [
+       -78.4588573,
+       -0.1079151
+      ],
+      [
+       -78.4588573,
+       -0.1080849
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CA-0063",
+    "clave_catastral": "170000000000063",
+    "sector": "Calderón",
+    "direccion": "Calle García Moreno 258-8",
+    "area_terreno_m2": 303.33,
+    "area_construida_m2": 208.92,
+    "pisos": 1,
+    "uso_suelo": "institucional",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2025-05-22"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4586464,
+       -0.1080862
+      ],
+      [
+       -78.4585041,
+       -0.1080862
+      ],
+      [
+       -78.4585041,
+       -0.1079138
+      ],
+      [
+       -78.4586464,
+       -0.1079138
+      ],
+      [
+       -78.4586464,
+       -0.1080862
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CA-0064",
+    "clave_catastral": "170000000000064",
+    "sector": "Calderón",
+    "direccion": "Calle Roca 747-19",
+    "area_terreno_m2": 255.85,
+    "area_construida_m2": 197.65,
+    "pisos": 1,
+    "uso_suelo": "agrícola-urbano",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2024-04-07"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4585041,
+       -0.1080719
+      ],
+      [
+       -78.4583602,
+       -0.1080719
+      ],
+      [
+       -78.4583602,
+       -0.1079281
+      ],
+      [
+       -78.4585041,
+       -0.1079281
+      ],
+      [
+       -78.4585041,
+       -0.1080719
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CA-0065",
+    "clave_catastral": "170000000000065",
+    "sector": "Calderón",
+    "direccion": "Av. Portugal 217-20",
+    "area_terreno_m2": 307.68,
+    "area_construida_m2": 2355.12,
+    "pisos": 1,
+    "uso_suelo": "mixto",
+    "estado_predio": "desocupado",
+    "fecha_actualizacion": "2025-12-15"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4583602,
+       -0.1080809
+      ],
+      [
+       -78.4582064,
+       -0.1080809
+      ],
+      [
+       -78.4582064,
+       -0.1079191
+      ],
+      [
+       -78.4583602,
+       -0.1079191
+      ],
+      [
+       -78.4583602,
+       -0.1080809
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-CA-0066",
+    "clave_catastral": "170000000000066",
+    "sector": "Calderón",
+    "direccion": "Calle Cordero 615-10",
+    "area_terreno_m2": 273.2,
+    "area_construida_m2": 270.83,
+    "pisos": 2,
+    "uso_suelo": "residencial",
+    "estado_predio": "rematado",
+    "fecha_actualizacion": "2025-03-08"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4582064,
+       -0.1080788
+      ],
+      [
+       -78.4580662,
+       -0.1080788
+      ],
+      [
+       -78.4580662,
+       -0.1079212
+      ],
+      [
+       -78.4582064,
+       -0.1079212
+      ],
+      [
+       -78.4582064,
+       -0.1080788
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-OV-0067",
+    "clave_catastral": "170000000000067",
+    "sector": "Iñaquito",
+    "direccion": "Calle Cordero 243",
+    "area_terreno_m2": 207.49,
+    "area_construida_m2": 124.49,
+    "pisos": 1,
+    "uso_suelo": "institucional",
+    "estado_predio": "en_construccion",
+    "fecha_actualizacion": "2025-06-15"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.4923947,
+       -0.1750167
+      ],
+      [
+       -78.4922509,
+       -0.1750167
+      ],
+      [
+       -78.4922509,
+       -0.1749
+      ],
+      [
+       -78.4923947,
+       -0.1749
+      ],
+      [
+       -78.4923947,
+       -0.1750167
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_predio": "PD-OV-0068",
+    "clave_catastral": "170000000000068",
+    "sector": "Quitumbe",
+    "direccion": "Calle Granda Salazar 341",
+    "area_terreno_m2": 168.84,
+    "area_construida_m2": 202.61,
+    "pisos": 2,
+    "uso_suelo": "institucional",
+    "estado_predio": "ocupado",
+    "fecha_actualizacion": "2025-06-15"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.5328047,
+       -0.2540121
+      ],
+      [
+       -78.5326431,
+       -0.2540121
+      ],
+      [
+       -78.5326431,
+       -0.2539276
+      ],
+      [
+       -78.5328047,
+       -0.2539276
+      ],
+      [
+       -78.5328047,
+       -0.2540121
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
