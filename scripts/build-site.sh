@@ -10,6 +10,7 @@ fi
 WORK=$(mktemp -d)
 trap 'rm -rf -- "$WORK"' EXIT
 python3 "$ROOT/scripts/verify-integrity.py"
+node --test --test-isolation=none "$ROOT/tests/site-experience.test.cjs"
 python3 - "$ROOT" "$WORK" <<'PY'
 import shutil, sys
 from pathlib import Path
@@ -35,6 +36,7 @@ cp "$WORK/independent-cases.json" "$OUTPUT/reports/independent-cases-current.jso
 for model in deepseek glm mimo; do
   cp -R "$WORK/$model/dist" "$OUTPUT/$model"
 done
+python3 "$ROOT/scripts/add-app-shell.py" "$OUTPUT"
 python3 "$ROOT/scripts/collect-notices.py" "$WORK" "$OUTPUT/third-party-licenses.txt"
 cp "$ROOT/LICENSE" "$ROOT/THIRD_PARTY_NOTICES.md" "$OUTPUT/"
 touch "$OUTPUT/.nojekyll"

@@ -92,7 +92,7 @@ node scripts/audit-engines.mjs /tmp/geospatial-flash-audit
 
 ## Technology and repository layout
 
-The submissions use JavaScript ES modules, Vite, MapLibre GL JS, Turf.js, Vitest, HTML and CSS. The separate landing page uses plain HTML/CSS, local system fonts and a schematic SVG illustration. It has no framework, analytics or credential-dependent service.
+The submissions use JavaScript ES modules, Vite, MapLibre GL JS, Turf.js, Vitest, HTML and CSS. The separate landing page uses plain HTML/CSS, local system fonts and a schematic SVG illustration. It has no framework, analytics or credential-dependent service. The comparison supports system-aware light/dark appearance with a saved preference, and app links open in new tabs. During assembly, a separate benchmark navigation/help bar is added to the generated app HTML, providing a return link and a friendly WebGL availability notice. No original source file or GIS logic is modified; the apps retain their original appearance. The WebGL probe is a capability check, not proof of successful map rendering.
 
 ```text
 implementations/{deepseek,glm,mimo}/  Immutable original submissions
