@@ -54,7 +54,8 @@ test('uses saved appearance before DOM ready and toggles persistently', () => {
   b.ready(); b.toggle.handlers.click();
   assert.equal(b.document.documentElement.dataset.theme, 'light');
   assert.equal(b.stored(), 'light');
-  assert.equal(b.toggle.attrs['aria-label'], 'Switch to dark mode');
+  assert.equal(b.toggle.attrs['aria-label'], 'Cambiar a modo oscuro');
+  assert.equal(b.toggle.textContent, '☾ Modo oscuro');
 });
 test('blocked storage follows system appearance and still allows manual switching', () => {
   const b = browser({ blockedStorage: true, dark: true });

@@ -3,6 +3,7 @@
   'use strict';
   const key = 'geospatial-flash-theme';
   const root = document.documentElement;
+  const spanish = root.lang.startsWith('es');
   const media = window.matchMedia?.('(prefers-color-scheme: dark)');
   let preference;
   try { preference = localStorage.getItem(key); } catch { /* Storage may be disabled. */ }
@@ -14,8 +15,12 @@
     root.dataset.theme = dark ? 'dark' : 'light';
     for (const button of document.querySelectorAll('[data-benchmark-theme-toggle]')) {
       button.hidden = false;
-      button.textContent = dark ? '☀ Light mode' : '☾ Dark mode';
-      button.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      button.textContent = spanish
+        ? (dark ? '☀ Modo claro' : '☾ Modo oscuro')
+        : (dark ? '☀ Light mode' : '☾ Dark mode');
+      button.setAttribute('aria-label', spanish
+        ? (dark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro')
+        : (dark ? 'Switch to light mode' : 'Switch to dark mode'));
     }
   }
   applyTheme(); // Before the stylesheet paints: avoid a bright flash in dark mode.
@@ -56,7 +61,6 @@
     const status = document.querySelector('[data-benchmark-webgl-status]');
     const retry = panel.querySelector('[data-benchmark-webgl-retry]');
     const feedback = panel.querySelector('[data-benchmark-webgl-feedback]');
-    const spanish = root.lang.startsWith('es');
     const announcement = document.querySelector('[data-benchmark-webgl-announcement]');
     function update(lost = false) {
       const available = !lost && hasWebGL();

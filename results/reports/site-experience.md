@@ -10,3 +10,5 @@
 Verification: seven Node tests with simulated browser APIs passed, covering saved appearance, blocked storage, system/cross-tab changes, WebGL1 fallback, graphics failure/recovery, an already-lost context and runtime map-context loss. These are tests of the added website behavior, separate from the 171 original model tests. The assembled inspection site passed 29 local HTML references, new-tab/return-link/help checks and byte-identical dataset checks. The assembly helper refuses original source directories and is idempotent for generated HTML.
 
 No browser automation or usable rendered browser session was available. Desktop/mobile appearance and real GPU behavior remain unverified; no screenshots were fabricated. No dependency upgrade or original implementation repair was made.
+
+Language follow-up: the entire public comparison interface is translated into Spanish, including metadata, accessible labels, tables, controls and fallback guidance. Proper project/model/library names are retained. Technical repository reports remain in English.
