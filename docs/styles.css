@@ -14,3 +14,13 @@
 
 /* Longer Spanish labels retain room on compact displays. */
 @media(min-width:761px){.nav nav{flex-wrap:wrap;justify-content:flex-end;gap:18px}}
+
+/* Authentic audit evidence; crops are previews linking to the original full images. */
+.capture-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.capture-card{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:7px;overflow:hidden}
+.capture-preview{display:block;aspect-ratio:16/11;overflow:hidden;background:var(--tint);border-bottom:1px solid var(--line)}
+.capture-preview img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.capture-copy{padding:22px}.capture-title{display:flex;align-items:start;gap:12px;flex-wrap:wrap}.capture-title h3{font-size:24px}.capture-title .pill{white-space:normal}
+.capture-copy>p{color:var(--muted);font-size:12px;margin-top:16px}.capture-links{display:flex;flex-wrap:wrap;gap:10px 16px;font-size:11px;margin-top:20px}.capture-links a{text-decoration:none}
+.audit-matrix{margin-top:32px}.audit-matrix caption{white-space:normal}
+@media(max-width:760px){.capture-grid{grid-template-columns:1fr}.capture-preview{aspect-ratio:16/10}.capture-links a{padding:8px 0}.capture-copy{padding:20px}}

@@ -35,3 +35,7 @@ Built HTML and relative app assets are checked by `scripts/check-site.py`. The a
 ## External tooling checks
 
 The complete `build-site.sh` was exercised once after implementation. It verified hashes, installed/tested/built DeepSeek, then stopped with a nonzero exit at the same GLM `spawnSync EPERM` test failure. It did not bypass GLM to manufacture a successful combined deployment. A separate inspection artifact assembled from the three already successful standalone builds passed 19 local HTML reference checks and byte-identical demo-data checks. Bash/Node/Python helper syntax checks passed; no YAML/actionlint executable was available for workflow validation.
+
+## Subsequent real-browser capture evidence
+
+The owner later executed the temporary Brave/Playwright script outside the sandbox. The 12 authentic captures and manifest were directly reviewed: all three initial loads are evidenced, MiMo/GLM popup correspondence is confirmed, and selection/filter/mobile checks are otherwise partial. Rules, tolerance, exports and restoration remain untested in-browser. The earlier sandbox failure above is historical, not the final evidence state. See [browser-functional-audit.md](browser-functional-audit.md) for the eight-test matrix and [visual-comparison.md](visual-comparison.md) for screenshot-backed findings.

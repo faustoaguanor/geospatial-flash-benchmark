@@ -14,7 +14,7 @@ The research question: how well do three coding models translate one GIS specifi
 
 ## Audit status and demos
 
-The public repository is published. **GitHub Actions verified all 171 original tests, built all three applications and successfully deployed the Pages artifact on 2026-10-31.** [Verified deployment run](https://github.com/faustoaguanor/geospatial-flash-benchmark/actions/runs/41252590779). Direct public-page fetching and real-browser behavior remain unverified in this restricted session. Published deployment targets:
+The public repository is published. **GitHub Actions verified all 171 original tests, built all three applications and successfully deployed the Pages artifact on 2026-10-31.** [Verified deployment run](https://github.com/faustoaguanor/geospatial-flash-benchmark/actions/runs/41252590779). A subsequent owner-run Brave/Playwright session produced 12 genuine screenshots, reviewed with its execution manifest. Initial rendering, popups and applied filter controls are evidenced; the full eight-test browser protocol remains incomplete. Published deployment targets:
 
 - [Comparison website](https://faustoaguanor.github.io/geospatial-flash-benchmark/)
 - [DeepSeek application](https://faustoaguanor.github.io/geospatial-flash-benchmark/deepseek/)
@@ -33,14 +33,24 @@ Audit date: 2026-10-31; Node 24.16.0, npm 12.2.0. All original files are frozen.
 | Existing tests independently executed | 64/64 passed | 56/56 passed on GitHub; 55/56 locally | 51/51 passed |
 | Production build | Passed | Passed | Passed |
 | Provisional technical subtotal /80 | 61 | 50 | 58 |
-| Browser / visual criterion /20 | Unverified | Unverified | Unverified |
+| Reviewed browser screenshots | 4 | 4 | 4 |
+| Aesthetics + composition /8 (partial) | 7 | 6 | 4.5 |
+| Complete design criterion /20 | Withheld | Withheld | Withheld |
 | Full score /100 | Withheld | Withheld | Withheld |
 
-GLM's generator test initially hit `spawnSync EPERM` in the local sandbox; its assertion did not execute there. All 56 tests subsequently passed unchanged on GitHub Actions. Two direct generator runs in an isolated copy preserved both original output hashes. This is an environment limitation, not a demonstrated generator defect or a 56/56 passing test run.
+GLM's generator test initially hit `spawnSync EPERM` in the local sandbox; its assertion did not execute there. All 56 tests subsequently passed unchanged on GitHub Actions. Two direct generator runs in an isolated copy preserved both original output hashes. The local failure was an environment limitation; it was not a demonstrated generator defect. The hosted 56/56 result is separately verified.
 
 Independent diagnostic cases confirmed overlap/boundary discrimination in all three. They also exposed GLM's one-sided overlap indicators and missing-ID normalization, MiMo's malformed-MultiPolygon crash, and shared shortcomings in exterior-hole validity and orientation-independent duplicate detection. [Technical comparison](results/reports/technical-comparison.md) documents evidence and qualifications.
 
-**Provisional categories:** DeepSeek leads the observed GIS review; MiMo has the strongest module/map-loading separation. Visual design, UX and the overall winner remain unverified. GLM was fastest according to reported timing. A complete-cost winner cannot be determined.
+**Provisional categories:** DeepSeek leads the observed GIS review; MiMo has the strongest module/map-loading separation. DeepSeek also leads the reviewed aesthetics/composition and observed mobile arrangement, provisionally. Full UX, cartographic and overall winners remain withheld. GLM was fastest according to reported timing. A complete-cost winner cannot be determined.
+
+## Conclusions of the exercise
+
+All three submissions achieved a deployable demonstration, but passing model-authored tests did not establish cadastral correctness or production readiness. Independent geometry cases found shared validity/duplicate limitations and model-specific indicator/input defects. The browser captures added UX evidence that compilation and unit tests cannot supply.
+
+DeepSeek offers the strongest observed balance for continuing a separately identified demo derivative; MiMo provides the clearest module separation, and GLM the shortest reported delivery time. These are findings about three particular submissions, not universal model rankings. Different generated datasets, partial costs and a single run per model prevent stronger generalization.
+
+The visual review assigns only the two observed components: DeepSeek 7/8, GLM 6/8 and MiMo 4.5/8. It does not fill the 20-point criterion or change prior technical scores. Rules, tolerance changes, exports, restoration and accessibility need further browser testing. No operational cadastral use is endorsed. Read the [full professional conclusions](results/reports/conclusions.md) and the [qualified browser matrix](results/reports/browser-functional-audit.md).
 
 ## Reported development telemetry
 
@@ -61,13 +71,15 @@ Usage percentages are not prices; their accounting basis is not verified and the
 
 All models received the [same benchmark prompt](benchmark/prompt.md), but each generated its own dataset. Generated incidence counts and internal passing-test totals are therefore **not directly comparable measures of correctness**. Model-authored expectations are not independent ground truth. This audit did not alter the implementations to make tests pass or deployment work.
 
-The audit uses isolated lockfile installations, original tests (including a successful hosted run), production builds, selected source review and 16 shared diagnostic cases per model with schema adapters. It is one submission per model, without repeated trials or controlled agent budgets. Scores are post-hoc reviewer judgments; missing browser evidence prevents a full ranking. The 5% tolerance is experimental, not an ISO/municipal standard. Official accuracy cannot be evaluated without reference data.
+The audit uses isolated lockfile installations, original tests (including a successful hosted run), production builds, selected source review and 16 shared diagnostic cases per model with schema adapters. It is one submission per model, without repeated trials or controlled agent budgets. Scores are post-hoc reviewer judgments; incomplete browser/accessibility verification prevents a full ranking. The 5% tolerance is experimental, not an ISO/municipal standard. Official accuracy cannot be evaluated without reference data.
 
 - [Methodology](benchmark/methodology.md)
 - [Rubric and qualified results](benchmark/evaluation.md)
 - [Machine-readable results](benchmark/results.csv)
 - [Functional verification](results/reports/functional-verification.md)
-- [Visual evaluation limits](results/reports/visual-comparison.md)
+- [Visual comparison with genuine screenshots](results/reports/visual-comparison.md)
+- [Browser functional matrix](results/reports/browser-functional-audit.md)
+- [Professional conclusions](results/reports/conclusions.md)
 - [Source integrity manifest](results/reports/source-integrity.json)
 
 ## Reproduce without editing originals
@@ -98,7 +110,7 @@ The submissions use JavaScript ES modules, Vite, MapLibre GL JS, Turf.js, Vitest
 implementations/{deepseek,glm,mimo}/  Immutable original submissions
 benchmark/                         Original prompt, methodology, rubric, CSV
 results/reports/                   Findings, command evidence, integrity hashes
-results/screenshots/               Reserved for genuine future captures
+results/screenshots/               Twelve genuine browser captures and manifest
 scripts/                           External audit and isolated build helpers
 docs/                              Separate comparison website
 .github/workflows/deploy.yml       Verify, assemble and deploy one Pages site

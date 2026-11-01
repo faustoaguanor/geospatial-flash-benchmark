@@ -6,7 +6,7 @@
 
 Verified [Actions run 41252590779](https://github.com/faustoaguanor/geospatial-flash-benchmark/actions/runs/41252590779): all 171 original tests and all three builds passed. Commit: `86af38a22c91bbf3fc3c7d14d4b5e13e29abf8b6`. The initial Pages setup job failed before Pages was enabled. After the owner enabled GitHub Actions as the source and reran the failed job, deployment succeeded at 23:30 UTC on 2026-10-31. The deployment action reported https://faustoaguanor.github.io/geospatial-flash-benchmark/ as its environment URL.
 
-Public HTTP retrieval and browser/WebGL/desktop/mobile behavior remain unverified: web-tool fetches did not return the four public pages. No live screenshots or fabricated status codes are supplied.
+Subsequent owner-run Brave evidence confirms HTTP 200 for each application, live WebGL contexts and twelve authentic desktop/mobile/selection/filter screenshots. The full browser protocol remains incomplete; the evidence and partial findings are documented in browser-functional-audit.md and visual-comparison.md. Earlier web-tool retrieval failures describe that tool, not the later browser outcome.
 
 ### Earlier preparation blockers (resolved for publication)
 
@@ -17,7 +17,7 @@ The owner authenticated and created/pushed the prepared checkout from their term
 - Normal `git init` failed because the workspace exposes `.git` as read-only. No existing usable repository/history was found.
 - A local publication commit is prepared using Git metadata under `/tmp/geospatial-flash-benchmark.git`, with the project as its work tree. A portable bundle is saved at `/tmp/geospatial-flash-publication.bundle`; it is outside the public source tree. Normal `git status` inside this workspace will not use that metadata automatically. `/tmp` is session-local: copy the bundle to durable storage if needed.
 - The comparison website and all three successful standalone production builds are assembled under `/tmp/geospatial-flash-site-inspection`. Its static paths/datasets were checked. This inspection artifact is not evidence that the entire CI pipeline passed; GLM's subprocess test remains blocked here.
-- Attempts to fetch the planned repository and four Pages addresses through the web tool did not yield accessible pages. This does not prove absence or a specific HTTP status. The later Actions/deployment result is verified above; public HTTP/browser behavior remains unverified.
+- Attempts to fetch the planned repository and four Pages addresses through the web tool did not yield accessible pages. This does not prove absence or a specific HTTP status. The later Actions/deployment result is verified above; subsequent browser capture evidence is documented separately.
 
 ## Published Pages targets — deployment verified, browser behavior unverified
 
@@ -71,3 +71,7 @@ The owner authenticated and created/pushed the prepared checkout from their term
 5. Record the actual commit, Actions run URL/status and Pages environment URL; add genuine screenshots and update reports/site audit labels only after observing the result. Re-run `python3 scripts/verify-integrity.py`.
 
 The workflow follows the official [Pages deployment mechanism](https://docs.github.com/en/get-started/start-your-journey/deploying-your-website-automatically) and the current [Node setup action](https://github.com/actions/setup-node). It uses relative Vite build paths, copies public demo data into each app, regenerates dependency legal notices and uploads only the assembled static artifact. No original Vite configuration is changed.
+
+## Evidence publication update
+
+The current update adds the twelve original PNGs, their unchanged capture manifest, partial browser/visual reports, qualified CSV fields and professional conclusions. The homepage presents those findings in Spanish and the deployment assembly copies only selected PNGs/manifest into `screenshots/browser-audit/`. No browser profiles, temporary downloads or private sessions are published. Original technical scores remain unchanged and no final design total over 20 or combined score over 100 is introduced. A new deployment must be verified after the update is pushed.

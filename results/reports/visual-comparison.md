@@ -1,16 +1,52 @@
-# Visual comparison — unverified
+# Comparación visual y UX — revisión parcial con capturas reales
 
-No genuine browser screenshots were captured. Chromium/Chrome and browser automation tools were unavailable; attempted Vite previews were also blocked by `listen EPERM`. Firefox's presence did not provide a usable browser rendering session. The comparison website therefore does not include fabricated application images or assign visual/UX scores.
+Se revisaron directamente las **12 capturas** obtenidas por el script ejecutado por el propietario en Brave/Playwright. El motor reporta `156.0.8078.80`; escritorio solicitado 1440 × 900, móvil 390 × 844, escala 1 y esquema claro. Véanse [el manifiesto](../screenshots/browser-audit/capture-manifest.json) y [la matriz funcional](browser-functional-audit.md). La evaluación se basa en interfaces renderizadas, no en CSS/HTML.
 
-Source-only observations: DeepSeek provides a dense dashboard and several map controls; GLM uses a compact light dashboard; MiMo separates map loading and presents a simpler control/table structure. These describe selected HTML/CSS/module organization, **not verified visual quality**, responsive usability, accessible contrast or functional performance. No visual or UX winner is justified.
+La barra superior «Volver a la comparación / WebGL disponible» pertenece al benchmark y **no se puntúa como diseño del modelo**. Los nombres `-unverified` se conservan: su causa es una comprobación automática excesivamente conservadora de solicitudes canceladas, no ausencia de imágenes reales. La cartografía y los popups son visibles en la revisión humana.
 
-To complete evaluation on an unrestricted machine:
+## Hallazgos observados
 
-1. Build isolated copies; serve the assembled output at `/geospatial-flash-benchmark/`.
-2. Open all three in Chromium with the same desktop viewport (1440×1000) and mobile viewport (390×844), device scale 1.
-3. Confirm WebGL initialization, basemap and parcel loading; inspect network and console errors separately from external tile failures.
-4. Execute evaluation, search, severity/rule/sector filters, parcel navigation, popup interaction, invalid-file feedback, rule/tolerance changes and all three exports.
-5. Check keyboard operation, labels, focus, spacing, hierarchy, type size, contrast, map/table readability and horizontal overflow. Confirm attribution is visible.
-6. Save genuine desktop/mobile screenshots to `results/screenshots/{model}-{viewport}.png`, record browser/environment details and update the 20-point visual/UX criterion with specific evidence.
+| Modelo | Fortalezas visuales | Limitaciones observadas |
+|---|---|---|
+| DeepSeek | Identidad azul/verde coherente, tarjetas y jerarquía claras; mapa protagonista; indicadores agrupados; reglas plegadas; acciones «Localizar» explícitas. | El popup seleccionado se extiende hacia el borde inferior y compite con la leyenda; algunos textos secundarios y controles son pequeños. En móvil la tabla necesita navegación horizontal por verificar. |
+| GLM | Panel compacto y ordenado; indicadores y exportación próximos; severidades con texto e insignias; selección con contorno azul nítido. | Documento móvil de 690 px frente a los 390 solicitados; desbordamiento claro. El popup es largo y depende de desplazamiento interno. |
+| MiMo | Paneles claros, botones rotulados y leyenda legible; base vectorial relativamente discreta en las capturas revisadas. | Lista de reglas siempre desplegada: domina la columna y deja gran vacío en escritorio; indicadores/exportaciones quedan muy abajo. En móvil el mapa llega después de reglas, indicadores y exportaciones. Popup de Iñaquito persiste al filtrar Centro Histórico. |
 
-No screenshot files are provided for this session. The landing page itself also requires rendered desktop/mobile QA before any claim of visual verification.
+### Evidencia de escritorio
+
+- [DeepSeek inicial](../screenshots/browser-audit/deepseek-desktop.png), [selección](../screenshots/browser-audit/deepseek-parcel-unverified.png), [filtros](../screenshots/browser-audit/deepseek-filters-unverified.png).
+- [GLM inicial](../screenshots/browser-audit/glm-desktop.png), [selección](../screenshots/browser-audit/glm-parcel-unverified.png), [filtros](../screenshots/browser-audit/glm-filters-unverified.png).
+- [MiMo inicial](../screenshots/browser-audit/mimo-desktop.png), [selección](../screenshots/browser-audit/mimo-parcel-unverified.png), [filtros](../screenshots/browser-audit/mimo-filters-unverified.png).
+
+### Evidencia móvil
+
+[DeepSeek](../screenshots/browser-audit/deepseek-mobile-unverified.png) mantiene el mapa al comienzo y se ajusta al ancho de 390 px. [MiMo](../screenshots/browser-audit/mimo-mobile-unverified.png) también ajusta ese ancho, pero la extensa lista de reglas desplaza el mapa muy abajo. [GLM](../screenshots/browser-audit/glm-mobile-unverified.png) muestra contenido de 690 px y un encabezado de 390 px: la limitación de ancho está respaldada por imagen y métricas del navegador.
+
+Son capturas de página completa. Sus diferentes alturas no deben confundirse con diferentes tamaños de viewport. No se comprobaron gestos táctiles ni recorridos de teclado.
+
+## Rúbrica: únicamente criterios suficientemente observados
+
+Las puntuaciones son valoraciones del auditor sobre capturas y no métricas objetivas. Se retienen los criterios no verificados en lugar de inventar un total sobre 20.
+
+| Criterio | Máximo | DeepSeek | GLM | MiMo |
+|---|---:|---:|---:|---:|
+| Estética e identidad visual | 4 | 3,5 | 3 | 2,5 |
+| Jerarquía y composición | 4 | 3,5 | 3 | 2 |
+| Diseño cartográfico | 4 | Parcial; sin nota | Parcial; sin nota | Parcial; sin nota |
+| Usabilidad e interacción | 4 | Parcial; sin nota | Parcial; sin nota | Parcial; sin nota |
+| Responsive y accesibilidad | 4 | Parcial; sin nota | Parcial; sin nota | Parcial; sin nota |
+| **Subtotal observado** | **8** | **7** | **6** | **4,5** |
+| **Total de diseño** | **20** | **Pendiente** | **Pendiente** | **Pendiente** |
+
+DeepSeek obtiene mayor puntuación en estética por su identidad consistente y en composición por dar prioridad al mapa sin desplegar todas las reglas. GLM mantiene buen orden y densidad de información, con un lenguaje visual más convencional. MiMo tiene consistencia básica, pero la expansión vertical de reglas y el espacio vacío penalizan la composición. Estas razones se apoyan en las capturas iniciales enlazadas arriba.
+
+No se puntúa definitivamente cartografía: hay símbolos/leyendas y selección visibles, pero los mapas no comparten escala ni encuadre (GLM seleccionado muestra 20 m, DeepSeek 200 m). La interacción y la accesibilidad siguen incompletas: no se verificaron todas las funciones, teclado/foco, contraste cuantificado ni navegación táctil. No se suman subtotales parciales al resultado técnico sobre 80 ni se publica una clasificación general sobre 100.
+
+## Categorías y recomendaciones
+
+- **Mejor apariencia e interfaz más profesional en las capturas:** DeepSeek, conclusión provisional limitada a estética y composición.
+- **Mejor disposición móvil observada:** DeepSeek, por mantener el mapa accesible al inicio y respetar 390 px; no equivale a una prueba táctil completa.
+- **Mejor UX completa y diseño cartográfico:** pendientes; no hay evidencia suficiente para ganadores definitivos.
+- **Prioridades para versiones derivadas:** corregir el desbordamiento móvil de GLM; plegar/reorganizar reglas e indicadores de MiMo y revisar su popup tras cambiar sector; revisar espacio, anclaje y lectura de popups/leyendas en todos. No se harán esas reparaciones en las implementaciones preservadas.
+
+Los hallazgos previos de la auditoría técnica permanecen separados. La portada presenta esta evidencia como revisión parcial. Faltan pruebas funcionales y accesibilidad antes de finalizar puntuaciones o publicar una evaluación completa.

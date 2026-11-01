@@ -20,7 +20,7 @@ DeepSeek V4.1 Flash, GLM-5.3 Flash and MiMo V2.6 Flash independently implemented
 - **Verified:** executed command, inspected artifact or reproduced independent case.
 - **Reported:** supplied by the original experiment owner/agents, without independent execution/telemetry confirmation.
 - **Source inference:** behavior inferred from selected original code, without browser execution.
-- **Unverified:** unavailable evidence, including desktop/mobile rendering and remote deployment in this session.
+- **Unverified:** unavailable evidence, including any unfinished browser interactions/accessibility checks; later evidence is explicitly identified below.
 
 ## Limits
 
@@ -31,3 +31,7 @@ Dataset generation and model-authored expectations are not independent ground tr
 Turf area is appropriate for an educational geographic-coordinate comparison but is not a certified ellipsoidal survey computation. The implementations' projected-coordinate descriptions were not validated against an authoritative local CRS definition. TMQ and UTM must not be conflated. No official TMQ parameters are asserted by this audit.
 
 Browser availability, sandbox subprocess/listener restrictions and GitHub authentication limited final verification. See the functional and visual reports for exact scope. Monetary observations are partial and cannot determine the cheapest complete implementation.
+
+## Browser evidence follow-up
+
+The owner subsequently ran the temporary capture script in an independent Brave profile outside the restricted agent environment. The agent reviewed 12 genuine full-page screenshots and the execution manifest. Requested viewports were 1440×900 and 390×844, with scale 1. This updates the earlier browser-availability limitation; it does not imply that all eight functional tests were executed. See the browser report for actual image/layout dimensions, differing map scales and readiness-flag limitations. Prior technical judgments remain unchanged; only aesthetics and composition receive partial visual scores.

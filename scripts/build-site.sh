@@ -33,6 +33,9 @@ cp -R "$ROOT/docs/." "$OUTPUT/"
 mkdir -p "$OUTPUT/reports"
 cp "$ROOT"/results/reports/* "$OUTPUT/reports/"
 cp "$WORK/independent-cases.json" "$OUTPUT/reports/independent-cases-current.json"
+mkdir -p "$OUTPUT/screenshots/browser-audit"
+cp "$ROOT"/results/screenshots/browser-audit/*.png "$OUTPUT/screenshots/browser-audit/"
+cp "$ROOT/results/screenshots/browser-audit/capture-manifest.json" "$OUTPUT/screenshots/browser-audit/"
 for model in deepseek glm mimo; do
   cp -R "$WORK/$model/dist" "$OUTPUT/$model"
 done
