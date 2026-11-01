@@ -10,7 +10,7 @@ La conclusión más relevante es metodológica: una aplicación que compila, mue
 
 | Implementación | Aporte principal | Condición que limita su recomendación |
 |---|---|---|
-| **DeepSeek** | Mejor balance observado entre amplitud GIS, presentación profesional y prioridad del mapa. Lidera el subtotal técnico provisional y la valoración parcial de estética/composición. | La validez poligonal y la equivalencia geométrica siguen incompletas. La lectura de popups y la interacción móvil requieren pruebas adicionales. |
+| **DeepSeek** | Mejor balance observado entre amplitud GIS, presentación profesional y prioridad del mapa. Lidera el subtotal técnico provisional y la valoración de estética/composición dentro del alcance puntuado. | La validez poligonal y la equivalencia geométrica siguen incompletas. La lectura de popups y la interacción móvil requieren pruebas adicionales. |
 | **GLM** | Demostración compacta y menor tiempo de desarrollo reportado: 5 min 51 s. | La auditoría técnica encontró indicadores de superposición de un solo lado y sustitución de ID ausentes antes de validarlos. La captura móvil presenta 690 px de contenido frente a 390 solicitados. |
 | **MiMo** | Separación clara de responsabilidades, motor independiente de la interfaz y carga diferida del mapa. | Se reprodujo una excepción con MultiPolygon mal formado. En las capturas, la lista de reglas domina el espacio, retrasa el mapa en móvil y permanece un popup de otro sector tras filtrar. |
 
@@ -28,7 +28,7 @@ Cada modelo generó su propio conjunto sintético. Por tanto, 72/72/68 predios, 
 
 DeepSeek presenta la identidad y composición más sólidas en las capturas revisadas: mapa protagonista, jerarquía clara y controles complejos plegados. GLM organiza bien la información en escritorio, pero el desbordamiento móvil afecta su adaptabilidad. MiMo ofrece controles comprensibles, aunque la expansión vertical de reglas dificulta la exploración y relega los indicadores y el mapa.
 
-La revisión puntúa exclusivamente estética y composición: **DeepSeek 7/8, GLM 6/8 y MiMo 4,5/8**. No son notas de diseño sobre 20 ni deben sumarse a los subtotales técnicos sobre 80. Faltan una comparación cartográfica a escala equivalente, navegación por teclado, foco, contraste cuantificado, gestos táctiles y una verificación completa de las interacciones. No se proclama un ganador definitivo de UX, cartografía ni del benchmark completo.
+La revisión visual puntúa exclusivamente estética y composición: **DeepSeek 7/8, GLM 6/8 y MiMo 4,5/8**. A petición del propietario, se excluyen los criterios no completados y se consolida el alcance puntuado en **88 puntos**: **DeepSeek 68/88, MiMo 62,5/88 y GLM 56/88**. No se normaliza a 100 ni se modifican las notas técnicas anteriores. Faltan una comparación cartográfica a escala equivalente, navegación por teclado, foco, contraste cuantificado, gestos táctiles y una verificación completa de las interacciones. DeepSeek obtiene la mayor puntuación dentro del alcance evaluado; esto no acredita superioridad universal del modelo ni un ganador de UX o cartografía que no se evaluaron por completo.
 
 ## Velocidad y economía: evidencia con alcance limitado
 

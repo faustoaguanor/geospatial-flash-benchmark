@@ -34,15 +34,14 @@ Audit date: 2026-10-31; Node 24.16.0, npm 12.2.0. All original files are frozen.
 | Production build | Passed | Passed | Passed |
 | Provisional technical subtotal /80 | 61 | 50 | 58 |
 | Reviewed browser screenshots | 4 | 4 | 4 |
-| Aesthetics + composition /8 (partial) | 7 | 6 | 4.5 |
-| Complete design criterion /20 | Withheld | Withheld | Withheld |
-| Full score /100 | Withheld | Withheld | Withheld |
+| Visual design: aesthetics + composition /8 | 7 | 6 | 4.5 |
+| Evaluated-scope total /88 | 68 | 56 | 62.5 |
 
 GLM's generator test initially hit `spawnSync EPERM` in the local sandbox; its assertion did not execute there. All 56 tests subsequently passed unchanged on GitHub Actions. Two direct generator runs in an isolated copy preserved both original output hashes. The local failure was an environment limitation; it was not a demonstrated generator defect. The hosted 56/56 result is separately verified.
 
 Independent diagnostic cases confirmed overlap/boundary discrimination in all three. They also exposed GLM's one-sided overlap indicators and missing-ID normalization, MiMo's malformed-MultiPolygon crash, and shared shortcomings in exterior-hole validity and orientation-independent duplicate detection. [Technical comparison](results/reports/technical-comparison.md) documents evidence and qualifications.
 
-**Provisional categories:** DeepSeek leads the observed GIS review; MiMo has the strongest module/map-loading separation. DeepSeek also leads the reviewed aesthetics/composition and observed mobile arrangement, provisionally. Full UX, cartographic and overall winners remain withheld. GLM was fastest according to reported timing. A complete-cost winner cannot be determined.
+**Provisional categories:** DeepSeek leads the observed GIS review; MiMo has the strongest module/map-loading separation. DeepSeek also leads the reviewed aesthetics/composition and observed mobile arrangement, provisionally. DeepSeek has the highest evaluated-scope score, 68/88. Full UX and cartographic winners are not established. GLM was fastest according to reported timing. A complete-cost winner cannot be determined.
 
 ## Conclusions of the exercise
 
@@ -50,7 +49,7 @@ All three submissions achieved a deployable demonstration, but passing model-aut
 
 DeepSeek offers the strongest observed balance for continuing a separately identified demo derivative; MiMo provides the clearest module separation, and GLM the shortest reported delivery time. These are findings about three particular submissions, not universal model rankings. Different generated datasets, partial costs and a single run per model prevent stronger generalization.
 
-The visual review assigns only the two observed components: DeepSeek 7/8, GLM 6/8 and MiMo 4.5/8. It does not fill the 20-point criterion or change prior technical scores. Rules, tolerance changes, exports, restoration and accessibility need further browser testing. No operational cadastral use is endorsed. Read the [full professional conclusions](results/reports/conclusions.md) and the [qualified browser matrix](results/reports/browser-functional-audit.md).
+At the owner’s request, scoring now includes only the evaluated visual components: aesthetics and composition, worth 8 points. Added to the unchanged technical subtotals out of 80, the totals are DeepSeek 68/88, MiMo 62.5/88 and GLM 56/88. The uncompleted visual criteria are excluded rather than left pending or scored as zero. These totals are not normalized to 100. Rules, tolerance changes, exports, restoration and accessibility need further browser testing. No operational cadastral use is endorsed. Read the [full professional conclusions](results/reports/conclusions.md) and the [qualified browser matrix](results/reports/browser-functional-audit.md).
 
 ## Reported development telemetry
 
